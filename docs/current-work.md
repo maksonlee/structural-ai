@@ -1,9 +1,12 @@
 # Article handoff
 
-The article is maintained only in
-[WordPress draft 4630](https://www.maksonlee.com/wp-admin/post.php?post=4630&action=edit)
-(site login required), titled **Use AI, IFC, and OpenSees to Simulate a Building
-Design Workflow**. Last checked on 2026-09-13 UTC: draft, comments open.
+The article is maintained only in WordPress:
+[Use AI, IFC, and OpenSees to Simulate a Building Design Workflow](https://www.maksonlee.com/ai-ifc-opensees-building-design-workflow/).
+Post 4630 was published with the owner's authorization on 2026-09-13 UTC
+(2026-09-14 Taipei). Anonymous page and API checks confirm publication and open
+comments; desktop and mobile screenshots show readable layouts. The reader review
+covered prose, excerpt, figures, captions, links and
+internal/private content; the GitHub availability sentence now uses present tense.
 
 Use English, short practical explanations and three principal figures. The author
 has civil engineering education and no industry practice experience. Present a
@@ -28,10 +31,10 @@ has isolated fixture coverage; the whole-building analysis was not rerun.
 
 The [public-payload review](publishing.md) found no confirmed privacy issue and
 added the embedded PDF font notice. Inspect actual staged files before each push.
-Next editorial step: update the article's availability wording once companion
-files are public. WordPress publication and project-wide licence selection remain
-separate decisions. Do not recreate a local article copy or accumulate a diary
-of edits here.
+The article and companion files are public. No publication task remains; future
+reader corrections should be made in WordPress and reconciled with affected
+companion files. Project-wide licence selection remains open. Do not recreate a
+local article copy or accumulate a diary of edits here.
 
 Git is initialized on `main`; `origin` targets the companion repository above.
 Use Git status and remote tracking to determine the current commit/push state.
