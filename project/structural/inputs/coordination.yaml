@@ -1,0 +1,29 @@
+review_id: CO-001
+handoff: ../../architect/outputs/handoff.yaml
+status: FIRST_COORDINATION_REVIEW_NOT_DESIGN_APPROVAL
+source_geometry: physical_geometry in project.yaml; no geometry authority in this file
+screen_basis:
+  source_id: taiwan-design-construction-2026
+  edition: MOJ consolidated text amended 2026-02-23; 2026-07-01 changes effective; reviewed 2026-09-13
+  use: Dimensional scenarios only; final applicability/finishes remain explicit open checks.
+stairs:
+  conventional_scenarios:
+  - {id: ART33_ROW3, clause: Article 33 table row 3, condition: Occupied-room floor area exceeds 200 m2 on the applicable above-ground floor, width_min_m: 1.20, riser_max_m: 0.20, tread_min_m: 0.24}
+  - {id: ART33_ROW4, clause: Article 33 table row 4, condition: Outside table rows 1 through 3, width_min_m: 0.75, riser_max_m: 0.20, tread_min_m: 0.21}
+  landing: {clause: Article 34 other table categories, vertical_interval_max_m: 4.0, depth_at_least_stair_width: true}
+  headroom: {clause: Article 35, raw_screen_min_m: 1.90, final_status: NOT_CHECKED_FINISHES_AND_COMPLETE_EDGE_CLEARANCE}
+  accessible:
+    source_id: taiwan-accessibility-stairs-2020
+    clause: 304.1
+    riser_max_m: 0.16
+    tread_min_m: 0.26
+    two_risers_plus_tread_range_m: [0.55, 0.65]
+    applicability: Article 167 and 167-2 expected to apply to the simulated office; no exception adopted.
+  finish_allowance_extra_scenarios_m: [0.0, 0.05]
+  finish_allowance_basis: Add to the IFC stair property allowance; sensitivity is a project target check, not an interpretation of Article 33 handrail encroachment allowances.
+  headroom_samples_across_width: 3
+  interpretation: Individual-flight geometry checks do not certify inter-flight uniformity, turning, door swings, rails, guarding or finished egress.
+quantity_scope:
+  method: Individual IfcOpenShell net solid volumes with represented openings subtracted.
+  excluded: [inter_member_overlap_reconciliation, reinforcement, formwork, foundations, below_grade_trial_extensions, finishes, equipment, prices]
+  cost_estimate_status: NOT_PREPARED

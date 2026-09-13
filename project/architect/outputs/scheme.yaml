@@ -1,0 +1,81 @@
+id: AH-002
+revision: H02
+date: '2026-09-13'
+issuer: Simulated architectural design role within this research project
+status: PROPOSAL_WITH_INTERFACE_HOLDS_NOT_ARCHITECT_ISSUED
+supersedes: H01 inventory for proposed spatial requirements only; no change to structural IFC geometry
+units: m
+coordinates: Retained IFC axes; x east, y north, z up; structural 1F top is z=0
+geometry_authority: ../../project.yaml#authority
+use:
+  category: G-2 ordinary private office; provisional classification
+  occupied_levels: [1F, 2F, 3F]
+  persons_per_level: 20
+  persons_basis: Synthetic operational brief, not statutory occupant calculation
+  roof: Maintenance access only; no lift stop, assembly use or occupied roof terrace
+site:
+  provenance: SYNTHETIC_LAYOUT_ONLY_NOT_CADASTRAL_OR_ZONING_EVIDENCE
+  parcel_bounds_m: [-2.0, -3.0, 20.0, 14.0]
+  road_edge_y_m: -3.0
+  exterior_ground_z_m: 0.05
+  side_escape_path_bounds_m: [18.0, -3.0, 19.5, 4.0]
+  main_exit: {xy_m: [8.6, 0.0], clear_width_m: 1.4}
+  secondary_exit: {xy_m: [18.0, 3.2], clear_width_m: 1.4}
+  note: Two separated ground exits proposed conservatively; rights, building line, actual road, setbacks and level survey unverified.
+finishes:
+  occupied_floor_build_up_m: 0.05
+  stair_finish_and_rail_kN_m2: 1.50
+  stair_finish_sensitivity_kN_m2: [1.0, 2.0]
+  stair_basis: Synthetic equivalent permanent allowance on horizontal flight and mid-landing area; includes rails, bedding and finish; not additional floor-area load.
+  stair_geometry_hold: Finish transition must preserve risers at floor/landing interfaces; no finished stair section is approved.
+  partitions: Lightweight partitions assumed within existing movable-partition allowance; fire-rated assembly weights require reconciliation.
+spaces:
+  # Bounds are usable planning reservations; structural obstacles are subtracted by the report.
+  # They do not claim statutory floor-area exclusions or a fully partitioned permit plan.
+  - {id: W1, name: West office, bounds_m: [0.2, 4.55, 6.1, 11.8], occupied: true, door_xy_m: [4.6, 4.55], door_clear_m: 1.0}
+  - {id: E1, name: East office, bounds_m: [12.4, 7.2, 17.8, 11.8], occupied: true, door_xy_m: [16.4, 7.2], door_clear_m: 1.0}
+  - {id: M1, name: Meeting room, bounds_m: [0.2, 0.2, 6.1, 2.2], occupied: true, door_xy_m: [4.6, 2.2], door_clear_m: 1.0}
+  - {id: B1, name: Staff room, bounds_m: [12.4, 0.2, 17.8, 2.2], occupied: true, door_xy_m: [16.4, 2.2], door_clear_m: 1.0}
+  - {id: WC1, name: Accessible WC reservation, bounds_m: [12.4, 4.55, 15.0, 7.1], occupied: false, door_xy_m: [13.7, 4.55], door_clear_m: 0.9}
+  - {id: WC2, name: WC and services reservation, bounds_m: [9.65, 7.2, 11.55, 11.0], occupied: false, door_xy_m: [11.55, 8.2], door_clear_m: 0.9}
+circulation:
+  protected_hall_bounds_m: [6.65, 0.2, 11.3, 4.5]
+  lift_turn_circle: {center_m: [10.5, 3.6], diameter_m: 1.5}
+  corridor_target_clear_m: 1.2
+  main_route: [[4.6, 3.1], [7.85, 3.1], [7.85, 4.5]]
+  east_route: [[16.4, 7.2], [16.4, 3.1], [7.85, 3.1], [7.85, 4.5]]
+  service_route_hold: WC2 access crosses reserved east-core service strip; detailed door and protected partition layout not resolved.
+  safety_stair: Proposed one-hour enclosure, smoke-control door with one-hour integrity and half-hour insulation; certified assemblies and route clearances not checked.
+  door_hold: Existing 1.2 m rough stair entry cannot yet demonstrate the upper inward escape-direction swing plus landing turn and handrails.
+  wc_hold: Space reservation only; fixtures, transfer/turn clearances, plumbing penetrations and fixture counts remain NOT_CHECKED.
+stair:
+  wall_finish_m: 0.01
+  handrail_diameter_m: 0.032
+  handrail_wall_gap_m: 0.05
+  central_guard_thickness_m: 0.02
+  clear_flight_target_m: 1.2
+  note: Outer rail consumes 92 mm including finish; inner rails proposed within 200 mm central well; returns and fixings are not detailed.
+  riser_uniformity: HOLD_153846_VERSUS_150_MM_NO_EXCEPTION_ADOPTED
+lift:
+  source_id: tmec-mrl-planning-h02
+  candidate: P10 700 kg, 2S side opening, 60 m/min, single car MRL
+  selection_status: DIMENSIONAL_CANDIDATE_ONLY_NO_ORDER_OR_VENDOR_CONFIRMATION
+  stops: [1F, 2F, 3F]
+  cabin_inside_m: [1.20, 1.45]
+  clear_door_width_m: 0.90
+  minimum_finished_shaft_m: [1.80, 1.90]
+  shaft_finish_per_face_m: 0.01
+  pit_depth_below_lowest_finished_floor_m: 1.50
+  overhead_above_highest_finished_floor_m: 4.30
+  landing_turn_diameter_m: 1.50
+  reservations_only: [pit, overrun, headhouse, lifting_hook, rail_anchors, buffers, waterproofing, control_panel, permanent_and_installation_power]
+  missing: [2S_entrance_construction_detail, certified_reaction_schedule, impact_basis, fire_rating, tolerance_and_plumb_survey, ventilation_and_heat, maintenance_plan]
+  note: Catalogue standard door detail is CO; do not apply it to the candidate 2S door. Current source has aligned shaft voids but no pit/headhouse or equipment.
+roof:
+  stair_headroom_reservation_above_finished_roof_m: 2.4
+  enclosure_status: SPACE_RESERVATION_ONLY_GEOMETRY_AND_LOADS_NOT_ADOPTED
+  equipment: NOT_CONFIRMED; no tank or HVAC demand declared zero
+acceptance:
+  architectural_acceptance: NOT_GRANTED
+  complete_code_compliance: NOT_CHECKED
+  construction_release: BLOCKED

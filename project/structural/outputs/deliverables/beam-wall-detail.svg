@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17313d} .small{font-size:2.4px}</style>
+<rect x="8.000" y="8.000" width="404.000" height="281.000" fill="none" stroke="#17313d" stroke-width="0.35"/>
+<text x="14.000" y="19.000" font-size="5" style="fill:#17313d">SR-002  Beam-wall section, diagnostic results and remaining design gates</text>
+<text x="14.000" y="25.000" font-size="2.8" style="fill:#aa3a20">SIMULATED COORDINATION REVIEW CASE STUDY | NOT FOR CONSTRUCTION | 2026-09-13</text>
+<path d="M8.000,278.000 L412.000,278.000" fill="none" stroke="#80949c" stroke-width="0.2" stroke-dasharray=""/>
+<text x="14.000" y="283.000" font-size="2.5" style="fill:#17313d">Source: Architectural model / verified structural interfaces | SHA256 e0b0102fe76c91c587e7... | units: m unless stated</text>
+<text x="14.000" y="287.000" font-size="2.4" style="fill:#17313d">Retained structural scheme; architectural package, finishes, reinforcement and foundation design remain open.</text>
+<text x="14.000" y="33.000" font-size="2.7" style="fill:#17313d">Section through the B-line rear-bay beam at 2F. Concrete outlines are unchanged; the analytical web centroid is corrected.</text>
+<text x="22.000" y="48.000" font-size="2.8" style="fill:#17313d">B-Y-B-23-2F / transverse section / 1:9.52</text>
+<path d="M97.600,78.500 L123.850,78.500 L123.850,194.000 L97.600,194.000 L97.600,173.000 L106.000,173.000 L106.000,118.400 L97.600,118.400 L97.600,78.500 Z" fill="#b8dcca" fill-rule="evenodd" stroke="#287457" stroke-width=".25" stroke-dasharray=""/>
+<path d="M97.600,118.400 L97.600,99.500 L22.000,99.500 L22.000,118.400 L97.600,118.400 Z" fill="#d0e4f0" fill-rule="evenodd" stroke="#507e9a" stroke-width=".25" stroke-dasharray=""/>
+<path d="M106.000,173.000 L106.000,118.400 L64.000,118.400 L64.000,173.000 L106.000,173.000 Z" fill="#eeb369" fill-rule="evenodd" stroke="#95601d" stroke-width=".25" stroke-dasharray=""/>
+<path d="M22.000,99.500 L158.500,99.500" fill="none" stroke="#507e9a" stroke-width="0.25" stroke-dasharray="1,1"/>
+<text x="129.100" y="97.400" font-size="2.8" style="fill:#17313d">SSL +4.00</text>
+<path d="M53.500,145.700 L118.600,145.700" fill="none" stroke="#ae3858" stroke-width="0.35" stroke-dasharray="1,1"/>
+<text x="129.100" y="143.600" font-size="2.8" style="fill:#ae3858">Web centre +3.56</text>
+<text x="129.100" y="169.850" font-size="2.8" style="fill:#17313d">Soffit +3.30</text>
+<text x="22.000" y="210.000" font-size="2.8" style="fill:#17313d">Web: 0.40 x 0.52 m; centroid 0.44 m below SSL.</text>
+<text x="22.000" y="218.000" font-size="2.65" style="fill:#17313d">Slab flange: 0.18 m; no second full-depth beam section.</text>
+<text x="22.000" y="226.000" font-size="2.65" style="fill:#17313d">Beam-owned overlap leaves 0.17 m wall at this section.</text>
+<text x="22.000" y="234.000" font-size="2.45" style="fill:#17313d">Remaining wall midplane x = 6.285 m; corner/contact offsets are explicit.</text>
+<text x="218.000" y="51.000" font-size="2.65" style="fill:#183848">ACCOUNTING CORRECTION</text>
+<text x="218.000" y="61.000" font-size="2.65" style="fill:#183848">Wall / column: 2.05920 m3</text>
+<text x="218.000" y="71.000" font-size="2.65" style="fill:#183848">Wall / beam web: 2.00928 m3</text>
+<text x="218.000" y="81.000" font-size="2.65" style="fill:#183848">Total counted once: 4.06848 m3 / 97.64352 kN</text>
+<text x="218.000" y="91.000" font-size="2.65" style="fill:#a14428">This is duplicated accounting removed, not physical concrete saved.</text>
+<text x="218.000" y="101.000" font-size="2.65" style="fill:#183848"></text>
+<text x="218.000" y="111.000" font-size="2.65" style="fill:#183848">DIAGNOSTIC ANALYSIS RESULTS</text>
+<text x="218.000" y="121.000" font-size="2.65" style="fill:#183848">Service gravity: 11878.409 kN</text>
+<text x="218.000" y="131.000" font-size="2.65" style="fill:#183848">Max vertical displacement: 3.0484 mm</text>
+<text x="218.000" y="141.000" font-size="2.65" style="fill:#183848">X100 / Y100: 0.11938 / 0.07057 mm</text>
+<text x="218.000" y="151.000" font-size="2.65" style="fill:#183848">First period: 0.182024 s</text>
+<text x="218.000" y="161.000" font-size="2.65" style="fill:#183848">Direct wall-frame intersections: 31; MPCs: 2323</text>
+<text x="218.000" y="171.000" font-size="2.65" style="fill:#183848"></text>
+<text x="218.000" y="181.000" font-size="2.65" style="fill:#a14428">REMAINING DESIGN</text>
+<text x="218.000" y="191.000" font-size="2.65" style="fill:#183848">Code wind/earthquake and combinations; cracking and system checks;</text>
+<text x="218.000" y="201.000" font-size="2.65" style="fill:#183848">all-member reinforcement, stairs/joints and anchorage;</text>
+<text x="218.000" y="211.000" font-size="2.65" style="fill:#183848">soil/foundations, coherent bar drawings and schedules;</text>
+<text x="218.000" y="221.000" font-size="2.65" style="fill:#183848">priced quantities, congestion and construction feasibility.</text>
+<text x="22.000" y="249.000" font-size="2.65" style="fill:#17313d">100 kN cases use uniform floor-area distribution, independent of mesh mass. They are not wind or earthquake actions.</text>
+<text x="22.000" y="258.000" font-size="2.65" style="fill:#17313d">The -1.80 m fixed base is diagnostic. Synthetic equipment inputs and uncracked elastic stiffness are not final design criteria.</text>
+<text x="22.000" y="267.000" font-size="2.6" style="fill:#17313d">Use with AR-001/002 and the structural report. These are coordination/review sheets; reinforcement is not drawn or approved.</text>
+</svg>

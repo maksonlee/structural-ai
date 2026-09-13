@@ -1,0 +1,5001 @@
+{
+  "revision": "H03-C",
+  "status": "DIAGNOSTIC_GEOMETRY_ADOPTED_ARCHITECTURAL_ACCEPTANCE_OPEN",
+  "rows": [
+    {
+      "storey": "1F",
+      "upper": "2F",
+      "riser_m": 0.13333333333333333,
+      "tread_m": 0.29,
+      "a_risers": 15,
+      "b_risers": 15,
+      "a_start_y_m": 5.9,
+      "a_end_y_m": 9.96,
+      "b_start_y_m": 9.670000000000002,
+      "b_end_y_m": 5.610000000000002,
+      "lower_ffl_m": 0.05,
+      "mid_ffl_m": 2.05,
+      "upper_ffl_m": 4.05,
+      "mid_setback_m": 0.28999999999999915,
+      "next_floor_setback_m": 0.29
+    },
+    {
+      "storey": "2F",
+      "upper": "3F",
+      "riser_m": 0.13333333333333333,
+      "tread_m": 0.29,
+      "a_risers": 14,
+      "b_risers": 13,
+      "a_start_y_m": 5.900000000000002,
+      "a_end_y_m": 9.670000000000002,
+      "b_start_y_m": 9.380000000000003,
+      "b_end_y_m": 5.900000000000003,
+      "lower_ffl_m": 4.05,
+      "mid_ffl_m": 5.916666666666667,
+      "upper_ffl_m": 7.6499999999999995,
+      "mid_setback_m": 0.28999999999999915,
+      "next_floor_setback_m": 0.29
+    },
+    {
+      "storey": "3F",
+      "upper": "RF",
+      "riser_m": 0.13333333333333333,
+      "tread_m": 0.29,
+      "a_risers": 14,
+      "b_risers": 13,
+      "a_start_y_m": 6.190000000000003,
+      "a_end_y_m": 9.960000000000003,
+      "b_start_y_m": 9.670000000000003,
+      "b_end_y_m": 6.190000000000004,
+      "lower_ffl_m": 7.6499999999999995,
+      "mid_ffl_m": 9.516666666666667,
+      "upper_ffl_m": 11.25,
+      "mid_setback_m": 0.28999999999999915,
+      "next_floor_setback_m": 0.29
+    }
+  ],
+  "checks": [
+    {
+      "id": "H03-C01",
+      "clause": "Accessibility 304.1",
+      "location": "Proposed core; 1F-3F/RF as stated",
+      "combination": "NOT_APPLICABLE_GEOMETRIC_SCREEN",
+      "value": {
+        "riser_m": 0.13333333333333333,
+        "tread_m": 0.29,
+        "2R_plus_T_m": 0.5566666666666666
+      },
+      "criterion": "Uniform finished risers and treads; R <= 0.16, T >= 0.26, 0.55 <= 2R+T <= 0.65",
+      "status": "PASS_PROPOSED_DIMENSIONS_ONLY",
+      "coverage": "No field tolerance or construction acceptance"
+    },
+    {
+      "id": "H03-C02",
+      "clause": "Accessibility 303.2",
+      "location": "Proposed core; 1F-3F/RF as stated",
+      "combination": "NOT_APPLICABLE_GEOMETRIC_SCREEN",
+      "value": {
+        "mid_and_next_floor_setback_m": 0.29
+      },
+      "criterion": "Each rising flight retreats at least one tread",
+      "status": "PASS_PROPOSED_DIMENSIONS_ONLY",
+      "coverage": "Stepped landing/opening edges required; central handrail fabrication/anchorage still pending"
+    },
+    {
+      "id": "H03-C03",
+      "clause": "Design/construction Articles 33(4), 34",
+      "location": "Proposed core; 1F-3F/RF as stated",
+      "combination": "NOT_APPLICABLE_GEOMETRIC_SCREEN",
+      "value": {
+        "minimum_front_m": 1.860000000000002,
+        "minimum_rear_m": 1.469999999999997,
+        "flight_width_m": 1.33
+      },
+      "criterion": "Landing depth >= raw flight width; conservative turn radius contained",
+      "status": "PASS_PROPOSED_DIMENSIONS_ONLY",
+      "coverage": "Finished surfaces and rail intrusions checked separately; full route not accepted"
+    },
+    {
+      "id": "H03-C04",
+      "clause": "Design/construction Articles 33(4), 76, 97",
+      "location": "Proposed core; 1F-3F/RF as stated",
+      "combination": "NOT_APPLICABLE_GEOMETRIC_SCREEN",
+      "value": {
+        "full_disc_separation_m": 0.6008384478064701,
+        "nominal_door_clear_m": 1.1050000000000002,
+        "leaf_area_m2": 2.5300000000000007
+      },
+      "criterion": "Positive exact disc separation with 20 mm margin; door clear >= 0.90 m",
+      "status": "PASS_PROPOSED_DIMENSIONS_ONLY",
+      "coverage": "2F/3F inward entry only; ground outward swing and certified assemblies remain separate holds; RF has a different south door"
+    },
+    {
+      "id": "H03-C05",
+      "clause": "Design/construction Article 97; project 1.20 m passage target",
+      "location": "Proposed core; 1F-3F/RF as stated",
+      "combination": "NOT_APPLICABLE_GEOMETRIC_SCREEN",
+      "value": {
+        "portal_finished_width_m": 1.2800000000000007,
+        "door_bounding_box_column_intersection_m2": 0.0,
+        "actual_throat": {
+          "rough_width_m": 1.3000000000000007,
+          "finished_unobstructed_width_m": 1.2800000000000007,
+          "remaining_intervals_y_m": [
+            [
+              4.6,
+              5.9
+            ]
+          ],
+          "column_conflicts": [],
+          "scope": "Plan throat screen at occupied floor levels; not all-point egress acceptance"
+        }
+      },
+      "criterion": "Actual portal throat >= 1.20 m; door sweep clear of represented columns",
+      "status": "PASS_PROPOSED_DIMENSIONS_ONLY",
+      "coverage": "Both door sweep and separate wall portal are checked. Column overlap cannot be erased by drawing an opening over it."
+    },
+    {
+      "id": "H03-C06",
+      "clause": "Accessibility 303.2",
+      "location": "Proposed core; 1F-3F/RF as stated",
+      "combination": "NOT_APPLICABLE_GEOMETRIC_SCREEN",
+      "value": {
+        "sample_count": 468,
+        "minimum_m": 2.553333333333333
+      },
+      "criterion": "Sampled tread clearances >= 1.90 m",
+      "status": "PASS_PROPOSED_DIMENSIONS_ONLY",
+      "coverage": "Conservative proposed soffits and source beams only; new IFC, all-point finished routes and handrail supports still require verification"
+    },
+    {
+      "id": "H03-C07",
+      "clause": "TMEC P10 planning table; project stair roof reservation",
+      "location": "Proposed core; 1F-3F/RF as stated",
+      "combination": "NOT_APPLICABLE_GEOMETRIC_SCREEN",
+      "value": {
+        "lift_overhead_m": 4.420000000000001,
+        "stair_roof_clear_m": 2.420000000000001
+      },
+      "criterion": "Lift >= 4.30 m overhead; stair roof clear >= project 2.40 m",
+      "status": "PASS_PROPOSED_DIMENSIONS_ONLY",
+      "coverage": "Vendor feature/dimensional check, not structural capacity or manufacturer confirmation"
+    },
+    {
+      "id": "H03-C08",
+      "clause": "Accessibility 207, 305; project 1.20 m clear flight target",
+      "location": "Proposed core; 1F-3F/RF as stated",
+      "combination": "NOT_APPLICABLE_GEOMETRIC_SCREEN",
+      "value": {
+        "nominal_clear_flight_m": 1.238,
+        "margin_m": 0.038000000000000034,
+        "project_dimensional_allowance_m": 0.02
+      },
+      "criterion": "Retain 20 mm project allowance beyond the 1.20 m finished target",
+      "status": "PASS_PROPOSED_DIMENSIONS_ONLY",
+      "coverage": "The 20 mm allowance is a project choice, not a legal tolerance. Guard/bracket strength and finished construction remain unchecked."
+    },
+    {
+      "id": "H03-C09",
+      "clause": "Design/construction Articles 33(4), 76, 97",
+      "location": "Proposed core; 1F-3F/RF as stated",
+      "combination": "NOT_APPLICABLE_GEOMETRIC_SCREEN",
+      "value": {
+        "roof_door_disc_separation_m": 0.04346254957233442,
+        "roof_door_nominal_clear_m": 1.1050000000000002
+      },
+      "criterion": "RF south door clears the turn with 20 mm nominal margin and >= 0.90 m clear opening",
+      "status": "PASS_PROPOSED_DIMENSIONS_ONLY",
+      "coverage": "Narrow wall-edge jamb, rated anchorage and roof drainage remain for structural/detail review; not a certified assembly"
+    }
+  ],
+  "headroom": {
+    "method": "Sampled proposed envelope screen; not final IFC/finished route validation",
+    "sample_count": 468,
+    "minimum": {
+      "flight": "3F-B",
+      "xyz_m": [
+        8.02,
+        6.470000000000004,
+        11.116666666666667
+      ],
+      "headroom_m": 2.553333333333333,
+      "overhead": "proposed-stair-cap"
+    },
+    "below_1_90_m": 0,
+    "samples": [
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          5.91,
+          0.18333333333333335
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          5.91,
+          0.18333333333333335
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          5.91,
+          0.18333333333333335
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          6.180000000000001,
+          0.18333333333333335
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          6.180000000000001,
+          0.18333333333333335
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.180000000000001,
+          0.18333333333333335
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          6.2,
+          0.31666666666666665
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          6.2,
+          0.31666666666666665
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.2,
+          0.31666666666666665
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          6.470000000000001,
+          0.31666666666666665
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          6.470000000000001,
+          0.31666666666666665
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.470000000000001,
+          0.31666666666666665
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          6.49,
+          0.45
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          6.49,
+          0.45
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.49,
+          0.45
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          6.76,
+          0.45
+        ],
+        "headroom_m": 3.7472887220859956,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          6.76,
+          0.45
+        ],
+        "headroom_m": 3.7472887220859956,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.76,
+          0.45
+        ],
+        "headroom_m": 3.7472887220859956,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          6.78,
+          0.5833333333333334
+        ],
+        "headroom_m": 3.6231507910515135,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          6.78,
+          0.5833333333333334
+        ],
+        "headroom_m": 3.6231507910515135,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.78,
+          0.5833333333333334
+        ],
+        "headroom_m": 3.6231507910515135,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          7.050000000000001,
+          0.5833333333333334
+        ],
+        "headroom_m": 3.747288722085996,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          7.050000000000001,
+          0.5833333333333334
+        ],
+        "headroom_m": 3.747288722085996,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.050000000000001,
+          0.5833333333333334
+        ],
+        "headroom_m": 3.747288722085996,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          7.07,
+          0.7166666666666667
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          7.07,
+          0.7166666666666667
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.07,
+          0.7166666666666667
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          7.34,
+          0.7166666666666667
+        ],
+        "headroom_m": 3.7472887220859956,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          7.34,
+          0.7166666666666667
+        ],
+        "headroom_m": 3.7472887220859956,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.34,
+          0.7166666666666667
+        ],
+        "headroom_m": 3.7472887220859956,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          7.36,
+          0.8500000000000001
+        ],
+        "headroom_m": 3.6231507910515135,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          7.36,
+          0.8500000000000001
+        ],
+        "headroom_m": 3.6231507910515135,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.36,
+          0.8500000000000001
+        ],
+        "headroom_m": 3.6231507910515135,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          7.630000000000001,
+          0.8500000000000001
+        ],
+        "headroom_m": 3.747288722085996,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          7.630000000000001,
+          0.8500000000000001
+        ],
+        "headroom_m": 3.747288722085996,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.630000000000001,
+          0.8500000000000001
+        ],
+        "headroom_m": 3.747288722085996,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          7.65,
+          0.9833333333333334
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          7.65,
+          0.9833333333333334
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.65,
+          0.9833333333333334
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          7.92,
+          0.9833333333333334
+        ],
+        "headroom_m": 3.7472887220859956,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          7.92,
+          0.9833333333333334
+        ],
+        "headroom_m": 3.7472887220859956,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.92,
+          0.9833333333333334
+        ],
+        "headroom_m": 3.7472887220859956,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          7.9399999999999995,
+          1.1166666666666667
+        ],
+        "headroom_m": 3.6231507910515126,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          7.9399999999999995,
+          1.1166666666666667
+        ],
+        "headroom_m": 3.6231507910515126,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.9399999999999995,
+          1.1166666666666667
+        ],
+        "headroom_m": 3.6231507910515126,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          8.21,
+          1.1166666666666667
+        ],
+        "headroom_m": 3.747288722085997,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          8.21,
+          1.1166666666666667
+        ],
+        "headroom_m": 3.747288722085997,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.21,
+          1.1166666666666667
+        ],
+        "headroom_m": 3.747288722085997,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          8.23,
+          1.25
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          8.23,
+          1.25
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.23,
+          1.25
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          8.5,
+          1.25
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          8.5,
+          1.25
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.5,
+          1.25
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          8.52,
+          1.3833333333333333
+        ],
+        "headroom_m": 3.6231507910515135,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          8.52,
+          1.3833333333333333
+        ],
+        "headroom_m": 3.6231507910515135,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.52,
+          1.3833333333333333
+        ],
+        "headroom_m": 3.6231507910515135,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          8.79,
+          1.3833333333333333
+        ],
+        "headroom_m": 3.747288722085996,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          8.79,
+          1.3833333333333333
+        ],
+        "headroom_m": 3.747288722085996,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.79,
+          1.3833333333333333
+        ],
+        "headroom_m": 3.747288722085996,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          8.81,
+          1.5166666666666666
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          8.81,
+          1.5166666666666666
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.81,
+          1.5166666666666666
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          9.08,
+          1.5166666666666666
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          9.08,
+          1.5166666666666666
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.08,
+          1.5166666666666666
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          9.1,
+          1.6500000000000001
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          9.1,
+          1.6500000000000001
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.1,
+          1.6500000000000001
+        ],
+        "headroom_m": 3.623150791051513,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          9.370000000000001,
+          1.6500000000000001
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          9.370000000000001,
+          1.6500000000000001
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.370000000000001,
+          1.6500000000000001
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          9.39,
+          1.7833333333333334
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          9.39,
+          1.7833333333333334
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.39,
+          1.7833333333333334
+        ],
+        "headroom_m": 3.623150791051514,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          9.66,
+          1.7833333333333334
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          9.66,
+          1.7833333333333334
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.66,
+          1.7833333333333334
+        ],
+        "headroom_m": 3.7472887220859965,
+        "overhead": "2F-A"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          9.68,
+          1.9166666666666667
+        ],
+        "headroom_m": 3.7700000000000005,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          9.68,
+          1.9166666666666667
+        ],
+        "headroom_m": 3.7700000000000005,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.68,
+          1.9166666666666667
+        ],
+        "headroom_m": 3.7700000000000005,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          6.47,
+          9.95,
+          1.9166666666666667
+        ],
+        "headroom_m": 3.7700000000000005,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.035,
+          9.95,
+          1.9166666666666667
+        ],
+        "headroom_m": 3.7700000000000005,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.95,
+          1.9166666666666667
+        ],
+        "headroom_m": 3.7700000000000005,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          9.660000000000002,
+          2.183333333333333
+        ],
+        "headroom_m": 3.5033333333333343,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          9.660000000000002,
+          2.183333333333333
+        ],
+        "headroom_m": 3.5033333333333343,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          9.660000000000002,
+          2.183333333333333
+        ],
+        "headroom_m": 3.5033333333333343,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          9.390000000000002,
+          2.183333333333333
+        ],
+        "headroom_m": 3.5033333333333343,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          9.390000000000002,
+          2.183333333333333
+        ],
+        "headroom_m": 3.5033333333333343,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          9.390000000000002,
+          2.183333333333333
+        ],
+        "headroom_m": 3.5033333333333343,
+        "overhead": "2F-landing"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          9.370000000000001,
+          2.3166666666666664
+        ],
+        "headroom_m": 3.356484124384849,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          9.370000000000001,
+          2.3166666666666664
+        ],
+        "headroom_m": 3.356484124384849,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          9.370000000000001,
+          2.3166666666666664
+        ],
+        "headroom_m": 3.356484124384849,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          9.100000000000001,
+          2.3166666666666664
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          9.100000000000001,
+          2.3166666666666664
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          9.100000000000001,
+          2.3166666666666664
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          9.080000000000002,
+          2.4499999999999997
+        ],
+        "headroom_m": 3.3564841243848487,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          9.080000000000002,
+          2.4499999999999997
+        ],
+        "headroom_m": 3.3564841243848487,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          9.080000000000002,
+          2.4499999999999997
+        ],
+        "headroom_m": 3.3564841243848487,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          8.810000000000002,
+          2.4499999999999997
+        ],
+        "headroom_m": 3.4806220554193312,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          8.810000000000002,
+          2.4499999999999997
+        ],
+        "headroom_m": 3.4806220554193312,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          8.810000000000002,
+          2.4499999999999997
+        ],
+        "headroom_m": 3.4806220554193312,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          8.790000000000003,
+          2.583333333333333
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          8.790000000000003,
+          2.583333333333333
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          8.790000000000003,
+          2.583333333333333
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          8.520000000000001,
+          2.583333333333333
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          8.520000000000001,
+          2.583333333333333
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          8.520000000000001,
+          2.583333333333333
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          8.500000000000002,
+          2.7166666666666663
+        ],
+        "headroom_m": 3.3564841243848487,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          8.500000000000002,
+          2.7166666666666663
+        ],
+        "headroom_m": 3.3564841243848487,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          8.500000000000002,
+          2.7166666666666663
+        ],
+        "headroom_m": 3.3564841243848487,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          8.230000000000002,
+          2.7166666666666663
+        ],
+        "headroom_m": 3.4806220554193312,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          8.230000000000002,
+          2.7166666666666663
+        ],
+        "headroom_m": 3.4806220554193312,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          8.230000000000002,
+          2.7166666666666663
+        ],
+        "headroom_m": 3.4806220554193312,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          8.21,
+          2.8499999999999996
+        ],
+        "headroom_m": 3.356484124384849,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          8.21,
+          2.8499999999999996
+        ],
+        "headroom_m": 3.356484124384849,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          8.21,
+          2.8499999999999996
+        ],
+        "headroom_m": 3.356484124384849,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          7.940000000000001,
+          2.8499999999999996
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          7.940000000000001,
+          2.8499999999999996
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          7.940000000000001,
+          2.8499999999999996
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          7.920000000000002,
+          2.9833333333333334
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          7.920000000000002,
+          2.9833333333333334
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          7.920000000000002,
+          2.9833333333333334
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          7.650000000000002,
+          2.9833333333333334
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          7.650000000000002,
+          2.9833333333333334
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          7.650000000000002,
+          2.9833333333333334
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          7.630000000000003,
+          3.1166666666666663
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          7.630000000000003,
+          3.1166666666666663
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          7.630000000000003,
+          3.1166666666666663
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          7.360000000000002,
+          3.1166666666666663
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          7.360000000000002,
+          3.1166666666666663
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          7.360000000000002,
+          3.1166666666666663
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          7.340000000000002,
+          3.25
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          7.340000000000002,
+          3.25
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          7.340000000000002,
+          3.25
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          7.070000000000002,
+          3.25
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          7.070000000000002,
+          3.25
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          7.070000000000002,
+          3.25
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          7.0500000000000025,
+          3.383333333333333
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          7.0500000000000025,
+          3.383333333333333
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          7.0500000000000025,
+          3.383333333333333
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          6.780000000000002,
+          3.383333333333333
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          6.780000000000002,
+          3.383333333333333
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          6.780000000000002,
+          3.383333333333333
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          6.760000000000002,
+          3.5166666666666666
+        ],
+        "headroom_m": 3.356484124384849,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          6.760000000000002,
+          3.5166666666666666
+        ],
+        "headroom_m": 3.356484124384849,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          6.760000000000002,
+          3.5166666666666666
+        ],
+        "headroom_m": 3.356484124384849,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          6.490000000000002,
+          3.5166666666666666
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          6.490000000000002,
+          3.5166666666666666
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          6.490000000000002,
+          3.5166666666666666
+        ],
+        "headroom_m": 3.4806220554193317,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          6.470000000000002,
+          3.65
+        ],
+        "headroom_m": 3.3564841243848487,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          6.470000000000002,
+          3.65
+        ],
+        "headroom_m": 3.3564841243848487,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          6.470000000000002,
+          3.65
+        ],
+        "headroom_m": 3.3564841243848487,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          6.200000000000002,
+          3.65
+        ],
+        "headroom_m": 3.4806220554193312,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          6.200000000000002,
+          3.65
+        ],
+        "headroom_m": 3.4806220554193312,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          6.200000000000002,
+          3.65
+        ],
+        "headroom_m": 3.4806220554193312,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          6.180000000000002,
+          3.783333333333333
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          6.180000000000002,
+          3.783333333333333
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          6.180000000000002,
+          3.783333333333333
+        ],
+        "headroom_m": 3.3564841243848482,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          5.910000000000002,
+          3.783333333333333
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          5.910000000000002,
+          3.783333333333333
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          5.910000000000002,
+          3.783333333333333
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "2F-B"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          5.890000000000002,
+          3.9166666666666665
+        ],
+        "headroom_m": 3.5033333333333334,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          5.890000000000002,
+          3.9166666666666665
+        ],
+        "headroom_m": 3.5033333333333334,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          5.890000000000002,
+          3.9166666666666665
+        ],
+        "headroom_m": 3.5033333333333334,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.02,
+          5.620000000000002,
+          3.9166666666666665
+        ],
+        "headroom_m": 3.5033333333333334,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          8.585,
+          5.620000000000002,
+          3.9166666666666665
+        ],
+        "headroom_m": 3.5033333333333334,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "1F-B",
+        "xyz_m": [
+          9.15,
+          5.620000000000002,
+          3.9166666666666665
+        ],
+        "headroom_m": 3.5033333333333334,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          5.910000000000002,
+          4.183333333333334
+        ],
+        "headroom_m": 3.2366666666666664,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          5.910000000000002,
+          4.183333333333334
+        ],
+        "headroom_m": 3.2366666666666664,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          5.910000000000002,
+          4.183333333333334
+        ],
+        "headroom_m": 3.2366666666666664,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          6.180000000000002,
+          4.183333333333334
+        ],
+        "headroom_m": 3.2366666666666664,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          6.180000000000002,
+          4.183333333333334
+        ],
+        "headroom_m": 3.2366666666666664,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.180000000000002,
+          4.183333333333334
+        ],
+        "headroom_m": 3.2366666666666664,
+        "overhead": "3F-floor"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          6.200000000000002,
+          4.316666666666666
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          6.200000000000002,
+          4.316666666666666
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.200000000000002,
+          4.316666666666666
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          6.470000000000002,
+          4.316666666666666
+        ],
+        "headroom_m": 3.2139553887526633,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          6.470000000000002,
+          4.316666666666666
+        ],
+        "headroom_m": 3.2139553887526633,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.470000000000002,
+          4.316666666666666
+        ],
+        "headroom_m": 3.2139553887526633,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          6.490000000000002,
+          4.45
+        ],
+        "headroom_m": 3.08981745771818,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          6.490000000000002,
+          4.45
+        ],
+        "headroom_m": 3.08981745771818,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.490000000000002,
+          4.45
+        ],
+        "headroom_m": 3.08981745771818,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          6.760000000000002,
+          4.45
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          6.760000000000002,
+          4.45
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.760000000000002,
+          4.45
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          6.780000000000002,
+          4.583333333333333
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          6.780000000000002,
+          4.583333333333333
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.780000000000002,
+          4.583333333333333
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          7.0500000000000025,
+          4.583333333333333
+        ],
+        "headroom_m": 3.2139553887526633,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          7.0500000000000025,
+          4.583333333333333
+        ],
+        "headroom_m": 3.2139553887526633,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.0500000000000025,
+          4.583333333333333
+        ],
+        "headroom_m": 3.2139553887526633,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          7.070000000000002,
+          4.716666666666667
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          7.070000000000002,
+          4.716666666666667
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.070000000000002,
+          4.716666666666667
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          7.340000000000002,
+          4.716666666666667
+        ],
+        "headroom_m": 3.2139553887526633,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          7.340000000000002,
+          4.716666666666667
+        ],
+        "headroom_m": 3.2139553887526633,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.340000000000002,
+          4.716666666666667
+        ],
+        "headroom_m": 3.2139553887526633,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          7.360000000000002,
+          4.85
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          7.360000000000002,
+          4.85
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.360000000000002,
+          4.85
+        ],
+        "headroom_m": 3.0898174577181807,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          7.630000000000003,
+          4.85
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          7.630000000000003,
+          4.85
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.630000000000003,
+          4.85
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          7.650000000000002,
+          4.983333333333333
+        ],
+        "headroom_m": 3.089817457718179,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          7.650000000000002,
+          4.983333333333333
+        ],
+        "headroom_m": 3.089817457718179,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.650000000000002,
+          4.983333333333333
+        ],
+        "headroom_m": 3.089817457718179,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          7.920000000000002,
+          4.983333333333333
+        ],
+        "headroom_m": 3.2139553887526615,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          7.920000000000002,
+          4.983333333333333
+        ],
+        "headroom_m": 3.2139553887526615,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.920000000000002,
+          4.983333333333333
+        ],
+        "headroom_m": 3.2139553887526615,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          7.940000000000001,
+          5.116666666666666
+        ],
+        "headroom_m": 3.089817457718179,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          7.940000000000001,
+          5.116666666666666
+        ],
+        "headroom_m": 3.089817457718179,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.940000000000001,
+          5.116666666666666
+        ],
+        "headroom_m": 3.089817457718179,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          8.21,
+          5.116666666666666
+        ],
+        "headroom_m": 3.2139553887526615,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          8.21,
+          5.116666666666666
+        ],
+        "headroom_m": 3.2139553887526615,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.21,
+          5.116666666666666
+        ],
+        "headroom_m": 3.2139553887526615,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          8.230000000000002,
+          5.25
+        ],
+        "headroom_m": 3.08981745771818,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          8.230000000000002,
+          5.25
+        ],
+        "headroom_m": 3.08981745771818,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.230000000000002,
+          5.25
+        ],
+        "headroom_m": 3.08981745771818,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          8.500000000000002,
+          5.25
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          8.500000000000002,
+          5.25
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.500000000000002,
+          5.25
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          8.520000000000001,
+          5.383333333333333
+        ],
+        "headroom_m": 3.08981745771818,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          8.520000000000001,
+          5.383333333333333
+        ],
+        "headroom_m": 3.08981745771818,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.520000000000001,
+          5.383333333333333
+        ],
+        "headroom_m": 3.08981745771818,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          8.790000000000003,
+          5.383333333333333
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          8.790000000000003,
+          5.383333333333333
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.790000000000003,
+          5.383333333333333
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          8.810000000000002,
+          5.516666666666667
+        ],
+        "headroom_m": 3.089817457718179,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          8.810000000000002,
+          5.516666666666667
+        ],
+        "headroom_m": 3.089817457718179,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.810000000000002,
+          5.516666666666667
+        ],
+        "headroom_m": 3.089817457718179,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          9.080000000000002,
+          5.516666666666667
+        ],
+        "headroom_m": 3.2139553887526615,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          9.080000000000002,
+          5.516666666666667
+        ],
+        "headroom_m": 3.2139553887526615,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.080000000000002,
+          5.516666666666667
+        ],
+        "headroom_m": 3.2139553887526615,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          9.100000000000001,
+          5.65
+        ],
+        "headroom_m": 3.089817457718178,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          9.100000000000001,
+          5.65
+        ],
+        "headroom_m": 3.089817457718178,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.100000000000001,
+          5.65
+        ],
+        "headroom_m": 3.089817457718178,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          9.370000000000001,
+          5.65
+        ],
+        "headroom_m": 3.2139553887526606,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          9.370000000000001,
+          5.65
+        ],
+        "headroom_m": 3.2139553887526606,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.370000000000001,
+          5.65
+        ],
+        "headroom_m": 3.2139553887526606,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          9.39,
+          5.783333333333333
+        ],
+        "headroom_m": 3.089817457718178,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          9.39,
+          5.783333333333333
+        ],
+        "headroom_m": 3.089817457718178,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.39,
+          5.783333333333333
+        ],
+        "headroom_m": 3.089817457718178,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          6.47,
+          9.660000000000002,
+          5.783333333333333
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.035,
+          9.660000000000002,
+          5.783333333333333
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.660000000000002,
+          5.783333333333333
+        ],
+        "headroom_m": 3.2139553887526624,
+        "overhead": "3F-A"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          9.370000000000003,
+          6.050000000000001
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          9.370000000000003,
+          6.050000000000001
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          9.370000000000003,
+          6.050000000000001
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          9.100000000000003,
+          6.050000000000001
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          9.100000000000003,
+          6.050000000000001
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          9.100000000000003,
+          6.050000000000001
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          9.080000000000002,
+          6.183333333333334
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          9.080000000000002,
+          6.183333333333334
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          9.080000000000002,
+          6.183333333333334
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          8.810000000000002,
+          6.183333333333334
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          8.810000000000002,
+          6.183333333333334
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          8.810000000000002,
+          6.183333333333334
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          8.790000000000003,
+          6.316666666666667
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          8.790000000000003,
+          6.316666666666667
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          8.790000000000003,
+          6.316666666666667
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          8.520000000000003,
+          6.316666666666667
+        ],
+        "headroom_m": 3.480622055419329,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          8.520000000000003,
+          6.316666666666667
+        ],
+        "headroom_m": 3.480622055419329,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          8.520000000000003,
+          6.316666666666667
+        ],
+        "headroom_m": 3.480622055419329,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          8.500000000000004,
+          6.45
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          8.500000000000004,
+          6.45
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          8.500000000000004,
+          6.45
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          8.230000000000002,
+          6.45
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          8.230000000000002,
+          6.45
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          8.230000000000002,
+          6.45
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          8.210000000000003,
+          6.583333333333334
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          8.210000000000003,
+          6.583333333333334
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          8.210000000000003,
+          6.583333333333334
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          7.940000000000003,
+          6.583333333333334
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          7.940000000000003,
+          6.583333333333334
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          7.940000000000003,
+          6.583333333333334
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          7.920000000000003,
+          6.716666666666667
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          7.920000000000003,
+          6.716666666666667
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          7.920000000000003,
+          6.716666666666667
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          7.650000000000002,
+          6.716666666666667
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          7.650000000000002,
+          6.716666666666667
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          7.650000000000002,
+          6.716666666666667
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          7.630000000000003,
+          6.8500000000000005
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          7.630000000000003,
+          6.8500000000000005
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          7.630000000000003,
+          6.8500000000000005
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          7.360000000000003,
+          6.8500000000000005
+        ],
+        "headroom_m": 3.480622055419329,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          7.360000000000003,
+          6.8500000000000005
+        ],
+        "headroom_m": 3.480622055419329,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          7.360000000000003,
+          6.8500000000000005
+        ],
+        "headroom_m": 3.480622055419329,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          7.340000000000003,
+          6.983333333333333
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          7.340000000000003,
+          6.983333333333333
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          7.340000000000003,
+          6.983333333333333
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          7.070000000000003,
+          6.983333333333333
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          7.070000000000003,
+          6.983333333333333
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          7.070000000000003,
+          6.983333333333333
+        ],
+        "headroom_m": 3.480622055419331,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          7.0500000000000025,
+          7.116666666666667
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          7.0500000000000025,
+          7.116666666666667
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          7.0500000000000025,
+          7.116666666666667
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          6.780000000000003,
+          7.116666666666667
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          6.780000000000003,
+          7.116666666666667
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          6.780000000000003,
+          7.116666666666667
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          6.760000000000003,
+          7.25
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          6.760000000000003,
+          7.25
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          6.760000000000003,
+          7.25
+        ],
+        "headroom_m": 3.3564841243848473,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          6.490000000000003,
+          7.25
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          6.490000000000003,
+          7.25
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          6.490000000000003,
+          7.25
+        ],
+        "headroom_m": 3.48062205541933,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          6.470000000000002,
+          7.383333333333334
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          6.470000000000002,
+          7.383333333333334
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          6.470000000000002,
+          7.383333333333334
+        ],
+        "headroom_m": 3.3564841243848464,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          6.200000000000003,
+          7.383333333333334
+        ],
+        "headroom_m": 3.480622055419329,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          6.200000000000003,
+          7.383333333333334
+        ],
+        "headroom_m": 3.480622055419329,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          6.200000000000003,
+          7.383333333333334
+        ],
+        "headroom_m": 3.480622055419329,
+        "overhead": "3F-B"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          6.180000000000003,
+          7.5166666666666675
+        ],
+        "headroom_m": 3.503333333333332,
+        "overhead": "RF-floor"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          6.180000000000003,
+          7.5166666666666675
+        ],
+        "headroom_m": 3.503333333333332,
+        "overhead": "RF-floor"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          6.180000000000003,
+          7.5166666666666675
+        ],
+        "headroom_m": 3.503333333333332,
+        "overhead": "RF-floor"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.02,
+          5.910000000000003,
+          7.5166666666666675
+        ],
+        "headroom_m": 3.503333333333332,
+        "overhead": "RF-floor"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          8.585,
+          5.910000000000003,
+          7.5166666666666675
+        ],
+        "headroom_m": 3.503333333333332,
+        "overhead": "RF-floor"
+      },
+      {
+        "flight": "2F-B",
+        "xyz_m": [
+          9.15,
+          5.910000000000003,
+          7.5166666666666675
+        ],
+        "headroom_m": 3.503333333333332,
+        "overhead": "RF-floor"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          6.200000000000003,
+          7.783333333333333
+        ],
+        "headroom_m": 5.886666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          6.200000000000003,
+          7.783333333333333
+        ],
+        "headroom_m": 5.886666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.200000000000003,
+          7.783333333333333
+        ],
+        "headroom_m": 5.886666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          6.470000000000003,
+          7.783333333333333
+        ],
+        "headroom_m": 5.886666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          6.470000000000003,
+          7.783333333333333
+        ],
+        "headroom_m": 5.886666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.470000000000003,
+          7.783333333333333
+        ],
+        "headroom_m": 5.886666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          6.490000000000003,
+          7.916666666666666
+        ],
+        "headroom_m": 5.753333333333334,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          6.490000000000003,
+          7.916666666666666
+        ],
+        "headroom_m": 5.753333333333334,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.490000000000003,
+          7.916666666666666
+        ],
+        "headroom_m": 5.753333333333334,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          6.760000000000003,
+          7.916666666666666
+        ],
+        "headroom_m": 5.753333333333334,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          6.760000000000003,
+          7.916666666666666
+        ],
+        "headroom_m": 5.753333333333334,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.760000000000003,
+          7.916666666666666
+        ],
+        "headroom_m": 5.753333333333334,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          6.780000000000003,
+          8.049999999999999
+        ],
+        "headroom_m": 5.620000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          6.780000000000003,
+          8.049999999999999
+        ],
+        "headroom_m": 5.620000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          6.780000000000003,
+          8.049999999999999
+        ],
+        "headroom_m": 5.620000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          7.0500000000000025,
+          8.049999999999999
+        ],
+        "headroom_m": 5.620000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          7.0500000000000025,
+          8.049999999999999
+        ],
+        "headroom_m": 5.620000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.0500000000000025,
+          8.049999999999999
+        ],
+        "headroom_m": 5.620000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          7.070000000000003,
+          8.183333333333334
+        ],
+        "headroom_m": 5.486666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          7.070000000000003,
+          8.183333333333334
+        ],
+        "headroom_m": 5.486666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.070000000000003,
+          8.183333333333334
+        ],
+        "headroom_m": 5.486666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          7.340000000000003,
+          8.183333333333334
+        ],
+        "headroom_m": 5.486666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          7.340000000000003,
+          8.183333333333334
+        ],
+        "headroom_m": 5.486666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.340000000000003,
+          8.183333333333334
+        ],
+        "headroom_m": 5.486666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          7.360000000000003,
+          8.316666666666666
+        ],
+        "headroom_m": 5.3533333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          7.360000000000003,
+          8.316666666666666
+        ],
+        "headroom_m": 5.3533333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.360000000000003,
+          8.316666666666666
+        ],
+        "headroom_m": 5.3533333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          7.630000000000003,
+          8.316666666666666
+        ],
+        "headroom_m": 5.3533333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          7.630000000000003,
+          8.316666666666666
+        ],
+        "headroom_m": 5.3533333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.630000000000003,
+          8.316666666666666
+        ],
+        "headroom_m": 5.3533333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          7.650000000000003,
+          8.45
+        ],
+        "headroom_m": 5.220000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          7.650000000000003,
+          8.45
+        ],
+        "headroom_m": 5.220000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.650000000000003,
+          8.45
+        ],
+        "headroom_m": 5.220000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          7.9200000000000035,
+          8.45
+        ],
+        "headroom_m": 5.220000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          7.9200000000000035,
+          8.45
+        ],
+        "headroom_m": 5.220000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.9200000000000035,
+          8.45
+        ],
+        "headroom_m": 5.220000000000001,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          7.940000000000003,
+          8.583333333333332
+        ],
+        "headroom_m": 5.086666666666668,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          7.940000000000003,
+          8.583333333333332
+        ],
+        "headroom_m": 5.086666666666668,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          7.940000000000003,
+          8.583333333333332
+        ],
+        "headroom_m": 5.086666666666668,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          8.210000000000003,
+          8.583333333333332
+        ],
+        "headroom_m": 5.086666666666668,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          8.210000000000003,
+          8.583333333333332
+        ],
+        "headroom_m": 5.086666666666668,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.210000000000003,
+          8.583333333333332
+        ],
+        "headroom_m": 5.086666666666668,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          8.230000000000002,
+          8.716666666666667
+        ],
+        "headroom_m": 4.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          8.230000000000002,
+          8.716666666666667
+        ],
+        "headroom_m": 4.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.230000000000002,
+          8.716666666666667
+        ],
+        "headroom_m": 4.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          8.500000000000004,
+          8.716666666666667
+        ],
+        "headroom_m": 4.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          8.500000000000004,
+          8.716666666666667
+        ],
+        "headroom_m": 4.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.500000000000004,
+          8.716666666666667
+        ],
+        "headroom_m": 4.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          8.520000000000003,
+          8.85
+        ],
+        "headroom_m": 4.82,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          8.520000000000003,
+          8.85
+        ],
+        "headroom_m": 4.82,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.520000000000003,
+          8.85
+        ],
+        "headroom_m": 4.82,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          8.790000000000003,
+          8.85
+        ],
+        "headroom_m": 4.82,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          8.790000000000003,
+          8.85
+        ],
+        "headroom_m": 4.82,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.790000000000003,
+          8.85
+        ],
+        "headroom_m": 4.82,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          8.810000000000002,
+          8.983333333333333
+        ],
+        "headroom_m": 4.686666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          8.810000000000002,
+          8.983333333333333
+        ],
+        "headroom_m": 4.686666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          8.810000000000002,
+          8.983333333333333
+        ],
+        "headroom_m": 4.686666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          9.080000000000002,
+          8.983333333333333
+        ],
+        "headroom_m": 4.686666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          9.080000000000002,
+          8.983333333333333
+        ],
+        "headroom_m": 4.686666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.080000000000002,
+          8.983333333333333
+        ],
+        "headroom_m": 4.686666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          9.100000000000003,
+          9.116666666666665
+        ],
+        "headroom_m": 4.553333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          9.100000000000003,
+          9.116666666666665
+        ],
+        "headroom_m": 4.553333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.100000000000003,
+          9.116666666666665
+        ],
+        "headroom_m": 4.553333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          9.370000000000003,
+          9.116666666666665
+        ],
+        "headroom_m": 4.553333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          9.370000000000003,
+          9.116666666666665
+        ],
+        "headroom_m": 4.553333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.370000000000003,
+          9.116666666666665
+        ],
+        "headroom_m": 4.553333333333335,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          9.390000000000002,
+          9.25
+        ],
+        "headroom_m": 4.42,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          9.390000000000002,
+          9.25
+        ],
+        "headroom_m": 4.42,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.390000000000002,
+          9.25
+        ],
+        "headroom_m": 4.42,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          9.660000000000004,
+          9.25
+        ],
+        "headroom_m": 4.42,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          9.660000000000004,
+          9.25
+        ],
+        "headroom_m": 4.42,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.660000000000004,
+          9.25
+        ],
+        "headroom_m": 4.42,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          9.680000000000003,
+          9.383333333333333
+        ],
+        "headroom_m": 4.286666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          9.680000000000003,
+          9.383333333333333
+        ],
+        "headroom_m": 4.286666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.680000000000003,
+          9.383333333333333
+        ],
+        "headroom_m": 4.286666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          6.47,
+          9.950000000000003,
+          9.383333333333333
+        ],
+        "headroom_m": 4.286666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.035,
+          9.950000000000003,
+          9.383333333333333
+        ],
+        "headroom_m": 4.286666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-A",
+        "xyz_m": [
+          7.6000000000000005,
+          9.950000000000003,
+          9.383333333333333
+        ],
+        "headroom_m": 4.286666666666667,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          9.660000000000004,
+          9.65
+        ],
+        "headroom_m": 4.02,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          9.660000000000004,
+          9.65
+        ],
+        "headroom_m": 4.02,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          9.660000000000004,
+          9.65
+        ],
+        "headroom_m": 4.02,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          9.390000000000004,
+          9.65
+        ],
+        "headroom_m": 4.02,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          9.390000000000004,
+          9.65
+        ],
+        "headroom_m": 4.02,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          9.390000000000004,
+          9.65
+        ],
+        "headroom_m": 4.02,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          9.370000000000003,
+          9.783333333333335
+        ],
+        "headroom_m": 3.886666666666665,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          9.370000000000003,
+          9.783333333333335
+        ],
+        "headroom_m": 3.886666666666665,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          9.370000000000003,
+          9.783333333333335
+        ],
+        "headroom_m": 3.886666666666665,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          9.100000000000003,
+          9.783333333333335
+        ],
+        "headroom_m": 3.886666666666665,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          9.100000000000003,
+          9.783333333333335
+        ],
+        "headroom_m": 3.886666666666665,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          9.100000000000003,
+          9.783333333333335
+        ],
+        "headroom_m": 3.886666666666665,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          9.080000000000004,
+          9.916666666666668
+        ],
+        "headroom_m": 3.753333333333332,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          9.080000000000004,
+          9.916666666666668
+        ],
+        "headroom_m": 3.753333333333332,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          9.080000000000004,
+          9.916666666666668
+        ],
+        "headroom_m": 3.753333333333332,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          8.810000000000004,
+          9.916666666666668
+        ],
+        "headroom_m": 3.753333333333332,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          8.810000000000004,
+          9.916666666666668
+        ],
+        "headroom_m": 3.753333333333332,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          8.810000000000004,
+          9.916666666666668
+        ],
+        "headroom_m": 3.753333333333332,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          8.790000000000003,
+          10.05
+        ],
+        "headroom_m": 3.619999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          8.790000000000003,
+          10.05
+        ],
+        "headroom_m": 3.619999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          8.790000000000003,
+          10.05
+        ],
+        "headroom_m": 3.619999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          8.520000000000003,
+          10.05
+        ],
+        "headroom_m": 3.619999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          8.520000000000003,
+          10.05
+        ],
+        "headroom_m": 3.619999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          8.520000000000003,
+          10.05
+        ],
+        "headroom_m": 3.619999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          8.500000000000004,
+          10.183333333333334
+        ],
+        "headroom_m": 3.4866666666666664,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          8.500000000000004,
+          10.183333333333334
+        ],
+        "headroom_m": 3.4866666666666664,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          8.500000000000004,
+          10.183333333333334
+        ],
+        "headroom_m": 3.4866666666666664,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          8.230000000000004,
+          10.183333333333334
+        ],
+        "headroom_m": 3.4866666666666664,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          8.230000000000004,
+          10.183333333333334
+        ],
+        "headroom_m": 3.4866666666666664,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          8.230000000000004,
+          10.183333333333334
+        ],
+        "headroom_m": 3.4866666666666664,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          8.210000000000004,
+          10.316666666666668
+        ],
+        "headroom_m": 3.3533333333333317,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          8.210000000000004,
+          10.316666666666668
+        ],
+        "headroom_m": 3.3533333333333317,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          8.210000000000004,
+          10.316666666666668
+        ],
+        "headroom_m": 3.3533333333333317,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          7.940000000000003,
+          10.316666666666668
+        ],
+        "headroom_m": 3.3533333333333317,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          7.940000000000003,
+          10.316666666666668
+        ],
+        "headroom_m": 3.3533333333333317,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          7.940000000000003,
+          10.316666666666668
+        ],
+        "headroom_m": 3.3533333333333317,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          7.9200000000000035,
+          10.450000000000001
+        ],
+        "headroom_m": 3.219999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          7.9200000000000035,
+          10.450000000000001
+        ],
+        "headroom_m": 3.219999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          7.9200000000000035,
+          10.450000000000001
+        ],
+        "headroom_m": 3.219999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          7.650000000000004,
+          10.450000000000001
+        ],
+        "headroom_m": 3.219999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          7.650000000000004,
+          10.450000000000001
+        ],
+        "headroom_m": 3.219999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          7.650000000000004,
+          10.450000000000001
+        ],
+        "headroom_m": 3.219999999999999,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          7.630000000000004,
+          10.583333333333334
+        ],
+        "headroom_m": 3.086666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          7.630000000000004,
+          10.583333333333334
+        ],
+        "headroom_m": 3.086666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          7.630000000000004,
+          10.583333333333334
+        ],
+        "headroom_m": 3.086666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          7.360000000000004,
+          10.583333333333334
+        ],
+        "headroom_m": 3.086666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          7.360000000000004,
+          10.583333333333334
+        ],
+        "headroom_m": 3.086666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          7.360000000000004,
+          10.583333333333334
+        ],
+        "headroom_m": 3.086666666666666,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          7.340000000000003,
+          10.716666666666667
+        ],
+        "headroom_m": 2.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          7.340000000000003,
+          10.716666666666667
+        ],
+        "headroom_m": 2.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          7.340000000000003,
+          10.716666666666667
+        ],
+        "headroom_m": 2.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          7.070000000000004,
+          10.716666666666667
+        ],
+        "headroom_m": 2.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          7.070000000000004,
+          10.716666666666667
+        ],
+        "headroom_m": 2.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          7.070000000000004,
+          10.716666666666667
+        ],
+        "headroom_m": 2.953333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          7.050000000000004,
+          10.850000000000001
+        ],
+        "headroom_m": 2.8199999999999985,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          7.050000000000004,
+          10.850000000000001
+        ],
+        "headroom_m": 2.8199999999999985,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          7.050000000000004,
+          10.850000000000001
+        ],
+        "headroom_m": 2.8199999999999985,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          6.780000000000004,
+          10.850000000000001
+        ],
+        "headroom_m": 2.8199999999999985,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          6.780000000000004,
+          10.850000000000001
+        ],
+        "headroom_m": 2.8199999999999985,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          6.780000000000004,
+          10.850000000000001
+        ],
+        "headroom_m": 2.8199999999999985,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          6.760000000000003,
+          10.983333333333334
+        ],
+        "headroom_m": 2.6866666666666656,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          6.760000000000003,
+          10.983333333333334
+        ],
+        "headroom_m": 2.6866666666666656,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          6.760000000000003,
+          10.983333333333334
+        ],
+        "headroom_m": 2.6866666666666656,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          6.490000000000004,
+          10.983333333333334
+        ],
+        "headroom_m": 2.6866666666666656,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          6.490000000000004,
+          10.983333333333334
+        ],
+        "headroom_m": 2.6866666666666656,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          6.490000000000004,
+          10.983333333333334
+        ],
+        "headroom_m": 2.6866666666666656,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          6.470000000000004,
+          11.116666666666667
+        ],
+        "headroom_m": 2.553333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          6.470000000000004,
+          11.116666666666667
+        ],
+        "headroom_m": 2.553333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          6.470000000000004,
+          11.116666666666667
+        ],
+        "headroom_m": 2.553333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.02,
+          6.200000000000004,
+          11.116666666666667
+        ],
+        "headroom_m": 2.553333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          8.585,
+          6.200000000000004,
+          11.116666666666667
+        ],
+        "headroom_m": 2.553333333333333,
+        "overhead": "proposed-stair-cap"
+      },
+      {
+        "flight": "3F-B",
+        "xyz_m": [
+          9.15,
+          6.200000000000004,
+          11.116666666666667
+        ],
+        "headroom_m": 2.553333333333333,
+        "overhead": "proposed-stair-cap"
+      }
+    ]
+  },
+  "alternatives": {
+    "unchanged_core_minimum_depth_m": 6.910000000000001,
+    "unchanged_core_available_m": 6.4,
+    "minimum_depth_shortfall_m": 0.5100000000000007,
+    "basis": "Uniform 133.333 mm rises, minimum compliant tread, one mid-turn setback and two 1.30 m landings; arrangement-specific lower bound",
+    "reduced_first_storey_m": 3.9,
+    "reduced_first_storey_uniform_riser_m": 0.15
+  },
+  "existing_central_door_example": {
+    "hinge_m": [
+      7.3,
+      4.76
+    ],
+    "leaf_m": 1.1,
+    "turn_radius_m": 1.44,
+    "overlap_m2": 0.8310249642240236,
+    "scope": "Disclosed nominal swing example in the existing opening, not a proof that every alternative hinge/door is impossible"
+  },
+  "structural_interfaces": [
+    {
+      "source_name": "C-B2-1F",
+      "source_guid": "3s9lgrSw51zBU52rOG2Osf",
+      "wall_plan_intersection_m2": 0.10799999999999976,
+      "status": "STRUCTURAL_JOINT_AND_VOLUME_OWNERSHIP_REVIEW_REQUIRED"
+    },
+    {
+      "source_name": "C-B3-1F",
+      "source_guid": "0_pyKq5Y12av5_YdVo2tT$",
+      "wall_plan_intersection_m2": 0.050400000000000125,
+      "status": "STRUCTURAL_JOINT_AND_VOLUME_OWNERSHIP_REVIEW_REQUIRED"
+    },
+    {
+      "source_name": "B-X-BC-2-2F",
+      "source_guid": "1WFGcuY1zFGuUZbVf_wRYU",
+      "wall_plan_intersection_m2": 0.12800000000000022,
+      "status": "STRUCTURAL_JOINT_AND_VOLUME_OWNERSHIP_REVIEW_REQUIRED"
+    },
+    {
+      "source_name": "B-X-BC-3-2F",
+      "source_guid": "3lZTADYZn7NPuEGmCALMmp",
+      "wall_plan_intersection_m2": 0.5759999999999991,
+      "status": "STRUCTURAL_JOINT_AND_VOLUME_OWNERSHIP_REVIEW_REQUIRED"
+    },
+    {
+      "source_name": "B-Y-B-12-2F",
+      "source_guid": "2c_VTrcpHEyApZqIj$JVMz",
+      "wall_plan_intersection_m2": 0.03200000000000002,
+      "status": "STRUCTURAL_JOINT_AND_VOLUME_OWNERSHIP_REVIEW_REQUIRED"
+    },
+    {
+      "source_name": "B-Y-B-23-2F",
+      "source_guid": "3j6EzmHjjBQ8I3cyLqKNS3",
+      "wall_plan_intersection_m2": 0.5520000000000005,
+      "status": "STRUCTURAL_JOINT_AND_VOLUME_OWNERSHIP_REVIEW_REQUIRED"
+    }
+  ],
+  "quantity_screen": {
+    "stair_enclosure_added_plan_m2": 4.878399999999999,
+    "vestibule_outside_core_m2": 2.9160000000000013,
+    "west_room_reservation_loss_m2": 4.7200000000000015,
+    "proposed_stair_horizontal_finish_m2": 44.969099999999976,
+    "proposed_risers": 84,
+    "scope": "Geometric reservations/finish area only; not a priced bill or RC quantity certification"
+  },
+  "lift_and_roof": {
+    "pit_finished_floor_z_m": -1.45,
+    "pit_rc_top_z_m": -1.5,
+    "pit_rc_bottom_z_m": -1.8,
+    "lift_cap_soffit_z_m": 12.07,
+    "stair_cap_soffit_z_m": 13.67,
+    "counterweight_assumed_kg": 1315.0,
+    "permanent_equipment_assumed_kg": 2915.0,
+    "synthetic_load_envelopes": [
+      {
+        "equipment_mass_multiplier": 1.0,
+        "permanent_kN": 28.586384749999997,
+        "loaded_static_kN": 35.45103975,
+        "alternative_head_or_buffer_envelope_kN": 70.9020795
+      },
+      {
+        "equipment_mass_multiplier": 1.5,
+        "permanent_kN": 42.879577125,
+        "loaded_static_kN": 49.744232124999996,
+        "alternative_head_or_buffer_envelope_kN": 99.48846424999999
+      }
+    ],
+    "roof_equipment_dead_kN": 20.0,
+    "load_application": "APPLIED_TO_H03_C_DIAGNOSTICS_NOT_VENDOR_SUPPORT_DESIGN"
+  },
+  "architectural_acceptance": false,
+  "structural_geometry_adopted": true,
+  "solver_executed": false,
+  "holds": [
+    "Ground discharge swing and all-point protected egress",
+    "Rated vestibule assemblies, handrail/guard details and finished tolerances",
+    "Equipment lateral/anchor loads, roof tank/MEP requirements and pit/foundation design",
+    "Current code actions, RC joint/member reinforcement and foundations remain incomplete"
+  ],
+  "source_sha256": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b",
+  "candidate_geometry_sha256": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b",
+  "structural_verification_run_id": "20260913T112509Z-candidate-verification-0530d76a",
+  "architectural_geometry_revision": "H03-B",
+  "structural_adoption_scope": "H03-C gross elastic diagnostic basis; full code/RC/foundation design remains open",
+  "input_sha256": {
+    "project/structural/inputs/structural.ifc": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b",
+    "project/structural/inputs/received-scheme.ifc": "ef15b682abe8b5318365d58588a88c8150138602e4a0b4e187b5ac037d956438",
+    "project/structural/inputs/analysis.yaml": "907d0604b3ea44bed93d51703cf42531d1f24fca3b9c61e3dfbe22cae611392a",
+    "project/architect/outputs/scheme.yaml": "971773c196d170669d2a02b9f535adf4da68a4ba65ffdd119034b830cff27fc8",
+    "project/architect/outputs/core-proposal.yaml": "b848b0976078d1f7fba62f3516239c304ffff58404296e8cda340b316db8e657",
+    "project/structural/design/core-interface-loads.yaml": "9d0fb67363f14109a31a39d8ddc332190dc7ba154a1ea21a2d9268eeb0c71f21",
+    "project/architect/outputs/core-candidate.ifc": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b"
+  },
+  "independent_ifc_objects_checked": 164
+}

@@ -1,0 +1,217 @@
+revision: H03-C
+status: NOMINAL_DIMENSIONS_REVIEWED_DIAGNOSTIC_GEOMETRY_ADOPTED
+source_record: ../../../docs/sources.yaml
+input_hashes:
+  project/structural/inputs/structural.ifc: e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b
+  project/structural/inputs/received-scheme.ifc: ef15b682abe8b5318365d58588a88c8150138602e4a0b4e187b5ac037d956438
+  project/structural/inputs/analysis.yaml: 907d0604b3ea44bed93d51703cf42531d1f24fca3b9c61e3dfbe22cae611392a
+  project/architect/outputs/scheme.yaml: 971773c196d170669d2a02b9f535adf4da68a4ba65ffdd119034b830cff27fc8
+  project/architect/outputs/core-proposal.yaml: b848b0976078d1f7fba62f3516239c304ffff58404296e8cda340b316db8e657
+  project/structural/design/core-interface-loads.yaml: 9d0fb67363f14109a31a39d8ddc332190dc7ba154a1ea21a2d9268eeb0c71f21
+  project/architect/outputs/core-candidate.ifc: e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b
+checks:
+- id: H03-C01
+  clause: Accessibility 304.1
+  location: Proposed core; 1F-3F/RF as stated
+  combination: NOT_APPLICABLE_GEOMETRIC_SCREEN
+  value:
+    riser_m: 0.13333333333333333
+    tread_m: 0.29
+    2R_plus_T_m: 0.5566666666666666
+  criterion: Uniform finished risers and treads; R <= 0.16, T >= 0.26, 0.55 <= 2R+T
+    <= 0.65
+  status: PASS_PROPOSED_DIMENSIONS_ONLY
+  coverage: No field tolerance or construction acceptance
+  source_ids:
+  - taiwan-accessibility-stairs-2020
+  edition_basis: docs/sources.yaml h03_b_reviews; selected earlier H03-A figures reused
+  units: m, m2 and counts as named
+- id: H03-C02
+  clause: Accessibility 303.2
+  location: Proposed core; 1F-3F/RF as stated
+  combination: NOT_APPLICABLE_GEOMETRIC_SCREEN
+  value:
+    mid_and_next_floor_setback_m: 0.29
+  criterion: Each rising flight retreats at least one tread
+  status: PASS_PROPOSED_DIMENSIONS_ONLY
+  coverage: Stepped landing/opening edges required; central handrail fabrication/anchorage
+    still pending
+  source_ids:
+  - taiwan-accessibility-stairs-2020
+  edition_basis: docs/sources.yaml h03_b_reviews; selected earlier H03-A figures reused
+  units: m, m2 and counts as named
+- id: H03-C03
+  clause: Design/construction Articles 33(4), 34
+  location: Proposed core; 1F-3F/RF as stated
+  combination: NOT_APPLICABLE_GEOMETRIC_SCREEN
+  value:
+    minimum_front_m: 1.860000000000002
+    minimum_rear_m: 1.469999999999997
+    flight_width_m: 1.33
+  criterion: Landing depth >= raw flight width; conservative turn radius contained
+  status: PASS_PROPOSED_DIMENSIONS_ONLY
+  coverage: Finished surfaces and rail intrusions checked separately; full route not
+    accepted
+  source_ids:
+  - taiwan-design-construction-2026
+  edition_basis: docs/sources.yaml h03_b_reviews; selected earlier H03-A figures reused
+  units: m, m2 and counts as named
+- id: H03-C04
+  clause: Design/construction Articles 33(4), 76, 97
+  location: Proposed core; 1F-3F/RF as stated
+  combination: NOT_APPLICABLE_GEOMETRIC_SCREEN
+  value:
+    full_disc_separation_m: 0.6008384478064701
+    nominal_door_clear_m: 1.1050000000000002
+    leaf_area_m2: 2.5300000000000007
+  criterion: Positive exact disc separation with 20 mm margin; door clear >= 0.90
+    m
+  status: PASS_PROPOSED_DIMENSIONS_ONLY
+  coverage: 2F/3F inward entry only; ground outward swing and certified assemblies
+    remain separate holds; RF has a different south door
+  source_ids:
+  - taiwan-design-construction-2026
+  edition_basis: docs/sources.yaml h03_b_reviews; selected earlier H03-A figures reused
+  units: m, m2 and counts as named
+- id: H03-C05
+  clause: Design/construction Article 97; project 1.20 m passage target
+  location: Proposed core; 1F-3F/RF as stated
+  combination: NOT_APPLICABLE_GEOMETRIC_SCREEN
+  value:
+    portal_finished_width_m: 1.2800000000000007
+    door_bounding_box_column_intersection_m2: 0.0
+    actual_throat:
+      rough_width_m: 1.3000000000000007
+      finished_unobstructed_width_m: 1.2800000000000007
+      remaining_intervals_y_m:
+      - - 4.6
+        - 5.9
+      column_conflicts: []
+      scope: Plan throat screen at occupied floor levels; not all-point egress acceptance
+  criterion: Actual portal throat >= 1.20 m; door sweep clear of represented columns
+  status: PASS_PROPOSED_DIMENSIONS_ONLY
+  coverage: Both door sweep and separate wall portal are checked. Column overlap cannot
+    be erased by drawing an opening over it.
+  source_ids:
+  - taiwan-design-construction-2026
+  edition_basis: docs/sources.yaml h03_b_reviews; selected earlier H03-A figures reused
+  units: m, m2 and counts as named
+- id: H03-C06
+  clause: Accessibility 303.2
+  location: Proposed core; 1F-3F/RF as stated
+  combination: NOT_APPLICABLE_GEOMETRIC_SCREEN
+  value:
+    sample_count: 468
+    minimum_m: 2.553333333333333
+  criterion: Sampled tread clearances >= 1.90 m
+  status: PASS_PROPOSED_DIMENSIONS_ONLY
+  coverage: Conservative proposed soffits and source beams only; new IFC, all-point
+    finished routes and handrail supports still require verification
+  source_ids:
+  - taiwan-accessibility-stairs-2020
+  edition_basis: docs/sources.yaml h03_b_reviews; selected earlier H03-A figures reused
+  units: m, m2 and counts as named
+- id: H03-C07
+  clause: TMEC P10 planning table; project stair roof reservation
+  location: Proposed core; 1F-3F/RF as stated
+  combination: NOT_APPLICABLE_GEOMETRIC_SCREEN
+  value:
+    lift_overhead_m: 4.420000000000001
+    stair_roof_clear_m: 2.420000000000001
+  criterion: Lift >= 4.30 m overhead; stair roof clear >= project 2.40 m
+  status: PASS_PROPOSED_DIMENSIONS_ONLY
+  coverage: Vendor feature/dimensional check, not structural capacity or manufacturer
+    confirmation
+  source_ids:
+  - tmec-mrl-planning-h02
+  edition_basis: docs/sources.yaml h03_b_reviews; selected earlier H03-A figures reused
+  units: m, m2 and counts as named
+- id: H03-C08
+  clause: Accessibility 207, 305; project 1.20 m clear flight target
+  location: Proposed core; 1F-3F/RF as stated
+  combination: NOT_APPLICABLE_GEOMETRIC_SCREEN
+  value:
+    nominal_clear_flight_m: 1.238
+    margin_m: 0.038000000000000034
+    project_dimensional_allowance_m: 0.02
+  criterion: Retain 20 mm project allowance beyond the 1.20 m finished target
+  status: PASS_PROPOSED_DIMENSIONS_ONLY
+  coverage: The 20 mm allowance is a project choice, not a legal tolerance. Guard/bracket
+    strength and finished construction remain unchecked.
+  source_ids:
+  - taiwan-accessibility-stairs-2020
+  edition_basis: docs/sources.yaml h03_b_reviews; selected earlier H03-A figures reused
+  units: m, m2 and counts as named
+- id: H03-C09
+  clause: Design/construction Articles 33(4), 76, 97
+  location: Proposed core; 1F-3F/RF as stated
+  combination: NOT_APPLICABLE_GEOMETRIC_SCREEN
+  value:
+    roof_door_disc_separation_m: 0.04346254957233442
+    roof_door_nominal_clear_m: 1.1050000000000002
+  criterion: RF south door clears the turn with 20 mm nominal margin and >= 0.90 m
+    clear opening
+  status: PASS_PROPOSED_DIMENSIONS_ONLY
+  coverage: Narrow wall-edge jamb, rated anchorage and roof drainage remain for structural/detail
+    review; not a certified assembly
+  source_ids:
+  - taiwan-design-construction-2026
+  edition_basis: docs/sources.yaml h03_b_reviews; selected earlier H03-A figures reused
+  units: m, m2 and counts as named
+- id: H03-S01
+  clause: A01-specific source-to-analysis integrity gate; not a member code capacity
+    check
+  location: 31 wall/frame intersections including diagnostic subgrade segments
+  combination: NOT_APPLICABLE_GEOMETRY_AND_CONNECTIVITY_SCREEN
+  inputs:
+    wall_column_pairs: 10
+    wall_beam_web_pairs: 21
+    removed_duplicate_volume_m3: 4.06848
+  method: Independent source ownership/first moments and direct group mapping; actual
+    OpenSees compatibility and force recovery
+  result: All 31 contacts mapped and whole-building diagnostics verified
+  status: PASS_SCOPED_DIAGNOSTIC_MAPPING
+  coverage: Rigid gross elastic contact idealization only; joint RC/local demand and
+    construction remain open
+- id: H03-D01
+  clause: Applicable complete design requirements remain to be assembled at that stage
+  location: Whole case / named interface
+  combination: NOT_CHECKED
+  method: Not implemented
+  result: No acceptance
+  status: NOT_CHECKED
+  coverage: Full finished egress, ground discharge and WC/accessibility
+- id: H03-D02
+  clause: Applicable complete design requirements remain to be assembled at that stage
+  location: Whole case / named interface
+  combination: NOT_CHECKED
+  method: Not implemented
+  result: No acceptance
+  status: NOT_CHECKED
+  coverage: Certified lightweight enclosure/door assembly and rated interfaces
+- id: H03-D03
+  clause: Applicable complete design requirements remain to be assembled at that stage
+  location: Whole case / named interface
+  combination: NOT_CHECKED
+  method: Not implemented
+  result: No acceptance
+  status: NOT_CHECKED
+  coverage: Guard/handrail fabrication, strength and anchorage
+- id: H03-D04
+  clause: Applicable complete design requirements remain to be assembled at that stage
+  location: Whole case / named interface
+  combination: NOT_CHECKED
+  method: Not implemented
+  result: No acceptance
+  status: NOT_CHECKED
+  coverage: Member/stair/joint RC, equipment supports and lateral anchors
+- id: H03-D05
+  clause: Applicable complete design requirements remain to be assembled at that stage
+  location: Whole case / named interface
+  combination: NOT_CHECKED
+  method: Not implemented
+  result: No acceptance
+  status: NOT_CHECKED
+  coverage: Ground data, pit waterproofing and full foundation design
+full_design_complete: false
+construction_release: BLOCKED

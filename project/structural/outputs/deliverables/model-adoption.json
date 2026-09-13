@@ -1,0 +1,67 @@
+{
+  "revision": "H03-C",
+  "status": "ADOPTED_VERIFIED_GROSS_ELASTIC_DIAGNOSTIC_BASIS",
+  "before_sha256": {
+    "project/structural/inputs/structural.ifc": "ef15b682abe8b5318365d58588a88c8150138602e4a0b4e187b5ac037d956438",
+    "project/structural/inputs/analysis.yaml": "cb5f682200a5ae7b11a445938557a1a0c1d10602131c80b97434646408aa0458",
+    "project/project.yaml": "3b9d3306f775a30efba4119f66522bda2a8a07329f84b3ece1e57d4f9af972a1"
+  },
+  "after_sha256": {
+    "project/structural/inputs/structural.ifc": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b",
+    "project/structural/inputs/analysis.yaml": "907d0604b3ea44bed93d51703cf42531d1f24fca3b9c61e3dfbe22cae611392a",
+    "project/project.yaml": "39f4b033e41427e2521948e064ea2a9e18361eee3f8f7f74bbf16382aab6a9a4",
+    "project/structural/inputs/received-scheme.ifc": "ef15b682abe8b5318365d58588a88c8150138602e4a0b4e187b5ac037d956438",
+    "tests/fixtures/h02-analysis.yaml": "d9ac98de281197e98f70a1529ec14ecd923393bb367123d5947ccff4b9f13e3f",
+    "tests/fixtures/h03c_input_signature.json": "4645fc6f511fc2a3fb7a4ff1e67f3dfd79f010b5785b8f899572f4fe1be80aa4"
+  },
+  "verification_run_id": "20260913T112509Z-candidate-verification-0530d76a",
+  "verification_manifest_sha256": "f8154ef71999810eae08646dea975fbe50b0adc43a93ac2e7135d07a44f57d45",
+  "verified_model_sha256": "4bbd0bdc5562145ba76a54db0a19d7686d657e160d99eda9b9ed190e0ee081ad",
+  "candidate_sha256": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b",
+  "received_source_sha256": "ef15b682abe8b5318365d58588a88c8150138602e4a0b4e187b5ac037d956438",
+  "equipment_authority_sha256": "9d0fb67363f14109a31a39d8ddc332190dc7ba154a1ea21a2d9268eeb0c71f21",
+  "verified_equipment_snapshot_sha256": "07ecb9f9f9afec863f69938b734c067851bedc77f73c984f4e8e9634a0276e3b",
+  "equipment_semantic_equality": true,
+  "main_frame_unchanged": true,
+  "physical_change_from_H03_B_candidate": false,
+  "checked_numerical_source_sha256": {
+    "src/structural_ai/model_builder.py": "de76e644445385ff1383b70c837911a7c2442926280a46ed16a5c3acff87ae92",
+    "src/structural_ai/wall_interfaces.py": "6725a0eec8698bdd9c8483e5a7558d0f5607d3a46e588464f9df7d36db1a3817",
+    "src/structural_ai/joint_constraints.py": "9750548547df8b095632b5f86b6bf7d44eaf9579dab3f6fc6f409ed9d059d4e3",
+    "src/structural_ai/stair_transfer.py": "d54f7b6ed1b1beb1a2bb5089ea6a74974c9058a2e7e7af0d7d6e8e7368375cb6",
+    "src/structural_ai/core_loads.py": "e049712d5f631793a94b36efd82100c15cf514b86ca94a98de70c3dbc7461e2d",
+    "src/structural_ai/core_revision.py": "51c986d18e84f333db75cc5ec27a4f9088975f13b34e64307a5fb92b183a5231",
+    "src/structural_ai/rectilinear.py": "5dd72b46ab2d20f9aa96a20b81a5ee726023d5e60584261f888b947ec63d5c60",
+    "src/structural_ai/opensees_runner.py": "8fed33b582679453c65fb9b6798bc8e52540880abf26e87b85ed28c1f2a49b11",
+    "src/structural_ai/ifc_reader.py": "a31d5345c8319f9e6987fe07a4c8e0b2b5a60b56c57a9b481f603815996105fa",
+    "scripts/check_analysis.py": "7c7b621143a145b08deb346efdb8a81822f87c320e44c6436b8f262726a73c1c",
+    "scripts/check_modes.py": "94614c278e9c001fb7c562df98554c85d3169e96ea55df90eb794e9926248926",
+    "scripts/audit_wall_interfaces.py": "0972199fd273bda8bd7c156e16ef38a447dbc8eed0438d3ebb987654af40509c",
+    "scripts/audit_ifc.py": "fc0c255f1f33cb5d1b8f4b7b5788363b4c7a0e5a374e1fef6afabed82affa620"
+  },
+  "fixture_note": "Focused H02 settings preserve every value except the source path; canonical H02 input signature must remain unchanged.",
+  "scope": "Current source/config/equipment authority for gross elastic research diagnostics only",
+  "architectural_acceptance": false,
+  "engineering_approval": false,
+  "full_design_complete": false,
+  "construction_release": "BLOCKED",
+  "adopted_build_run_id": "20260913T114521Z-build-c89e9029",
+  "adopted_analysis_run_id": "20260913T114723Z-opensees-db48ba9b",
+  "adopted_model_sha256": "c4f51e46e7b8d85abeaaf89eeea9e41dd9f835ac7e9e051a4a7c3f888109c79e",
+  "identical_nominal_result_files": 109,
+  "architectural_generation_run_id": "20260913T114544Z-core-proposal-6c13b1f1",
+  "reviewed_outputs_manifest": "project/structural/outputs/deliverables/drawing-manifest.json",
+  "reviewed_sheets": [
+    "AR-001",
+    "AR-002",
+    "SR-001",
+    "SR-002"
+  ],
+  "exact_reproduction_record": "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/exact-reproduction.json",
+  "presentation_change": {
+    "scope": "Two project.yaml report/receipt paths only; all other project values and numerical inputs unchanged.",
+    "original_receipt_sha256": "a3de278461efb2300c43f40006d790802655d64a56c8350630aae694e476a1c3",
+    "original_receipt_path": "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/adoption-H03-C.json",
+    "mapping_record": "docs/provenance/presentation.json"
+  }
+}

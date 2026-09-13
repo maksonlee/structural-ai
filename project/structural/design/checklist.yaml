@@ -1,0 +1,112 @@
+project: a01
+completion_rule: Engineering coverage only; unfinished stages are never pass. Article
+  readiness is separate in docs/scope.md.
+stages:
+- id: architectural_input
+  scope: Architect deliverable inventory / requirements / circulation / structural
+    handoff review
+  status: INCOMPLETE
+  evidence:
+  - ../../architect/outputs/handoff.yaml
+  - ../../architect/outputs/scheme.yaml
+  - ../outputs/deliverables/structural-review.md
+  - ../../comparison/workflow-example.md
+  limitations: H03-C geometry adopted for diagnostics and nominal core dimensions
+    reviewed. Full protected egress, rated products, guard/rail details, WC/MEP and
+    external architectural acceptance remain open.
+- id: design_basis
+  scope: Materials / loads / codes / simulated ground data
+  status: INCOMPLETE
+  evidence:
+  - stair-load-method.md
+  - core-interface-loads.yaml
+  - ../outputs/deliverables/structural-review.md
+  - ../../comparison/workflow-example.md
+  limitations: Synthetic lift/roof/panel loads are now in H03-C diagnostics. Current
+    code wind/seismic/actions/combinations, effective stiffness, lateral anchors,
+    tanks and simulated ground/foundation criteria remain incomplete.
+- id: structural_model
+  scope: Physical and analytical model with source mapping
+  status: PRELIMINARY
+  evidence:
+  - ../outputs/deliverables/structural-review.md
+  - ../../comparison/workflow-example.md
+  - interface-checks.yaml
+  limitations: Source-derived owned wall strips and explicit eccentric contacts verified
+    for gross elastic diagnostics. Local joint/slab interaction, cracking, section-cut
+    demand and final design remain unverified.
+- id: analysis
+  scope: Actual established-solver execution and verification
+  status: DIAGNOSTIC_VERIFIED
+  evidence:
+  - ../outputs/deliverables/structural-review.md
+  - ../../comparison/workflow-example.md
+  - interface-checks.yaml
+  limitations: Five H03-C 19-case/12-mode variants and ordinary CLI reproduction passed;
+    109 nominal result files are identical. Twelve modes capture 93.39 percent X and
+    81.73 percent Y free mass; code modal sufficiency and local force convergence
+    remain open.
+- id: rc_design
+  scope: Beam / column / wall / slab / stair / joints / reinforcement
+  status: SCOPED_LANDING_STRIP_DEMONSTRATION
+  evidence:
+  - landing-strip.yaml
+  - ../outputs/deliverables/landing-strip.md
+  - ../outputs/deliverables/landing-strip.json
+  limitations: Selected local gravity flexure, shear, minimum reinforcement and
+    spacing only. Full landing, flight actions, anchorage, continuity, seismic,
+    serviceability and all-member RC remain incomplete.
+- id: foundation
+  scope: Foundation analysis, sizing, reinforcement and settlement checks
+  status: NOT_STARTED
+  evidence: []
+- id: iteration
+  scope: Repeated architect-structure coordination and controlled downstream design
+    change
+  status: STARTED_H03_C_DIAGNOSTIC_ADOPTION
+  evidence:
+  - ../outputs/deliverables/structural-review.md
+  - ../../comparison/workflow-example.md
+  limitations: H03-C geometry/load/interface adoption updates analysis, quantities,
+    trial reactions and four review sheets together. Downstream RC/foundation design
+    and final drawings are not complete.
+- id: cost_control
+  scope: Comparable quantities / cost basis / alternatives / design-change cost effects
+  status: PRELIMINARY_QUANTITY_SCREEN
+  evidence:
+  - ../outputs/deliverables/structural-review.md
+  - ../../comparison/workflow-example.md
+  limitations: 4.06848 m3 of duplicated wall/frame accounting corrected; no physical
+    saving or priced bill. Complete reinforcement/formwork quantities, budget and
+    verified prices remain open.
+- id: constructability
+  scope: Reinforcement congestion / connections / placement / formwork / sequencing
+    / site constraints
+  status: REVIEW_STARTED
+  evidence:
+  - ../outputs/deliverables/structural-review.md
+  - ../../comparison/workflow-example.md
+  limitations: Source joint/portal geometry and analytical transfer reviewed. Bar
+    layouts, congestion, anchorage, placement, formwork, sequencing and contractor
+    review remain incomplete.
+- id: deliverables
+  scope: Drawing package, calculation report and model release
+  status: INCOMPLETE
+  evidence:
+  - ../outputs/deliverables/structural-review.md
+  - ../../comparison/workflow-example.md
+  limitations: AH-009/010 and SH-003/004, diagnostic report and positioned trial reactions
+    reviewed; RC-001 adds a scoped landing reinforcement illustration. No coherent
+    final RC/foundation drawing/schedule/calculation package.
+- id: industry_comparison
+  scope: Stage-by-stage evidence, effort and limitations
+  status: DOCUMENTED_PARTIAL
+  evidence:
+  - ../../comparison/evidence.yaml
+  - ../../comparison/workflow.csv
+  - ../../../docs/industry/taiwan-workflow.md
+  - ../outputs/deliverables/structural-review.md
+  - ../../comparison/workflow-example.md
+  limitations: Targeted current modelling requirements and attributed practitioner
+    workflow documented; stage comparison remains partial, with no paired ETABS data
+    or measured industry effort.

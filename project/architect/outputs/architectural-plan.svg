@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17313d} .small{font-size:2.4px}</style>
+<rect x="8.000" y="8.000" width="404.000" height="281.000" fill="none" stroke="#17313d" stroke-width="0.35"/>
+<text x="14.000" y="19.000" font-size="5" style="fill:#17313d">AR-001  Core and retained frame: structural coordination review</text>
+<text x="14.000" y="25.000" font-size="2.8" style="fill:#aa3a20">SIMULATED COORDINATION REVIEW CASE STUDY | NOT FOR CONSTRUCTION | 2026-09-13</text>
+<path d="M8.000,278.000 L412.000,278.000" fill="none" stroke="#80949c" stroke-width="0.2" stroke-dasharray=""/>
+<text x="14.000" y="283.000" font-size="2.5" style="fill:#17313d">Source: Architectural model / verified diagnostic basis | SHA256 e0b0102fe76c91c587e7... | units: m unless stated</text>
+<text x="14.000" y="287.000" font-size="2.4" style="fill:#17313d">Retained structural scheme; architectural package, finishes, reinforcement and foundation design remain open.</text>
+<text x="14.000" y="33.000" font-size="2.9" style="fill:#a52d25">Architectural geometry checked for diagnostics. Full architecture, code actions, reinforcement and foundations remain open.</text>
+<path d="M279.000,235.000 L279.000,61.000 L18.000,61.000 L18.000,235.000 L279.000,235.000 Z" fill="#f8faf9" fill-rule="evenodd" stroke="#183848" stroke-width=".25" stroke-dasharray=""/>
+<path d="M100.650,233.550 L100.650,227.750 L26.700,227.750 L26.700,233.550 L100.650,233.550 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="0lPj1enf940h7TQX31k$7z"/>
+<path d="M187.650,233.550 L187.650,227.750 L109.350,227.750 L109.350,233.550 L187.650,233.550 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="3NO8EjziTCLQUa3pxjYEvb"/>
+<path d="M270.300,233.550 L270.300,227.750 L196.350,227.750 L196.350,233.550 L270.300,233.550 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="2zSJSv0m9D8QqvY$rP73mM"/>
+<path d="M100.650,177.000 L100.650,171.200 L26.700,171.200 L26.700,177.000 L100.650,177.000 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="3qfzR$qXLD4vQdWwtbBKjZ"/>
+<path d="M187.650,177.000 L187.650,171.200 L109.350,171.200 L109.350,177.000 L187.650,177.000 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="2WwwFPK4fAH8gAfUHf9dPs"/>
+<path d="M270.300,177.000 L270.300,171.200 L196.350,171.200 L196.350,177.000 L270.300,177.000 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="3VZ_wEKUj8LffjikBKVAtK"/>
+<path d="M100.650,68.250 L100.650,62.450 L26.700,62.450 L26.700,68.250 L100.650,68.250 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="3lwRKmNgr8KOebB93PGWr1"/>
+<path d="M187.650,68.250 L187.650,62.450 L109.350,62.450 L109.350,68.250 L187.650,68.250 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="01Kb2lznTFKgxd1cQyqC7x"/>
+<path d="M270.300,68.250 L270.300,62.450 L196.350,62.450 L196.350,68.250 L270.300,68.250 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="3s1XwcC1D7aO1HNiH4lsBm"/>
+<path d="M25.250,226.300 L25.250,178.450 L19.450,178.450 L19.450,226.300 L25.250,226.300 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="10w15fvmXFhAZwiiR3vWC1"/>
+<path d="M25.250,169.750 L25.250,69.700 L19.450,69.700 L19.450,169.750 L25.250,169.750 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="3XwqLMZSnAWhmLOo2LW0lM"/>
+<path d="M107.900,226.300 L107.900,178.450 L102.100,178.450 L102.100,226.300 L107.900,226.300 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="2I865v9wT4QfpqFKsptlgT"/>
+<path d="M107.900,169.750 L107.900,69.700 L102.100,69.700 L102.100,169.750 L107.900,169.750 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="0WPy6kBRjCNf3w9jWD1Duy"/>
+<path d="M194.900,226.300 L194.900,178.450 L189.100,178.450 L189.100,226.300 L194.900,226.300 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="3lHwChpgH0lPnc9FxEKV1A"/>
+<path d="M194.900,169.750 L194.900,69.700 L189.100,69.700 L189.100,169.750 L194.900,169.750 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="05LciJ1$f1aPWP_Y0oZJHL"/>
+<path d="M277.550,226.300 L277.550,178.450 L271.750,178.450 L271.750,226.300 L277.550,226.300 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="3NkaYjPnD1wfbFLq1d9JnC"/>
+<path d="M277.550,169.750 L277.550,69.700 L271.750,69.700 L271.750,169.750 L277.550,169.750 Z" fill="none" fill-rule="evenodd" stroke="#628ca4" stroke-width=".25" stroke-dasharray="1,1" data-source-guid="3vAyWCo4T8qegHTEw$QCxQ"/>
+<path d="M110.365,184.250 L110.365,65.640 L106.740,65.640 L106.740,184.250 L110.365,184.250 Z" fill="#cfdeea" fill-rule="evenodd" stroke="#527184" stroke-width=".25" stroke-dasharray="" data-source-guid="0meE0RiqH3SO9gn8K$Tx0k"/>
+<path d="M152.125,184.250 L152.125,180.625 L110.365,180.625 L110.365,184.250 L152.125,184.250 Z" fill="#cfdeea" fill-rule="evenodd" stroke="#527184" stroke-width=".25" stroke-dasharray="" data-source-guid="0pHsdblmTEHO6DL43kizn$"/>
+<path d="M152.125,69.265 L152.125,65.640 L110.365,65.640 L110.365,69.265 L152.125,69.265 Z" fill="#cfdeea" fill-rule="evenodd" stroke="#527184" stroke-width=".25" stroke-dasharray="" data-source-guid="2OPgxAtI5CPezR_ApJR$pt"/>
+<path d="M155.750,184.250 L155.750,65.640 L152.125,65.640 L152.125,184.250 L155.750,184.250 Z" fill="#cfdeea" fill-rule="evenodd" stroke="#527184" stroke-width=".25" stroke-dasharray="" data-source-guid="03zRJPydr6IuKojMT8t3eN"/>
+<path d="M185.475,169.750 L185.475,166.125 L155.750,166.125 L155.750,169.750 L185.475,169.750 Z" fill="#cfdeea" fill-rule="evenodd" stroke="#527184" stroke-width=".25" stroke-dasharray="" data-source-guid="3tQQHmlvb5iROlABtHiReE"/>
+<path d="M185.475,136.400 L185.475,132.775 L155.750,132.775 L155.750,136.400 L185.475,136.400 Z" fill="#cfdeea" fill-rule="evenodd" stroke="#527184" stroke-width=".25" stroke-dasharray="" data-source-guid="092fz5cN94dh3MEVbnoapw"/>
+<path d="M189.100,169.750 L189.100,132.775 L185.475,132.775 L185.475,169.750 L189.100,169.750 Z" fill="#cfdeea" fill-rule="evenodd" stroke="#527184" stroke-width=".25" stroke-dasharray="" data-source-guid="29pa9bNO5CiB6bzwy4O20m"/>
+<path d="M86.875,171.925 L86.875,145.825 L83.250,145.825 L83.250,171.925 L86.875,171.925 Z" fill="#e6daed" fill-rule="evenodd" stroke="#527184" stroke-width=".25" stroke-dasharray="" data-source-guid="2e2TlEub9SyftfeX5leuse"/>
+<path d="M106.740,171.925 L106.740,168.300 L86.875,168.300 L86.875,171.925 L106.740,171.925 Z" fill="#e6daed" fill-rule="evenodd" stroke="#527184" stroke-width=".25" stroke-dasharray="" data-source-guid="2frO8EHK9JMOunV1yTbLPm"/>
+<path d="M106.740,149.450 L106.740,145.825 L86.875,145.825 L86.875,149.450 L106.740,149.450 Z" fill="#e6daed" fill-rule="evenodd" stroke="#527184" stroke-width=".25" stroke-dasharray="" data-source-guid="2jEOhIoPHKwf0ANc9qs7rM"/>
+<path d="M111.090,168.300 L111.090,149.450 L106.015,149.450 L106.015,168.300 L111.090,168.300 Z" fill="white" fill-rule="evenodd" stroke="#34795d" stroke-width=".25" stroke-dasharray="" data-source-guid="1S0awIAE506f4the2PC8A2"/>
+<path d="M179.312,171.200 L179.312,164.675 L161.913,164.675 L161.913,171.200 L179.312,171.200 Z" fill="white" fill-rule="evenodd" stroke="#34795d" stroke-width=".25" stroke-dasharray="" data-source-guid="26JYXzokb529kegBmUgaCv"/>
+<path d="M87.600,168.300 L87.600,150.900 L82.525,150.900 L82.525,168.300 L87.600,168.300 Z" fill="white" fill-rule="evenodd" stroke="#34795d" stroke-width=".25" stroke-dasharray="" data-source-guid="1hlACF5iPR8fBQU6jv2cmR"/>
+<path d="M129.650,149.450 L129.650,94.785 L110.365,94.785 L110.365,149.450 L129.650,149.450 Z" fill="#e4ebe6" fill-rule="evenodd" stroke="#47726b" stroke-width=".25" stroke-dasharray=""/>
+<path d="M110.365,149.450 L129.650,149.450" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,145.245 L129.650,145.245" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,141.040 L129.650,141.040" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,136.835 L129.650,136.835" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,132.630 L129.650,132.630" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,128.425 L129.650,128.425" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,124.220 L129.650,124.220" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,120.015 L129.650,120.015" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,115.810 L129.650,115.810" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,111.605 L129.650,111.605" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,107.400 L129.650,107.400" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,103.195 L129.650,103.195" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,98.990 L129.650,98.990" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M110.365,94.785 L129.650,94.785" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<text x="113.265" y="122.117" font-size="3" style="fill:#17313d">A</text>
+<path d="M152.125,149.450 L152.125,98.990 L132.840,98.990 L132.840,149.450 L152.125,149.450 Z" fill="#e4ebe6" fill-rule="evenodd" stroke="#47726b" stroke-width=".25" stroke-dasharray=""/>
+<path d="M132.840,149.450 L152.125,149.450" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,145.245 L152.125,145.245" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,141.040 L152.125,141.040" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,136.835 L152.125,136.835" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,132.630 L152.125,132.630" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,128.425 L152.125,128.425" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,124.220 L152.125,124.220" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,120.015 L152.125,120.015" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,115.810 L152.125,115.810" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,111.605 L152.125,111.605" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,107.400 L152.125,107.400" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,103.195 L152.125,103.195" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<path d="M132.840,98.990 L152.125,98.990" fill="none" stroke="#47726b" stroke-width="0.16" stroke-dasharray=""/>
+<text x="135.740" y="124.220" font-size="3" style="fill:#17313d">B</text>
+<path d="M110.365,94.785 L129.650,94.785 L129.650,98.990 L152.125,98.990 L152.125,69.265 L110.365,69.265 L110.365,94.785 Z" fill="#e7ecdc" fill-rule="evenodd" stroke="#6c7d48" stroke-width=".25" stroke-dasharray=""/>
+<path d="M26.700,235.000 L26.700,226.300 L18.000,226.300 L18.000,235.000 L26.700,235.000 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="2LSpvqSC9DpBFfYj0Dflqk"/>
+<path d="M26.700,178.450 L26.700,169.750 L18.000,169.750 L18.000,178.450 L26.700,178.450 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="1GpSwc9L9FzOUHQO$fYQBA"/>
+<path d="M26.700,69.700 L26.700,61.000 L18.000,61.000 L18.000,69.700 L26.700,69.700 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="37Lkq_I7L1QwcjmGCvmL_6"/>
+<path d="M109.350,235.000 L109.350,226.300 L100.650,226.300 L100.650,235.000 L109.350,235.000 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="2HLYpET7jD9fA3kiMluViM"/>
+<path d="M109.350,178.450 L109.350,169.750 L100.650,169.750 L100.650,178.450 L109.350,178.450 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="3s9lgrSw51zBU52rOG2Osf"/>
+<path d="M109.350,69.700 L109.350,61.000 L100.650,61.000 L100.650,69.700 L109.350,69.700 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="0_pyKq5Y12av5_YdVo2tT$"/>
+<path d="M196.350,235.000 L196.350,226.300 L187.650,226.300 L187.650,235.000 L196.350,235.000 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="0yTEyDWOf7$v_GRhVJt28I"/>
+<path d="M196.350,178.450 L196.350,169.750 L187.650,169.750 L187.650,178.450 L196.350,178.450 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="1QLkY_yez7kwdmLUB9DRtq"/>
+<path d="M196.350,69.700 L196.350,61.000 L187.650,61.000 L187.650,69.700 L196.350,69.700 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="0NzfSOecnEHfwwh$xtmHBl"/>
+<path d="M279.000,235.000 L279.000,226.300 L270.300,226.300 L270.300,235.000 L279.000,235.000 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="1shzB9u512evHGEEALo4ze"/>
+<path d="M279.000,178.450 L279.000,169.750 L270.300,169.750 L270.300,178.450 L279.000,178.450 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="1nXO3MIVT7ufLNOFRhxrME"/>
+<path d="M279.000,69.700 L279.000,61.000 L270.300,61.000 L270.300,69.700 L279.000,69.700 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="0UU96v_uTAeP1H5li68Fam"/>
+<path d="M83.250,190.050 L83.250,145.825 L63.675,145.825 L63.675,190.050 L83.250,190.050 Z" fill="none" fill-rule="evenodd" stroke="#538751" stroke-width=".25" stroke-dasharray="1,1"/>
+<text x="291.000" y="52.000" font-size="2.5" style="fill:#183848">2F REFERENCE PLAN / 1:69</text>
+<text x="291.000" y="59.000" font-size="2.5" style="fill:#183848">36 source columns / 51 source beams retained.</text>
+<text x="291.000" y="66.000" font-size="2.5" style="fill:#183848">Orthogonal beams and 7.50 m rear bay retained.</text>
+<text x="291.000" y="73.000" font-size="2.5" style="fill:#183848">Shared stair / lift wall retained.</text>
+<text x="291.000" y="80.000" font-size="2.5" style="fill:#183848"></text>
+<text x="291.000" y="87.000" font-size="2.5" style="fill:#183848">ARCHITECTURAL GEOMETRY</text>
+<text x="291.000" y="94.000" font-size="2.5" style="fill:#183848">Flight / well / flight: 1.33 / 0.22 / 1.33 m.</text>
+<text x="291.000" y="101.000" font-size="2.5" style="fill:#183848">Finished flight: 1.238 m; 38 mm nominal margin.</text>
+<text x="291.000" y="108.000" font-size="2.5" style="fill:#183848">Uniform rises: 133.333 mm; treads: 290 mm.</text>
+<text x="291.000" y="115.000" font-size="2.5" style="fill:#183848">North edge +11.68; south edge +3.50 m.</text>
+<text x="291.000" y="122.000" font-size="2.5" style="fill:#183848">Lightweight vestibules: load only, no RC stiffness.</text>
+<text x="291.000" y="129.000" font-size="2.5" style="fill:#183848">Caps +13.85 / +12.25 m; pit RC bottom -1.80 m.</text>
+<text x="291.000" y="136.000" font-size="2.5" style="fill:#183848"></text>
+<text x="291.000" y="143.000" font-size="2.5" style="fill:#a52d25">DIAGNOSTIC GEOMETRY ADOPTED</text>
+<text x="291.000" y="150.000" font-size="2.5" style="fill:#a52d25">B2 clears the portal by 0.10 m in plan.</text>
+<text x="291.000" y="157.000" font-size="2.5" style="fill:#a52d25">Actual finished throat: 1.28 m &gt; target 1.20 m.</text>
+<text x="291.000" y="164.000" font-size="2.5" style="fill:#a52d25">See AR-002 and SR-001/002 interface review.</text>
+<text x="291.000" y="171.000" font-size="2.5" style="fill:#a52d25">Elastic joint action checked; RC design remains open.</text>
+<text x="291.000" y="178.000" font-size="2.5" style="fill:#183848"></text>
+<text x="291.000" y="185.000" font-size="2.5" style="fill:#183848">No RC reinforcement or foundation approval.</text>
+<text x="291.000" y="192.000" font-size="2.5" style="fill:#183848">Not a coordinated construction package.</text>
+<text x="18.000" y="250.000" font-size="2.65" style="fill:#17313d">Blue dashed: retained beams above. Columns drawn last: opening graphics cannot erase physical columns.</text>
+<text x="18.000" y="259.000" font-size="2.65" style="fill:#a52d25">This geometry matches the structural input. Architectural and construction acceptance are not complete.</text>
+</svg>

@@ -1,0 +1,455 @@
+{
+  "status": "COMPLETED_ARTICLE_PRESENTATION",
+  "scope": "Self-contained brief-to-drawing article; purpose-based filenames and figure captions.",
+  "run_path": "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c",
+  "renames": {
+    "project/architect/outputs/core-review-H03-C.md": "project/architect/outputs/architectural-review.md",
+    "project/architect/outputs/core-review-H03-C.json": "project/architect/outputs/architectural-review.json",
+    "project/architect/outputs/core-review-H03-C.pdf": "project/architect/outputs/architectural-review.pdf",
+    "project/architect/outputs/AH-009-candidate.svg": "project/architect/outputs/architectural-plan.svg",
+    "project/architect/outputs/AH-010-portal.svg": "project/architect/outputs/entrance-detail.svg",
+    "project/comparison/coordination-H03-C.md": "project/comparison/workflow-example.md",
+    "project/structural/design/coordination-checks-H03-C.yaml": "project/structural/design/coordination-checks.yaml",
+    "project/structural/design/wall-interface-checks-H03-C.yaml": "project/structural/design/interface-checks.yaml",
+    "project/structural/design/wall-interface-audit-H03-C.json": "project/structural/design/interface-audit.json",
+    "project/structural/design/stair-transfer-H02.md": "project/structural/design/stair-load-method.md",
+    "project/structural/outputs/deliverables/adoption-H03-C.json": "project/structural/outputs/deliverables/model-adoption.json",
+    "project/structural/outputs/deliverables/coordination-response-H03-C.md": "project/structural/outputs/deliverables/structural-review.md",
+    "project/structural/outputs/deliverables/diagnostic-variants-H03-C.csv": "project/structural/outputs/deliverables/analysis-variants.csv",
+    "project/structural/outputs/deliverables/diagnostics-H03-C.json": "project/structural/outputs/deliverables/analysis-checks.json",
+    "project/structural/outputs/deliverables/reaction-provenance-H03-C.json": "project/structural/outputs/deliverables/reaction-sources.json",
+    "project/structural/outputs/deliverables/reviewed-output-H03-C-manifest.json": "project/structural/outputs/deliverables/drawing-manifest.json",
+    "project/structural/outputs/deliverables/trial-reactions-H03-C.csv": "project/structural/outputs/deliverables/support-reactions.csv",
+    "project/structural/outputs/deliverables/wall-interface-H03-C.pdf": "project/structural/outputs/deliverables/structural-drawings.pdf",
+    "project/structural/outputs/deliverables/SH-003-wall-column.svg": "project/structural/outputs/deliverables/wall-column-detail.svg",
+    "project/structural/outputs/deliverables/SH-004-beam-wall.svg": "project/structural/outputs/deliverables/beam-wall-detail.svg"
+  },
+  "renamed_file_original_sha256": {
+    "project/architect/outputs/core-review-H03-C.md": "cd49b9213d67dd08fb797f7de5e31587b894dce7571f9624eb3afa536f80caf5",
+    "project/architect/outputs/core-review-H03-C.json": "4197380b798f5f1ea88d0a9a6ea1eef57ffdfd7a1bea8b83868eebbe46118dbd",
+    "project/architect/outputs/core-review-H03-C.pdf": "a16f59fc521073544a13fc5b5a556b270a7bbf935e2a57751853cbf23859b32d",
+    "project/architect/outputs/AH-009-candidate.svg": "ec59e42cc190ecd74429a8381a5b599d1d5f1a195ff8e7118508ed11ddd9720a",
+    "project/architect/outputs/AH-010-portal.svg": "c6353ed57402b752d114fd9c1e13660a42dc7eb505b347534087562eb994770d",
+    "project/comparison/coordination-H03-C.md": "4d803932aa9328453cc33804ff14e6682b536360e0fc8972c1992f94226e7e1a",
+    "project/structural/design/coordination-checks-H03-C.yaml": "06b72ec3c1a65d135a839cf6e53497ba4bfae8f67809bb1686655cbaa5e6bcf4",
+    "project/structural/design/wall-interface-checks-H03-C.yaml": "517d7c53863f1e0ece11288784aecf8735e5e92562ed44fc765ec0117873e5df",
+    "project/structural/design/wall-interface-audit-H03-C.json": "07d692f099aea9abbf97a2483e851f89ce45b7a74926e627e2408c1aaba0688f",
+    "project/structural/design/stair-transfer-H02.md": "7db95c9080875f2194358456664330d0de60294c3011c8cfeac7de19ca5f2185",
+    "project/structural/outputs/deliverables/adoption-H03-C.json": "a3de278461efb2300c43f40006d790802655d64a56c8350630aae694e476a1c3",
+    "project/structural/outputs/deliverables/coordination-response-H03-C.md": "67e2ab7fe93c13d03925a5a10254485b8fbf41a4650860c0ba00456d8efb11a0",
+    "project/structural/outputs/deliverables/diagnostic-variants-H03-C.csv": "17e703080224180e952ed2e7176ebf44984bb523d484c4cbdce3e78151fc2e26",
+    "project/structural/outputs/deliverables/diagnostics-H03-C.json": "21f4d9c1c8c9bc38382f9ed0e7e529bbf3bcafe2f4886d107dc1ef649ad27cb0",
+    "project/structural/outputs/deliverables/reaction-provenance-H03-C.json": "2d229deef6e3f0b73f289196402d2bb34ab7ee885a5c8121c70e21b8bde15a82",
+    "project/structural/outputs/deliverables/reviewed-output-H03-C-manifest.json": "d4ad2a0383e1c724987d9485e18332c82338cb06f724d61af5b8a999c54272cf",
+    "project/structural/outputs/deliverables/trial-reactions-H03-C.csv": "36b758f01776100fc22d2a32cf2fab06d3d56f6a719b6e3be065edd8f858b98b",
+    "project/structural/outputs/deliverables/wall-interface-H03-C.pdf": "4b41cf6047c84a1beeca4a402b9c65e4f74d8c8072b89007ef7b8e33562de70f",
+    "project/structural/outputs/deliverables/SH-003-wall-column.svg": "c23c1195ee6a41c9c8a48d4959566d65e556d127b3e48ee2d5746affaf5a02f0",
+    "project/structural/outputs/deliverables/SH-004-beam-wall.svg": "ef0978f8f23dff5fa99e840baa7b4bee7a84635f0813c32508b1be578d898ca4"
+  },
+  "removed_housekeeping_documents": [
+    {
+      "path": "docs/provenance/taiwan-workflow-research-validation.json",
+      "sha256": "c87a5f73752ae8093ebd6f14ce90f013e28be92658fe63c9392d01458669887e",
+      "bytes": 3596
+    },
+    {
+      "path": "docs/provenance/history.md",
+      "sha256": "856f4763563e33c2780f9073c50ec8d5a7cf76f867e49df4c4b5d2694d155999",
+      "bytes": 1296
+    },
+    {
+      "path": "docs/provenance/run-cleanup-2026-09-13.json",
+      "sha256": "226662a6345f289860fe6afd6559411dee6f3da44b7bdedc1424cd9d3d2417b5",
+      "bytes": 32100
+    },
+    {
+      "path": "docs/provenance/article-cleanup-2026-09-13.json",
+      "sha256": "9f2d8fa76b128c1704ed62e8a59cf2c8835dcb5487f22b16c254992435bdb120",
+      "bytes": 73417
+    },
+    {
+      "path": "docs/provenance/path-relocation.json",
+      "sha256": "79b7fa533fa4e2c2fa696b3c2196ad958c48df92395d8abc020457fef1fc6dea",
+      "bytes": 1469
+    },
+    {
+      "path": "docs/provenance/restructure-validation.json",
+      "sha256": "bbf37faae7c9d6774f244443d4d1522e8faf5bf5aaa5fe1dd4e515395cd74363",
+      "bytes": 2454
+    },
+    {
+      "path": "docs/provenance/single-project-layout-2026-09-13.md",
+      "sha256": "9e695f495601956ee3350b925b1bb0a969de19d863b6ea0b0d054c372217c225",
+      "bytes": 6512
+    },
+    {
+      "path": "docs/provenance/run-cleanup-H03-B.json",
+      "sha256": "94927f5c28307148c8c15a2948fac7205c104adc565a3c666b545920282edc86",
+      "bytes": 12303
+    }
+  ],
+  "input_path_check": {
+    "passed": true,
+    "only_changed_fields": [
+      "compatibility.adapter_review",
+      "release.diagnostic_adoption_record"
+    ],
+    "before_project_yaml_sha256": "7348ef8b4f0c31cc515ab89d8735af95c3ee1d3bfa87859b8e434ba698ff7ee5",
+    "after_project_yaml_sha256": "39f4b033e41427e2521948e064ea2a9e18361eee3f8f7f74bbf16382aab6a9a4",
+    "original_receipt_sha256": "a3de278461efb2300c43f40006d790802655d64a56c8350630aae694e476a1c3",
+    "current_receipt_sha256": "6ab51ff8d68956536337727d97a2c32f44d6f82bf434247b9dd2517de69f352e",
+    "geometry_and_analysis_unchanged": true
+  },
+  "presentation_invariance": {
+    "svg_checks": [
+      {
+        "output": "project/architect/outputs/architectural-plan.svg",
+        "generated": "project/structural/outputs/runs/20260913T151822Z-core-proposal-cdc881d0/architectural-plan.svg",
+        "non_text_svg_equal": true,
+        "before_sha256": "ec59e42cc190ecd74429a8381a5b599d1d5f1a195ff8e7118508ed11ddd9720a",
+        "after_sha256": "733751e36eff76bab0c145c7a610d58ab8b8383ed183344c712463cc5c909d2c"
+      },
+      {
+        "output": "project/architect/outputs/entrance-detail.svg",
+        "generated": "project/structural/outputs/runs/20260913T151822Z-core-proposal-cdc881d0/entrance-detail.svg",
+        "non_text_svg_equal": true,
+        "before_sha256": "c6353ed57402b752d114fd9c1e13660a42dc7eb505b347534087562eb994770d",
+        "after_sha256": "13dfa3f03c6d1e8604c49316c2586bc5a441436d4e5da66dc0b4e324fd3fc18c"
+      },
+      {
+        "output": "project/structural/outputs/deliverables/wall-column-detail.svg",
+        "generated": "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/structural/wall-column-detail.svg",
+        "non_text_svg_equal": true,
+        "before_sha256": "c23c1195ee6a41c9c8a48d4959566d65e556d127b3e48ee2d5746affaf5a02f0",
+        "after_sha256": "21205e08d5034e45c252ddcd7de4661294804efe8450fee7230b1195b6eef30b"
+      },
+      {
+        "output": "project/structural/outputs/deliverables/beam-wall-detail.svg",
+        "generated": "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/structural/beam-wall-detail.svg",
+        "non_text_svg_equal": true,
+        "before_sha256": "ef0978f8f23dff5fa99e840baa7b4bee7a84635f0813c32508b1be578d898ca4",
+        "after_sha256": "17d771a7cfbe35a4beecee440964de6659cbaa05d6b802c72bd4ff99d6855432"
+      },
+      {
+        "output": "project/structural/outputs/deliverables/RC-001-landing-strip.svg",
+        "generated": "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/landing/RC-001-landing-strip.svg",
+        "non_text_svg_equal": true,
+        "before_sha256": "0e7af2d600930e05a9de6b51e6023f47dea841defb5714b4d078b7a85a0751f1",
+        "after_sha256": "88c828fafccb4b4f6bf668503a16f1584645a277243c50e4ab4c3ae942d95cc9"
+      }
+    ],
+    "landing_results_equal_excluding_input_provenance": true,
+    "architectural_checks_equal": true,
+    "structural_source_sha256": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b",
+    "analysis_yaml_sha256": "907d0604b3ea44bed93d51703cf42531d1f24fca3b9c61e3dfbe22cae611392a",
+    "whole_building_solver_rerun": false,
+    "initial_audit_issue": "Mixed relative and absolute paths interrupted the first audit; resolved paths before comparing all five sheets."
+  },
+  "visual_review": {
+    "status": "PASS_REVIEWED_PRESENTATION_ONLY",
+    "reviewed_pages": [
+      "AR-001",
+      "AR-002",
+      "SR-001",
+      "SR-002",
+      "RC-001"
+    ],
+    "checks": [
+      "All five pages inspected at readable resolution.",
+      "No H03 revision labels remain in displayed titles/captions.",
+      "Non-text SVG geometry unchanged on all five pages.",
+      "Geometry dimensions, calculation numbers and NOT FOR CONSTRUCTION/HOLD labels retained."
+    ],
+    "rejected_landing_render": "Initial render lacked its HTML input; rejected and recreated before promotion.",
+    "whole_building_analysis_rerun": false,
+    "architectural_generation_run": "project/structural/outputs/runs/20260913T151822Z-core-proposal-cdc881d0",
+    "landing_calculation_equal_except_provenance": true
+  },
+  "whole_building_solver_rerun": false,
+  "internal_identifiers": "Immutable model, source and execution IDs remain technical provenance; they are not reader-facing design stages.",
+  "current_output_manifest": "project/structural/outputs/deliverables/drawing-manifest.json",
+  "full_design_complete": false,
+  "wordpress_published": false,
+  "completed_at_utc": "2026-09-13T15:26:25+00:00",
+  "verification": {
+    "software_tests": 75,
+    "skipped": 0,
+    "full_suite_seconds": 17.794,
+    "focused_repository_tests": 20,
+    "cli_validation": "PASS_INPUT_SCREEN_ONLY",
+    "file_audit": {
+      "status": "PASS",
+      "markdown_links_checked": 113,
+      "broken_links": [],
+      "yaml_files_parsed": 17,
+      "reader_revision_labels": [],
+      "case_revision_filenames": [],
+      "principal_article_images": 3,
+      "article_body_words_approx": 1128,
+      "public_scan": {
+        "findings": [],
+        "files_checked": 126,
+        "scope": "Limited automated check. Review metadata, images, logs, Git history, data rights and licenses separately."
+      }
+    },
+    "protected_inputs": {
+      "unchanged_protected_files": {
+        "project/architect/outputs/core-candidate.ifc": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b",
+        "project/architect/outputs/core-proposal.yaml": "b848b0976078d1f7fba62f3516239c304ffff58404296e8cda340b316db8e657",
+        "project/architect/outputs/handoff.yaml": "775e8d5cc80b8ae0ac09049d37d3838912243fb11e9f500c74ad4df8b3fb1626",
+        "project/architect/outputs/scheme.yaml": "971773c196d170669d2a02b9f535adf4da68a4ba65ffdd119034b830cff27fc8",
+        "project/structural/inputs/analysis.yaml": "907d0604b3ea44bed93d51703cf42531d1f24fca3b9c61e3dfbe22cae611392a",
+        "project/structural/inputs/coordination.yaml": "54a4583a6267174397da4e9aacf984ec3cc38ca76605fdafa0d1a97b49be15a9",
+        "project/structural/inputs/received-scheme.ifc": "ef15b682abe8b5318365d58588a88c8150138602e4a0b4e187b5ac037d956438",
+        "project/structural/inputs/structural.ifc": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b",
+        "project/structural/design/core-interface-loads.yaml": "9d0fb67363f14109a31a39d8ddc332190dc7ba154a1ea21a2d9268eeb0c71f21",
+        "src/structural_ai/core_loads.py": "e049712d5f631793a94b36efd82100c15cf514b86ca94a98de70c3dbc7461e2d",
+        "src/structural_ai/core_revision.py": "51c986d18e84f333db75cc5ec27a4f9088975f13b34e64307a5fb92b183a5231",
+        "src/structural_ai/ifc_reader.py": "a31d5345c8319f9e6987fe07a4c8e0b2b5a60b56c57a9b481f603815996105fa",
+        "src/structural_ai/joint_constraints.py": "9750548547df8b095632b5f86b6bf7d44eaf9579dab3f6fc6f409ed9d059d4e3",
+        "src/structural_ai/model_builder.py": "de76e644445385ff1383b70c837911a7c2442926280a46ed16a5c3acff87ae92",
+        "src/structural_ai/opensees_runner.py": "8fed33b582679453c65fb9b6798bc8e52540880abf26e87b85ed28c1f2a49b11",
+        "src/structural_ai/rectilinear.py": "5dd72b46ab2d20f9aa96a20b81a5ee726023d5e60584261f888b947ec63d5c60",
+        "src/structural_ai/wall_interfaces.py": "6725a0eec8698bdd9c8483e5a7558d0f5607d3a46e588464f9df7d36db1a3817"
+      },
+      "stair_transfer_only_module_documentation_path_changed": true,
+      "project_yaml_only_two_document_paths_changed": true,
+      "renamed_numerical_tables_and_audits_unchanged": true,
+      "new_global_solver_execution": false
+    }
+  },
+  "commands": {
+    "architectural-generation": {
+      "argv": [
+        ".venv/bin/python",
+        "-m",
+        "structural_ai",
+        "core-review",
+        "--project",
+        "project"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 1.5214277200284414
+    },
+    "architecture-pdf": {
+      "argv": [
+        "chromium",
+        "--headless",
+        "--disable-gpu",
+        "--no-pdf-header-footer",
+        "--print-to-pdf=project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/architectural-review.pdf",
+        "file://<repository>/project/structural/outputs/runs/20260913T151822Z-core-proposal-cdc881d0/core-proposal.html"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 1.6177898499881849
+    },
+    "architecture-png": {
+      "argv": [
+        "gs",
+        "-dSAFER",
+        "-dBATCH",
+        "-dNOPAUSE",
+        "-sDEVICE=png16m",
+        "-r110",
+        "-sOutputFile=project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/architecture-%d.png",
+        "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/architectural-review.pdf"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.19404563499847427
+    },
+    "focused-tests": {
+      "argv": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_repository.py",
+        "-v"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.34941354498732835
+    },
+    "full-tests": {
+      "argv": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 18.385494985966943
+    },
+    "landing-generation": {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/design_landing_strip.py",
+        "--output",
+        "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/landing"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.9309016900369897
+    },
+    "landing-pdf-2": {
+      "argv": [
+        "chromium",
+        "--headless",
+        "--disable-gpu",
+        "--no-pdf-header-footer",
+        "--print-to-pdf=project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/landing-strip.pdf",
+        "file://<repository>/project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/landing/landing-strip.html"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.7451333299977705
+    },
+    "landing-pdf": {
+      "argv": [
+        "chromium",
+        "--headless",
+        "--disable-gpu",
+        "--no-pdf-header-footer",
+        "--print-to-pdf=project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/landing-strip.pdf",
+        "file://<repository>/project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/landing/landing-strip.html"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.737491479027085
+    },
+    "landing-png-2": {
+      "argv": [
+        "gs",
+        "-dSAFER",
+        "-dBATCH",
+        "-dNOPAUSE",
+        "-sDEVICE=png16m",
+        "-r110",
+        "-sOutputFile=project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/landing-%d.png",
+        "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/landing-strip.pdf"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.08220471401000395
+    },
+    "landing-png": {
+      "argv": [
+        "gs",
+        "-dSAFER",
+        "-dBATCH",
+        "-dNOPAUSE",
+        "-sDEVICE=png16m",
+        "-r110",
+        "-sOutputFile=project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/landing-%d.png",
+        "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/landing-strip.pdf"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.07641198497731239
+    },
+    "landing-reproduction": {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/design_landing_strip.py",
+        "--output",
+        "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/landing-reproduction"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.9539736359729432
+    },
+    "public-file-audit": {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/review_public_files.py"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.07378303800942376
+    },
+    "structural-drawings": {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/draw_wall_interfaces.py",
+        "--source",
+        "project/structural/inputs/structural.ifc",
+        "--verification",
+        "project/structural/outputs/runs/20260913T112509Z-candidate-verification-0530d76a",
+        "--output",
+        "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/structural"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 4.394191496947315
+    },
+    "structural-pdf": {
+      "argv": [
+        "chromium",
+        "--headless",
+        "--disable-gpu",
+        "--no-pdf-header-footer",
+        "--print-to-pdf=project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/structural-drawings.pdf",
+        "file://<repository>/project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/structural/wall-interface-review.html"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.774379005015362
+    },
+    "structural-png": {
+      "argv": [
+        "gs",
+        "-dSAFER",
+        "-dBATCH",
+        "-dNOPAUSE",
+        "-sDEVICE=png16m",
+        "-r110",
+        "-sOutputFile=project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/structural-%d.png",
+        "project/structural/outputs/runs/20260913T150822Z-article-presentation-3556150c/structural-drawings.pdf"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.12139376503182575
+    },
+    "validate": {
+      "argv": [
+        ".venv/bin/python",
+        "-m",
+        "structural_ai",
+        "validate",
+        "--project",
+        "project"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 0.22732135700061917
+    }
+  },
+  "resource_wrapper": {
+    "command_prefix": "codex-build-limited --",
+    "cpus": 2,
+    "memory_high_GiB": 2,
+    "memory_max_GiB": 4,
+    "swap_max_GiB": 1,
+    "sequential": true
+  },
+  "execution_environment": {
+    "python": "3.14.4",
+    "solver": "OpenSees 3.8.0 through OpenSeesPy 3.8.0.0",
+    "new_dependencies": []
+  },
+  "failed_or_rejected_work": [
+    {
+      "step": "first invariance audit",
+      "reason": "Mixed relative/absolute paths stopped metadata recording; corrected before verifying all five sheets."
+    },
+    {
+      "outputs": [
+        "rejected-landing-strip.pdf",
+        "rejected-landing-1.png"
+      ],
+      "reason": "HTML input had not been created after an interrupted path audit. Zero browser exit is not drawing verification. Rejected before promotion and regenerated with the confirmed HTML input.",
+      "solver_failure": false
+    }
+  ],
+  "git": {
+    "available": false,
+    "status_return_code": 128,
+    "history_return_code": 128,
+    "commit_or_push": false
+  },
+  "next_milestone": "Editorial review and WordPress publication preparation; no upload/publication authorized."
+}

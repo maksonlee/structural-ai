@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17313d} .small{font-size:2.4px}</style>
+<rect x="8.000" y="8.000" width="404.000" height="281.000" fill="none" stroke="#17313d" stroke-width="0.35"/>
+<text x="14.000" y="19.000" font-size="5" style="fill:#17313d">RC-001  Stair landing: loads to a reinforcement sketch</text>
+<text x="14.000" y="25.000" font-size="2.8" style="fill:#aa3a20">SIMULATED COORDINATION REVIEW CASE STUDY | NOT FOR CONSTRUCTION | 2026-09-13</text>
+<path d="M8.000,278.000 L412.000,278.000" fill="none" stroke="#80949c" stroke-width="0.2" stroke-dasharray=""/>
+<text x="14.000" y="283.000" font-size="2.5" style="fill:#17313d">Source: STL-1F-MID | SHA256 e0b0102fe76c91c587e7... | units: m unless stated</text>
+<text x="14.000" y="287.000" font-size="2.4" style="fill:#17313d">Retained structural scheme; architectural package, finishes, reinforcement and foundation design remain open.</text>
+<text x="14.000" y="35.000" font-size="3.2" style="fill:#aa3a20">LOCAL GRAVITY STRIP ONLY | no whole-landing, anchorage or seismic acceptance</text>
+<text x="18.000" y="49.000" font-size="3.4" style="fill:#17313d">1  LOCATE THE STRIP / PLAN / 1:25 AT A3</text>
+<path d="M35.000,127.400 L88.200,127.400 L88.200,139.000 L150.200,139.000 L150.200,68.600 L35.000,68.600 L35.000,127.400 Z" fill="#eef3f4" fill-rule="evenodd" stroke="#365a69" stroke-width=".25" stroke-dasharray="" data-source-guid="3WBnbFw6v18ePpRsZLm4Gj"/>
+<path d="M150.200,117.800 L150.200,77.800 L35.000,77.800 L35.000,117.800 L150.200,117.800 Z" fill="#e1efe7" fill-rule="evenodd" stroke="#287457" stroke-width=".25" stroke-dasharray=""/>
+<path d="M40.200,113.800 L145.000,113.800" fill="none" stroke="#ae3858" stroke-width="0.55" stroke-dasharray=""/>
+<path d="M40.200,105.800 L145.000,105.800" fill="none" stroke="#ae3858" stroke-width="0.55" stroke-dasharray=""/>
+<path d="M40.200,97.800 L145.000,97.800" fill="none" stroke="#ae3858" stroke-width="0.55" stroke-dasharray=""/>
+<path d="M40.200,89.800 L145.000,89.800" fill="none" stroke="#ae3858" stroke-width="0.55" stroke-dasharray=""/>
+<path d="M40.200,81.800 L145.000,81.800" fill="none" stroke="#ae3858" stroke-width="0.55" stroke-dasharray=""/>
+<path d="M30.000,139.800 L30.000,61.800" fill="none" stroke="#aa3a20" stroke-width="0.3" stroke-dasharray="1,1"/>
+<path d="M155.200,139.800 L155.200,61.800" fill="none" stroke="#aa3a20" stroke-width="0.3" stroke-dasharray="1,1"/>
+<text x="18.000" y="152.000" font-size="2.8" style="fill:#17313d">Green: y = 10.20..11.20 m; main bottom bars run along X.</text>
+<text x="18.000" y="159.000" font-size="2.8" style="fill:#17313d">Slab top +2.00 m; h = 180 mm; footprint follows the source IFC.</text>
+<text x="18.000" y="166.000" font-size="2.6" style="fill:#17313d">Band excludes flight bearings; adjacent plate action is not checked.</text>
+<text x="18.000" y="181.000" font-size="3.4" style="fill:#17313d">2  RELEASED LOCAL MODEL / DIAGRAMMATIC</text>
+<path d="M30.000,202.000 L155.000,202.000" fill="none" stroke="#365a69" stroke-width="0.7" stroke-dasharray=""/>
+<path d="M30.000,202.000 L27.000,208.000" fill="none" stroke="#80949c" stroke-width="0.2" stroke-dasharray=""/>
+<path d="M30.000,202.000 L33.000,208.000" fill="none" stroke="#80949c" stroke-width="0.2" stroke-dasharray=""/>
+<path d="M27.000,208.000 L33.000,208.000" fill="none" stroke="#80949c" stroke-width="0.2" stroke-dasharray=""/>
+<path d="M155.000,202.000 L152.000,208.000" fill="none" stroke="#80949c" stroke-width="0.2" stroke-dasharray=""/>
+<path d="M155.000,202.000 L158.000,208.000" fill="none" stroke="#80949c" stroke-width="0.2" stroke-dasharray=""/>
+<path d="M152.000,208.000 L158.000,208.000" fill="none" stroke="#80949c" stroke-width="0.2" stroke-dasharray=""/>
+<path d="M37.000,190.000 L37.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M37.000,200.000 L35.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M47.000,190.000 L47.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M47.000,200.000 L45.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M57.000,190.000 L57.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M57.000,200.000 L55.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M67.000,190.000 L67.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M67.000,200.000 L65.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M77.000,190.000 L77.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M77.000,200.000 L75.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M87.000,190.000 L87.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M87.000,200.000 L85.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M97.000,190.000 L97.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M97.000,200.000 L95.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M107.000,190.000 L107.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M107.000,200.000 L105.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M117.000,190.000 L117.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M117.000,200.000 L115.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M127.000,190.000 L127.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M127.000,200.000 L125.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M137.000,190.000 L137.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M137.000,200.000 L135.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M147.000,190.000 L147.000,200.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<path d="M147.000,200.000 L145.800,197.000" fill="none" stroke="#365a69" stroke-width="0.3" stroke-dasharray=""/>
+<text x="30.000" y="217.000" font-size="2.8" style="fill:#17313d">Support-line span 3.13 m; loaded length 2.88 m</text>
+<text x="30.000" y="225.000" font-size="2.8" style="fill:#17313d">1.2D + 1.6L: q = 11.691 kN/m</text>
+<text x="18.000" y="237.000" font-size="2.7" style="fill:#17313d">Inherited nominal wall reaction lines x = 6.245 / 9.375 m.</text>
+<text x="18.000" y="244.000" font-size="2.7" style="fill:#17313d">Pin/roller idealization; unloaded 0.125 m end zones.</text>
+<text x="18.000" y="252.000" font-size="2.7" style="fill:#17313d">No new gravity is added to the whole-building model.</text>
+<text x="218.000" y="49.000" font-size="3.4" style="fill:#17313d">3  SECTION AND SELECTED CHECKS</text>
+<rect x="224.000" y="61.000" width="170.000" height="22.000" fill="#eef3f4" stroke="#365a69" stroke-width="0.2"/>
+<path d="M234.000,79.000 L384.000,79.000" fill="none" stroke="#ae3858" stroke-width="0.8" stroke-dasharray=""/>
+<rect x="240.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<rect x="252.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<rect x="264.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<rect x="276.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<rect x="288.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<rect x="300.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<rect x="312.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<rect x="324.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<rect x="336.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<rect x="348.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<rect x="360.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<rect x="372.000" y="76.000" width="1.100" height="1.100" fill="#287457" stroke="#287457" stroke-width="0.2"/>
+<text x="224.000" y="93.000" font-size="2.65" style="fill:#17313d">Midspan section sketch; h 180 / cover 20 mm (not to scale)</text>
+<text x="224.000" y="101.000" font-size="2.65" style="fill:#17313d">Magenta: bottom main D10 @ 200; green: transverse above.</text>
+<text x="218.000" y="114.000" font-size="2.85" style="fill:#17313d">Concrete fc = 28 MPa; steel fy = 420 MPa (case assumption)</text>
+<text x="218.000" y="122.000" font-size="2.85" style="fill:#17313d">Effective depth d = 155.23 mm</text>
+<text x="218.000" y="130.000" font-size="2.85" style="fill:#17313d">Demand Mu = 14.23 kNm/m</text>
+<text x="218.000" y="138.000" font-size="2.85" style="fill:#17313d">Provided phi Mn = 20.50 kNm/m</text>
+<text x="218.000" y="146.000" font-size="2.85" style="fill:#17313d">As = 356.65 &gt;= 324 mm2/m minimum</text>
+<text x="218.000" y="154.000" font-size="2.85" style="fill:#17313d">Vu = 16.84 &lt;= phi Vc = 55.28 kN/m</text>
+<text x="218.000" y="162.000" font-size="2.85" style="fill:#17313d">Selected gravity strength, minimum steel and spacing: PASS</text>
+<text x="218.000" y="170.000" font-size="2.85" style="fill:#17313d">D10 @ 250 fails minimum steel; D13 @ 300 uses more steel.</text>
+<rect x="218.000" y="181.000" width="181.000" height="38.000" fill="#fff1e9" stroke="#c67652" stroke-width="0.2"/>
+<text x="223.000" y="189.000" font-size="2.5" style="fill:#943d26">SUPPORT / END DETAILS: HOLD</text>
+<text x="223.000" y="197.000" font-size="2.5" style="fill:#943d26">Anchorage, continuity, integrity steel and cut lengths are unresolved.</text>
+<text x="223.000" y="205.000" font-size="2.5" style="fill:#943d26">Lines stop schematically; they are NOT proposed bar terminations.</text>
+<text x="223.000" y="213.000" font-size="2.5" style="fill:#943d26">D10 @ 200 also used for transverse distribution in this strip.</text>
+<text x="218.000" y="232.000" font-size="2.65" style="fill:#17313d">Taiwan concrete code effective 2024-01-01, with 2024 errata.</text>
+<text x="218.000" y="240.000" font-size="2.65" style="fill:#17313d">Tables 5.3.1 / 21.2.2 / 22.5.5.1; sections 7.6 / 7.7 / 24 / 25.</text>
+<text x="218.000" y="250.000" font-size="2.65" style="fill:#17313d">Read landing-strip.md / .json for the exact scope, inputs and checks.</text>
+<text x="18.000" y="267.000" font-size="2.8" style="fill:#17313d">SOURCE GUID: 3WBnbFw6v18ePpRsZLm4Gj | Article illustration within A01; NOT a complete stair reinforcement sheet.</text>
+</svg>

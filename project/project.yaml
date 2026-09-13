@@ -1,0 +1,75 @@
+id: a01
+title: A01 simulated RC office building
+status: IN_PROGRESS_NOT_FOR_CONSTRUCTION
+purpose: 'Develop coordinated structural design drawings from the architect''s deliverables
+  and applicable regulations through repeated design review, addressing architecture,
+  code compliance, cost control and construction feasibility. Use available open tools
+  and AI assistance and compare each stage with documented Taiwan practice.
+
+  '
+acceptance_basis: ../docs/scope.md
+architectural_handoff:
+  outputs: architect/outputs/
+  inventory: architect/outputs/handoff.yaml
+  proposal: architect/outputs/scheme.yaml
+  core_proposal: architect/outputs/core-proposal.yaml
+  status: H03_C_DIAGNOSTIC_GEOMETRY_ADOPTED_FULL_ARCHITECTURAL_REVIEW_OPEN
+  note: Simulated architectural candidate adopted for H03-C structural diagnostics;
+    no external architect acceptance or construction release.
+  core_candidate_ifc: architect/outputs/core-candidate.ifc
+  core_candidate_sha256: e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b
+site:
+  city: Taipei
+  district: Datong
+  village: Jianming
+  provenance: SIMULATED_NOT_SURVEYED
+inputs:
+  structural_ifc: structural/inputs/structural.ifc
+  analysis: structural/inputs/analysis.yaml
+  coordination: structural/inputs/coordination.yaml
+  architectural_scheme: architect/outputs/scheme.yaml
+  received_structural_scheme: structural/inputs/received-scheme.ifc
+  equipment_basis: structural/design/core-interface-loads.yaml
+authority:
+  architectural_deliverables: architect/outputs/
+  proposed_space_equipment_and_stair_finish_requirements: architect/outputs/scheme.yaml
+  physical_geometry: structural/inputs/structural.ifc
+  inherited_source_revision: R05
+  below_grade_extension_and_analysis_assumptions: structural/inputs/analysis.yaml
+  generated_outputs: structural/outputs/runs/<run-id>/
+  reviewed_deliverables: structural/outputs/deliverables/
+  note: Current physical geometry is structural/inputs/structural.ifc. Analysis, equipment
+    and stair-finish fields retain their named YAML owners. Generated IFC is an output.
+    Received R05 is immutable regeneration evidence, not a second editable master.
+  architectural_core_revision_specification: architect/outputs/core-proposal.yaml;
+    regenerate and review before any further structural adoption
+  received_immutable_scheme: structural/inputs/received-scheme.ifc; R05 regeneration
+    input, never the current geometry authority
+  architectural_candidate_output: architect/outputs/core-candidate.ifc; deterministic
+    output, byte-identical to the explicitly adopted structural input at H03-C
+  synthetic_equipment_loads: structural/design/core-interface-loads.yaml
+compatibility:
+  adapter: A01-specific H03-C source-derived core, owned wall strips and verified
+    eccentric contacts
+  source_ifc_sha256: e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b
+  geometry_changes_require_adapter_review: true
+  physical_counts:
+    IFCCOLUMN: 36
+    IFCBEAM: 51
+    IFCWALL: 44
+    IFCSLAB: 10
+    IFCSTAIRFLIGHT: 6
+    IFCOPENINGELEMENT: 17
+  received_source_sha256: ef15b682abe8b5318365d58588a88c8150138602e4a0b4e187b5ac037d956438
+  adapter_review: structural/outputs/deliverables/structural-review.md
+release:
+  design_complete: false
+  foundation_complete: false
+  opensees_verified: true
+  opensees_verification_scope: H03-C gross elastic diagnostics with explicit wall/frame
+    ownership and eccentric joints; verified five variants. Downstream adoption build/drawing
+    review is recorded separately; code/RC/foundation design remains open.
+  industry_comparison_complete: false
+  construction_release: BLOCKED
+  public_publication_requested: false
+  diagnostic_adoption_record: structural/outputs/deliverables/model-adoption.json

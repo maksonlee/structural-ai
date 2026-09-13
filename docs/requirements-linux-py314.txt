@@ -1,0 +1,19 @@
+# Resolved and executed on Linux x86_64 / CPython 3.14.4, 2026-09-13.
+# Dependency pins, not bundled software or a portable multi-platform lock.
+# Install with: python -m pip install -c docs/requirements-linux-py314.txt -e '.[analysis,ifc-validation]'
+ifcopenshell==0.8.5
+iniconfig==2.3.0
+isodate==0.7.2
+lark==1.3.1
+numpy==2.5.3
+openseespy==3.8.0.0
+openseespylinux==3.8.0.0
+packaging==26.3
+pluggy==1.6.0
+Pygments==2.21.0
+pytest==9.1.1
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+shapely==2.1.2
+six==1.17.0
+typing_extensions==4.16.0

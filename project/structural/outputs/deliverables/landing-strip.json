@@ -1,0 +1,919 @@
+{
+  "status": "SCOPED_GRAVITY_STRIP_DEMONSTRATION",
+  "source_name": "STL-1F-MID",
+  "source_guid": "3WBnbFw6v18ePpRsZLm4Gj",
+  "basis": {
+    "id": "RC-001",
+    "purpose": "Article example within the adopted building; local gravity strip only",
+    "source_name": "STL-1F-MID",
+    "source_guid": "3WBnbFw6v18ePpRsZLm4Gj",
+    "strip_y_m": [
+      10.2,
+      11.2
+    ],
+    "cover_mm": 20.0,
+    "maximum_aggregate_mm": 20.0,
+    "exposure": "SYNTHETIC_INTERIOR_NOT_EXPOSED_TO_WEATHER_OR_EARTH",
+    "reinforcement_grade": "Adopt fy from analysis.yaml, including D10; no supplier confirmation",
+    "bar_dimensions_source": "tw-rebar-dimensions",
+    "bars": {
+      "D10": {
+        "diameter_mm": 9.53,
+        "area_mm2": 71.33,
+        "mass_kg_m": 0.56
+      },
+      "D13": {
+        "diameter_mm": 12.7,
+        "area_mm2": 126.7,
+        "mass_kg_m": 0.994
+      }
+    },
+    "alternatives": [
+      {
+        "bar": "D10",
+        "spacing_mm": 250
+      },
+      {
+        "bar": "D10",
+        "spacing_mm": 200
+      },
+      {
+        "bar": "D13",
+        "spacing_mm": 300
+      }
+    ],
+    "selected": {
+      "bar": "D10",
+      "spacing_mm": 200
+    },
+    "scope": [
+      "Derive geometry and loads from current IFC and adopted verification ledger.",
+      "Use the ledger's released support lines; no new loads enter the global model.",
+      "Check direct gravity positive flexure, one-way shear, minimum steel and spacing.",
+      "Show bottom main bars and transverse distribution for this strip only."
+    ],
+    "not_checked": [
+      "Whole landing plate action, adjacent flight reactions and wall continuity",
+      "Negative moments, seismic actions and stair bracing effects",
+      "Anchorage, splices, integrity reinforcement and support joint design",
+      "Cracked and long-term deflection, vibration and fire resistance",
+      "Supplier grade confirmation, fabrication lengths, congestion and priced quantities"
+    ]
+  },
+  "materials": {
+    "concrete_fc_MPa": 28.0,
+    "rebar_fy_MPa": 420.0,
+    "E_kN_m2": 25000000.0,
+    "poisson": 0.2,
+    "unit_weight_kN_m3": 24.0,
+    "g_m_s2": 9.80665,
+    "basis": "PROJECT_TRIAL_MATERIAL_PROPERTIES; uncracked linear-elastic baseline"
+  },
+  "geometry": {
+    "profile_xy_m": [
+      [
+        6.37,
+        9.96
+      ],
+      [
+        7.7,
+        9.96
+      ],
+      [
+        7.7,
+        9.67
+      ],
+      [
+        9.25,
+        9.67
+      ],
+      [
+        9.25,
+        11.43
+      ],
+      [
+        6.37,
+        11.43
+      ],
+      [
+        6.37,
+        9.96
+      ]
+    ],
+    "strip_y_m": [
+      10.2,
+      11.2
+    ],
+    "support_x_m": [
+      6.245,
+      9.375
+    ],
+    "loaded_x_m": [
+      6.37,
+      9.25
+    ],
+    "span_m": 3.13,
+    "thickness_m": 0.17999999999999994,
+    "top_z_m": 2.0
+  },
+  "loads_kN_m2": {
+    "D_SELF": 4.320000000000025,
+    "D_SUPER": 1.5,
+    "L_STAIRS": 2.941995
+  },
+  "cases": {
+    "SERVICE": {
+      "solver": "OpenSees",
+      "version": "3.8.0",
+      "return_code": 0,
+      "q_kN_m": 8.761995000000026,
+      "reactions_kN": [
+        12.617272799997693,
+        12.61727280000073
+      ],
+      "peak": {
+        "x_m": 1.565,
+        "V_kN": 3.375077994860476e-14,
+        "M_kNm": 10.661595515999993
+      },
+      "max_abs_shear_kN": 12.61727280000073,
+      "midspan_vertical_mm": -0.8943528392211104,
+      "elements": [
+        {
+          "id": 1,
+          "x_m": [
+            0.0,
+            0.125
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            12.617272799997693,
+            -1.0547118733938987e-13,
+            0.0,
+            -12.617272799997693,
+            1.577159099999817
+          ]
+        },
+        {
+          "id": 2,
+          "x_m": [
+            0.125,
+            1.565
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            12.61727280000007,
+            -1.577159099999916,
+            0.0,
+            -3.375077994860476e-14,
+            10.66159551599999
+          ]
+        },
+        {
+          "id": 3,
+          "x_m": [
+            1.565,
+            3.005
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            3.907985046680551e-14,
+            -10.661595515999988,
+            0.0,
+            12.617272799999997,
+            1.5771591000000191
+          ]
+        },
+        {
+          "id": 4,
+          "x_m": [
+            3.005,
+            3.13
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            -12.61727280000073,
+            -1.577159100000028,
+            0.0,
+            12.61727280000073,
+            -6.328271240363392e-14
+          ]
+        }
+      ],
+      "force_moment_residual_kN_kNm": [
+        -1.6484591469634324e-12,
+        2.1742607714259066e-12
+      ],
+      "closed_form": {
+        "reactions_kN": [
+          12.617272800000036,
+          12.617272800000036
+        ],
+        "peak_x_m": 1.565,
+        "moment_kNm": 10.661595516000029
+      },
+      "numerical_checks_passed": true
+    },
+    "U1_1.4D": {
+      "solver": "OpenSees",
+      "version": "3.8.0",
+      "return_code": 0,
+      "q_kN_m": 8.148000000000035,
+      "reactions_kN": [
+        11.733119999999438,
+        11.733119999999944
+      ],
+      "peak": {
+        "x_m": 1.565,
+        "V_kN": 2.5757174171303632e-14,
+        "M_kNm": 9.91448640000001
+      },
+      "max_abs_shear_kN": 11.733120000000088,
+      "midspan_vertical_mm": -0.8316812477037043,
+      "elements": [
+        {
+          "id": 1,
+          "x_m": [
+            0.0,
+            0.125
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            11.733119999999438,
+            0.0,
+            0.0,
+            -11.733119999999438,
+            1.4666399999999298
+          ]
+        },
+        {
+          "id": 2,
+          "x_m": [
+            0.125,
+            1.565
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            11.733120000000088,
+            -1.466639999999918,
+            0.0,
+            -3.8191672047105385e-14,
+            9.91448640000001
+          ]
+        },
+        {
+          "id": 3,
+          "x_m": [
+            1.565,
+            3.005
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            2.5757174171303632e-14,
+            -9.91448640000001,
+            0.0,
+            11.733120000000024,
+            1.4666400000000104
+          ]
+        },
+        {
+          "id": 4,
+          "x_m": [
+            3.005,
+            3.13
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            -11.733119999999944,
+            -1.466639999999993,
+            0.0,
+            11.733119999999944,
+            0.0
+          ]
+        }
+      ],
+      "force_moment_residual_kN_kNm": [
+        -7.212008767965017e-13,
+        -3.339550858072471e-13
+      ],
+      "closed_form": {
+        "reactions_kN": [
+          11.733120000000051,
+          11.733120000000051
+        ],
+        "peak_x_m": 1.565,
+        "moment_kNm": 9.914486400000042
+      },
+      "numerical_checks_passed": true
+    },
+    "U2_1.2D_1.6L": {
+      "solver": "OpenSees",
+      "version": "3.8.0",
+      "return_code": 0,
+      "q_kN_m": 11.69119200000003,
+      "reactions_kN": [
+        16.83531647999876,
+        16.835316479998752
+      ],
+      "peak": {
+        "x_m": 1.565,
+        "V_kN": 3.730349362740526e-14,
+        "M_kNm": 14.225842425599986
+      },
+      "max_abs_shear_kN": 16.83531648000008,
+      "midspan_vertical_mm": -1.1933413291241466,
+      "elements": [
+        {
+          "id": 1,
+          "x_m": [
+            0.0,
+            0.125
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            16.83531647999876,
+            -4.196643033083092e-14,
+            0.0,
+            -16.83531647999876,
+            2.1044145599998867
+          ]
+        },
+        {
+          "id": 2,
+          "x_m": [
+            0.125,
+            1.565
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            16.83531648000008,
+            -2.10441455999989,
+            0.0,
+            -3.730349362740526e-14,
+            14.225842425599975
+          ]
+        },
+        {
+          "id": 3,
+          "x_m": [
+            1.565,
+            3.005
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            3.730349362740526e-14,
+            -14.225842425599986,
+            0.0,
+            16.835316480000003,
+            2.104414560000009
+          ]
+        },
+        {
+          "id": 4,
+          "x_m": [
+            3.005,
+            3.13
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            -16.835316479998752,
+            -2.1044145599999284,
+            0.0,
+            16.835316479998752,
+            8.43769498715119e-14
+          ]
+        }
+      ],
+      "force_moment_residual_kN_kNm": [
+        -2.5721647034515627e-12,
+        -4.035882739117369e-12
+      ],
+      "closed_form": {
+        "reactions_kN": [
+          16.835316480000042,
+          16.835316480000042
+        ],
+        "peak_x_m": 1.565,
+        "moment_kNm": 14.225842425600035
+      },
+      "numerical_checks_passed": true
+    }
+  },
+  "governing_combination": "U2_1.2D_1.6L",
+  "combination_clause": "Table 5.3.1(a,b), printed p. 5-1, indoor direct gravity only",
+  "mesh_sensitivity": {
+    "fine": {
+      "solver": "OpenSees",
+      "version": "3.8.0",
+      "return_code": 0,
+      "q_kN_m": 11.69119200000003,
+      "reactions_kN": [
+        16.835316479998752,
+        16.83531647999876
+      ],
+      "peak": {
+        "x_m": 1.565,
+        "V_kN": -3.099742684753437e-13,
+        "M_kNm": 14.2258424255996
+      },
+      "max_abs_shear_kN": 16.835316479999587,
+      "midspan_vertical_mm": -1.193341329124131,
+      "elements": [
+        {
+          "id": 1,
+          "x_m": [
+            0.0,
+            0.125
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            16.835316479998752,
+            -8.43769498715119e-14,
+            0.0,
+            -16.835316479998752,
+            2.1044145599999284
+          ]
+        },
+        {
+          "id": 2,
+          "x_m": [
+            0.125,
+            0.485
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            16.835316479999587,
+            -2.1044145600001194,
+            0.0,
+            -12.626487359999578,
+            7.407539251199969
+          ]
+        },
+        {
+          "id": 3,
+          "x_m": [
+            0.485,
+            0.845
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            12.626487360000043,
+            -7.407539251199946,
+            0.0,
+            -8.417658240000032,
+            11.19548545919996
+          ]
+        },
+        {
+          "id": 4,
+          "x_m": [
+            0.845,
+            1.205
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            8.417658239999307,
+            -11.195485459199904,
+            0.0,
+            -4.2088291199992955,
+            13.468253183999654
+          ]
+        },
+        {
+          "id": 5,
+          "x_m": [
+            1.205,
+            1.565
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            4.208829119999699,
+            -13.46825318399971,
+            0.0,
+            3.099742684753437e-13,
+            14.2258424255996
+          ]
+        },
+        {
+          "id": 6,
+          "x_m": [
+            1.565,
+            1.9249999999999998
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            7.838174553853605e-13,
+            -14.225842425599433,
+            0.0,
+            4.2088291199992245,
+            13.468253183999714
+          ]
+        },
+        {
+          "id": 7,
+          "x_m": [
+            1.9249999999999998,
+            2.285
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            -4.208829120000031,
+            -13.468253183999787,
+            0.0,
+            8.417658240000044,
+            11.195485459199771
+          ]
+        },
+        {
+          "id": 8,
+          "x_m": [
+            2.285,
+            2.645
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            -8.41765823999943,
+            -11.195485459200174,
+            0.0,
+            12.626487359999437,
+            7.4075392512003795
+          ]
+        },
+        {
+          "id": 9,
+          "x_m": [
+            2.645,
+            3.005
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            -12.626487359999437,
+            -7.40753925120036,
+            0.0,
+            16.835316479999445,
+            2.1044145600005626
+          ]
+        },
+        {
+          "id": 10,
+          "x_m": [
+            3.005,
+            3.13
+          ],
+          "local_force_kN_kNm": [
+            0.0,
+            -16.83531647999876,
+            -2.1044145600006035,
+            0.0,
+            16.83531647999876,
+            7.58726415028832e-13
+          ]
+        }
+      ],
+      "force_moment_residual_kN_kNm": [
+        -2.5721647034515627e-12,
+        -4.014566457044566e-12
+      ],
+      "closed_form": {
+        "reactions_kN": [
+          16.835316480000042,
+          16.835316480000042
+        ],
+        "peak_x_m": 1.565,
+        "moment_kNm": 14.225842425600035
+      },
+      "numerical_checks_passed": true
+    },
+    "passed": true
+  },
+  "alternatives": [
+    {
+      "bar": "D10",
+      "spacing_mm": 250,
+      "effective_depth_mm": 155.23499999999996,
+      "steel_mm2_m": 285.32,
+      "minimum_steel_mm2_m": 323.9999999999999,
+      "stress_block_a_mm": 5.035058823529411,
+      "neutral_axis_c_mm": 5.923598615916954,
+      "tension_strain": 0.07561859491097715,
+      "phi_flexure": 0.9,
+      "phi_Mn_kNm_m": 16.47072581171294,
+      "phi_Vc_kN_m": 51.316027305497514,
+      "ideal_two_direction_grid_kg_m2": 4.48,
+      "checks": {
+        "positive_flexure": {
+          "status": "PASS_SCOPED",
+          "clause": "21.2.2; 22.2.2.4",
+          "value": 14.225842425599986,
+          "limit": 16.47072581171294,
+          "units": "kNm/m"
+        },
+        "one_way_shear": {
+          "status": "PASS_SCOPED",
+          "clause": "21.2.1; 22.5.5.1(c); 7.6.3.1",
+          "value": 16.83531648000008,
+          "limit": 51.316027305497514,
+          "units": "kN/m"
+        },
+        "minimum_flexural_steel": {
+          "status": "FAIL",
+          "clause": "7.6.1.1",
+          "value": 285.32,
+          "limit": 323.9999999999999,
+          "units": "mm2/m"
+        },
+        "transverse_distribution_steel": {
+          "status": "FAIL",
+          "clause": "7.7.6.1; 24.4.3.2",
+          "value": 285.32,
+          "limit": 323.9999999999999,
+          "units": "mm2/m"
+        },
+        "main_spacing": {
+          "status": "PASS_SCOPED",
+          "clause": "7.7.2.3; 24.3.2",
+          "value": 250,
+          "limit": 300.0,
+          "units": "mm"
+        },
+        "transverse_spacing": {
+          "status": "PASS_SCOPED",
+          "clause": "24.4.3.3",
+          "value": 250,
+          "limit": 450,
+          "units": "mm"
+        },
+        "clear_spacing": {
+          "status": "PASS_SCOPED",
+          "clause": "25.2.1",
+          "value": 240.47,
+          "limit": 26.666666666666668,
+          "units": "mm"
+        },
+        "interior_cover": {
+          "status": "PASS_SCOPED",
+          "clause": "20.5.1.3.1",
+          "value": 20.0,
+          "limit": 20,
+          "units": "mm"
+        }
+      },
+      "selected_checks_passed": false
+    },
+    {
+      "bar": "D10",
+      "spacing_mm": 200,
+      "effective_depth_mm": 155.23499999999996,
+      "steel_mm2_m": 356.65,
+      "minimum_steel_mm2_m": 323.9999999999999,
+      "stress_block_a_mm": 6.293823529411765,
+      "neutral_axis_c_mm": 7.4044982698961945,
+      "tension_strain": 0.0598948759287817,
+      "phi_flexure": 0.9,
+      "phi_Mn_kNm_m": 20.503557900926467,
+      "phi_Vc_kN_m": 55.278514690793614,
+      "ideal_two_direction_grid_kg_m2": 5.6,
+      "checks": {
+        "positive_flexure": {
+          "status": "PASS_SCOPED",
+          "clause": "21.2.2; 22.2.2.4",
+          "value": 14.225842425599986,
+          "limit": 20.503557900926467,
+          "units": "kNm/m"
+        },
+        "one_way_shear": {
+          "status": "PASS_SCOPED",
+          "clause": "21.2.1; 22.5.5.1(c); 7.6.3.1",
+          "value": 16.83531648000008,
+          "limit": 55.278514690793614,
+          "units": "kN/m"
+        },
+        "minimum_flexural_steel": {
+          "status": "PASS_SCOPED",
+          "clause": "7.6.1.1",
+          "value": 356.65,
+          "limit": 323.9999999999999,
+          "units": "mm2/m"
+        },
+        "transverse_distribution_steel": {
+          "status": "PASS_SCOPED",
+          "clause": "7.7.6.1; 24.4.3.2",
+          "value": 356.65,
+          "limit": 323.9999999999999,
+          "units": "mm2/m"
+        },
+        "main_spacing": {
+          "status": "PASS_SCOPED",
+          "clause": "7.7.2.3; 24.3.2",
+          "value": 200,
+          "limit": 300.0,
+          "units": "mm"
+        },
+        "transverse_spacing": {
+          "status": "PASS_SCOPED",
+          "clause": "24.4.3.3",
+          "value": 200,
+          "limit": 450,
+          "units": "mm"
+        },
+        "clear_spacing": {
+          "status": "PASS_SCOPED",
+          "clause": "25.2.1",
+          "value": 190.47,
+          "limit": 26.666666666666668,
+          "units": "mm"
+        },
+        "interior_cover": {
+          "status": "PASS_SCOPED",
+          "clause": "20.5.1.3.1",
+          "value": 20.0,
+          "limit": 20,
+          "units": "mm"
+        }
+      },
+      "selected_checks_passed": true
+    },
+    {
+      "bar": "D13",
+      "spacing_mm": 300,
+      "effective_depth_mm": 153.64999999999995,
+      "steel_mm2_m": 422.3333333333333,
+      "minimum_steel_mm2_m": 323.9999999999999,
+      "stress_block_a_mm": 7.452941176470588,
+      "neutral_axis_c_mm": 8.768166089965398,
+      "tension_strain": 0.04957085635359114,
+      "phi_flexure": 0.9,
+      "phi_Mn_kNm_m": 23.934092082352933,
+      "phi_Vc_kN_m": 58.08393377052958,
+      "ideal_two_direction_grid_kg_m2": 6.626666666666667,
+      "checks": {
+        "positive_flexure": {
+          "status": "PASS_SCOPED",
+          "clause": "21.2.2; 22.2.2.4",
+          "value": 14.225842425599986,
+          "limit": 23.934092082352933,
+          "units": "kNm/m"
+        },
+        "one_way_shear": {
+          "status": "PASS_SCOPED",
+          "clause": "21.2.1; 22.5.5.1(c); 7.6.3.1",
+          "value": 16.83531648000008,
+          "limit": 58.08393377052958,
+          "units": "kN/m"
+        },
+        "minimum_flexural_steel": {
+          "status": "PASS_SCOPED",
+          "clause": "7.6.1.1",
+          "value": 422.3333333333333,
+          "limit": 323.9999999999999,
+          "units": "mm2/m"
+        },
+        "transverse_distribution_steel": {
+          "status": "PASS_SCOPED",
+          "clause": "7.7.6.1; 24.4.3.2",
+          "value": 422.3333333333333,
+          "limit": 323.9999999999999,
+          "units": "mm2/m"
+        },
+        "main_spacing": {
+          "status": "PASS_SCOPED",
+          "clause": "7.7.2.3; 24.3.2",
+          "value": 300,
+          "limit": 300.0,
+          "units": "mm"
+        },
+        "transverse_spacing": {
+          "status": "PASS_SCOPED",
+          "clause": "24.4.3.3",
+          "value": 300,
+          "limit": 450,
+          "units": "mm"
+        },
+        "clear_spacing": {
+          "status": "PASS_SCOPED",
+          "clause": "25.2.1",
+          "value": 287.3,
+          "limit": 26.666666666666668,
+          "units": "mm"
+        },
+        "interior_cover": {
+          "status": "PASS_SCOPED",
+          "clause": "20.5.1.3.1",
+          "value": 20.0,
+          "limit": 20,
+          "units": "mm"
+        }
+      },
+      "selected_checks_passed": true
+    }
+  ],
+  "selected": {
+    "bar": "D10",
+    "spacing_mm": 200,
+    "effective_depth_mm": 155.23499999999996,
+    "steel_mm2_m": 356.65,
+    "minimum_steel_mm2_m": 323.9999999999999,
+    "stress_block_a_mm": 6.293823529411765,
+    "neutral_axis_c_mm": 7.4044982698961945,
+    "tension_strain": 0.0598948759287817,
+    "phi_flexure": 0.9,
+    "phi_Mn_kNm_m": 20.503557900926467,
+    "phi_Vc_kN_m": 55.278514690793614,
+    "ideal_two_direction_grid_kg_m2": 5.6,
+    "checks": {
+      "positive_flexure": {
+        "status": "PASS_SCOPED",
+        "clause": "21.2.2; 22.2.2.4",
+        "value": 14.225842425599986,
+        "limit": 20.503557900926467,
+        "units": "kNm/m"
+      },
+      "one_way_shear": {
+        "status": "PASS_SCOPED",
+        "clause": "21.2.1; 22.5.5.1(c); 7.6.3.1",
+        "value": 16.83531648000008,
+        "limit": 55.278514690793614,
+        "units": "kN/m"
+      },
+      "minimum_flexural_steel": {
+        "status": "PASS_SCOPED",
+        "clause": "7.6.1.1",
+        "value": 356.65,
+        "limit": 323.9999999999999,
+        "units": "mm2/m"
+      },
+      "transverse_distribution_steel": {
+        "status": "PASS_SCOPED",
+        "clause": "7.7.6.1; 24.4.3.2",
+        "value": 356.65,
+        "limit": 323.9999999999999,
+        "units": "mm2/m"
+      },
+      "main_spacing": {
+        "status": "PASS_SCOPED",
+        "clause": "7.7.2.3; 24.3.2",
+        "value": 200,
+        "limit": 300.0,
+        "units": "mm"
+      },
+      "transverse_spacing": {
+        "status": "PASS_SCOPED",
+        "clause": "24.4.3.3",
+        "value": 200,
+        "limit": 450,
+        "units": "mm"
+      },
+      "clear_spacing": {
+        "status": "PASS_SCOPED",
+        "clause": "25.2.1",
+        "value": 190.47,
+        "limit": 26.666666666666668,
+        "units": "mm"
+      },
+      "interior_cover": {
+        "status": "PASS_SCOPED",
+        "clause": "20.5.1.3.1",
+        "value": 20.0,
+        "limit": 20,
+        "units": "mm"
+      }
+    },
+    "selected_checks_passed": true
+  },
+  "input_sha256": {
+    "project/structural/design/landing-strip.yaml": "b33b7bbb63b695c0a964de3f6a1f45be046d030ddf4c43d61ff3646561ed437e",
+    "project/structural/outputs/deliverables/model-adoption.json": "1ac77de32f11157d394bb767d1cacde52142b1f3cabea21e3840bb8699ddffe7",
+    "project/structural/inputs/structural.ifc": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b",
+    "project/architect/outputs/scheme.yaml": "971773c196d170669d2a02b9f535adf4da68a4ba65ffdd119034b830cff27fc8",
+    "project/structural/inputs/analysis.yaml": "907d0604b3ea44bed93d51703cf42531d1f24fca3b9c61e3dfbe22cae611392a",
+    "project/structural/outputs/runs/20260913T112509Z-candidate-verification-0530d76a/baseline-build/analytical_model.json": "4bbd0bdc5562145ba76a54db0a19d7686d657e160d99eda9b9ed190e0ee081ad",
+    "project/structural/outputs/runs/20260913T112509Z-candidate-verification-0530d76a/baseline-build/stair_transfer.json": "fd9b23f29ad5ca5bfe596188f3ba7333042be1e9c38c2027db63c9fbab853318",
+    "project/structural/outputs/runs/20260913T112509Z-candidate-verification-0530d76a/baseline-analysis/results/summary.json": "a063e97bf6eea9f4b1f0da82574727fce476d58749ea4446ce66a055e3363d3d",
+    "project/structural/outputs/runs/20260913T112509Z-candidate-verification-0530d76a/manifest.json": "f8154ef71999810eae08646dea975fbe50b0adc43a93ac2e7135d07a44f57d45",
+    "src/structural_ai/landing_detail.py": "8d624fe2170e06be3375f52c1293d3a1bb145198419e0455e9da8a195a6a6a3d"
+  },
+  "unperformed_checks": [
+    {
+      "scope": "Whole landing plate action, adjacent flight reactions and wall continuity",
+      "status": "NOT_CHECKED"
+    },
+    {
+      "scope": "Negative moments, seismic actions and stair bracing effects",
+      "status": "NOT_CHECKED"
+    },
+    {
+      "scope": "Anchorage, splices, integrity reinforcement and support joint design",
+      "status": "NOT_CHECKED"
+    },
+    {
+      "scope": "Cracked and long-term deflection, vibration and fire resistance",
+      "status": "NOT_CHECKED"
+    },
+    {
+      "scope": "Supplier grade confirmation, fabrication lengths, congestion and priced quantities",
+      "status": "NOT_CHECKED"
+    }
+  ],
+  "full_landing_design_complete": false,
+  "construction_release": "BLOCKED"
+}

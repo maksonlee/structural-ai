@@ -1,0 +1,57 @@
+{
+  "source_archive_name": "A01_Codex_Handoff.zip",
+  "source_archive_sha256": "d82aaf7183bdd1d664f9fe92743741c967c09fe590ffbb22c3c47865757f1fcd",
+  "scope": "Repository reorganization only; no structural design decision, analysis-method change, or new solver claim.",
+  "retained": [
+    {
+      "source_archive_path": "structural-ai/work/a01/source/A01_Structural_R05_ContinuousFrame.ifc",
+      "destination": "projects/a01/inputs/structural.ifc",
+      "sha256": "ef15b682abe8b5318365d58588a88c8150138602e4a0b4e187b5ac037d956438",
+      "byte_identical": true
+    },
+    {
+      "source_archive_path": "structural-ai/work/a01/analysis_input.yaml",
+      "source_sha256": "f7363dc3dc74e67dcdb8b220ce5613ce45983590def0691f466d46b77a7b668a",
+      "destination": "projects/a01/inputs/analysis.yaml",
+      "change": "Only source_ifc path changed to structural.ifc"
+    },
+    {
+      "source_archive_path": "structural-ai/work/a01/build_model.py",
+      "source_sha256": "f48144815b276c252815b639af3d379b8e38368b6d9dd3a993bbaef8b7bfb73c",
+      "destination": "src/structural_ai/model_builder.py",
+      "destination_sha256": "f4d4d8f6c6544a563f76fb506358de09148605105e56aa5273d67cfa0d473de8",
+      "change_scope": "Package imports / CLI paths / descriptive metadata only. No element or load formulas intentionally changed."
+    },
+    {
+      "source_archive_path": "structural-ai/work/a01/ifc_subset.py",
+      "source_sha256": "da9f695b5037afe23c1699b87d6ecf1dd91ee1ddbcb61ef2c4a286999c166efd",
+      "destination": "src/structural_ai/ifc_reader.py",
+      "destination_sha256": "a31d5345c8319f9e6987fe07a4c8e0b2b5a60b56c57a9b481f603815996105fa",
+      "change_scope": "Package imports / CLI paths / descriptive metadata only. No element or load formulas intentionally changed."
+    },
+    {
+      "source_archive_path": "structural-ai/work/a01/run_opensees.py",
+      "source_sha256": "9e3c09ef0a4ab9e12fe02605b6e9f98bc6b2431a8b455eca06fa707e94293db9",
+      "destination": "src/structural_ai/opensees_runner.py",
+      "destination_sha256": "7ecc0f72dcb14ced7aee7811077c6eff2288e508cb442e8e2b7186be540c025d",
+      "change_scope": "Package imports / CLI paths / descriptive metadata only. No element or load formulas intentionally changed."
+    }
+  ],
+  "not_copied": [
+    "Duplicated baseline/work trees",
+    "Historical raw SciPy outputs and large analytical JSON",
+    "linear_fem.py / run_analysis.py / sensitivity.py / custom-solver tests",
+    "Old architectural IFC not coordinated to adopted structural scheme",
+    "Chat transcripts, machine-specific handoff commands and hostnames"
+  ],
+  "retention": "Keep A01_Codex_Handoff.zip outside the public repository as the original local archive. It has not been deleted or modified.",
+  "historical_result_status": "Prior R06 numbers came from a custom SciPy solver; OpenSees not executed there.",
+  "license_note": "Imported R06 MIT notice retained verbatim; whole-repository licensing decision remains pending.",
+  "license_notice": {
+    "original_path": "LICENSES/A01-R06-original.txt",
+    "current_path": "LICENSES/imported-code-MIT.txt",
+    "sha256": "dd3faae9714cde729ad701579b0fe4ee4c6e5eb1fe743002f7ffa3469a6d2e22",
+    "byte_identical": true,
+    "scope": "Filename only. Imported source headers retain their original reference to preserve the verified source bytes; this mapping resolves it to the current notice."
+  }
+}

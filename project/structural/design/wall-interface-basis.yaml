@@ -1,0 +1,51 @@
+revision: H03-C
+status: VERIFIED_SCOPED_DIAGNOSTICS_ADOPTED
+physical_source: ../inputs/structural.ifc
+source_sha256: e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b
+scope: Correct source-derived wall/frame contacts and concrete ownership for gross
+  elastic diagnostics.
+geometry_change: None; preserve the H03-B candidate and all original main-frame solids/GUIDs.
+ownership_order:
+- Gross columns
+- Clear-span beam webs below the slab flange
+- Remaining wall concrete after openings and frame ownership
+- Floor self-weight outside column/wall footprints
+implementation:
+  walls: Physical midplane extents, remaining-strip thickness and centroid; explicit
+    eccentric corner/contact constraints.
+  contacts: Small-rotation rigid cross-section groups, flattened to one free master;
+    no chains or multiple constraints.
+  beam_centroid: Derive the 0.52 m web centroid from the 0.70 m beam and 0.18 m slab;
+    -0.44 m below SSL.
+  calibration: Uniform net source-floor area for 100 kN X/Y diagnostics; preserve
+    force and position moments across meshes.
+  coordinate_precision: H03-C nodes/contact lookup retain eight-decimal mesh stations;
+    no seven-decimal rounding after load integration.
+method_document: ../../../docs/wall-interface-method.md
+checks_required:
+- Real-backend eccentric static flexibility, moment transfer and condensed-mass eigenvalues
+- Source-based ownership volumes and first moments, including adjacent beam-web intersections
+- Direct-contact coverage, no mechanisms, finite response and constraint compatibility
+- Global equilibrium and reduced nodal equilibrium including recovered joint forces
+- Whole-building repeat, modal/eigenpair, mesh and diagnostic support/equipment sensitivity
+- Coherent source/adoption authority and reviewed drawing/reaction updates
+legal_basis:
+  source_id: taiwan-concrete-code
+  edition: 2023-08-10 revision, effective 2024-01-01, 2024-02-19 errata
+  clauses: 6.3.1.1, 6.3.1.3, 6.9.1-6.9.5; printed pages 6-4/6-5/6-18
+  result: NOT_CHECKED_FOR_FULL_DESIGN; requirements inform model verification, not
+    automatic compliance.
+limitations:
+- Rigid elastic joints omit bond slip, finite joint-panel shear flexibility and cracking.
+- Floor shells retain reference-surface stiffness; the ownership audit is not a full
+  three-dimensional concrete constitutive verification.
+- A remaining 70 mm analytical strip is part of a monolithic wall-column union, not
+  a proposed separate 70 mm wall.
+- Stair strips carry gravity/mass only; anchorage, local joint and member reinforcement
+  are not designed.
+- Fixed-base variants remain diagnostic; ground-panel, soil, footing and foundation
+  design remain open.
+- No priced quantity, contractor acceptance, ETABS equivalence or construction release
+  follows.
+verification_run_id: 20260913T112509Z-candidate-verification-0530d76a
+adoption_receipt: ../outputs/deliverables/model-adoption.json

@@ -1,0 +1,355 @@
+{
+  "status": "COMPLETED_LOCAL_ARTICLE_AND_SCOPED_RC001_EXAMPLE",
+  "date": "2026-09-13",
+  "run_path": "project/structural/outputs/runs/20260913T144241Z-landing-article-6bf9271b",
+  "environment": {
+    "os": "Ubuntu 26.04.1 LTS",
+    "python": "3.14.4",
+    "platform": {
+      "system": "Linux",
+      "machine": "x86_64",
+      "libc": [
+        "glibc",
+        "2.43"
+      ]
+    },
+    "dependencies": {
+      "numpy": "2.5.3",
+      "shapely": "2.1.2",
+      "PyYAML": "6.0.3",
+      "openseespy": "3.8.0.0",
+      "openseespylinux": "3.8.0.0",
+      "ifcopenshell": "0.8.5"
+    },
+    "solver": "OpenSees 3.8.0 via OpenSeesPy",
+    "isolated_environment": ".venv",
+    "new_dependencies": []
+  },
+  "command_execution": {
+    "working_directory": "repository root",
+    "resource_wrapper": "codex-build-limited -- (installed user-local host wrapper)",
+    "limits": {
+      "cpus": 2,
+      "memory_high_GiB": 2,
+      "memory_max_GiB": 4,
+      "swap_max_GiB": 1
+    },
+    "commands": {
+      "calculation": {
+        "argv": [
+          ".venv/bin/python",
+          "scripts/design_landing_strip.py",
+          "--output",
+          "project/structural/outputs/runs/20260913T144241Z-landing-article-6bf9271b/calculation"
+        ],
+        "return_code": 0,
+        "elapsed_seconds": 0.9966465060133487
+      },
+      "final-calculation": {
+        "argv": [
+          ".venv/bin/python",
+          "scripts/design_landing_strip.py",
+          "--output",
+          "project/structural/outputs/runs/20260913T144241Z-landing-article-6bf9271b/final-calculation"
+        ],
+        "return_code": 0,
+        "elapsed_seconds": 1.1414252009708434
+      },
+      "focused-tests-1": {
+        "argv": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_landing_detail.py",
+          "-v"
+        ],
+        "return_code": 1,
+        "elapsed_seconds": 0.18387972499476746
+      },
+      "focused-tests-2": {
+        "argv": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_landing_detail.py",
+          "-v"
+        ],
+        "return_code": 0,
+        "elapsed_seconds": 0.20041352102998644
+      },
+      "full-tests-1": {
+        "argv": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "return_code": 1,
+        "elapsed_seconds": 18.461851119995117
+      },
+      "full-tests-2": {
+        "argv": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "return_code": 0,
+        "elapsed_seconds": 18.490186195995193
+      },
+      "render-pdf": {
+        "argv": [
+          "chromium",
+          "--headless",
+          "--disable-gpu",
+          "--no-pdf-header-footer",
+          "--print-to-pdf=project/structural/outputs/runs/20260913T144241Z-landing-article-6bf9271b/calculation/RC-001-landing-strip.pdf",
+          "file://<repository>/project/structural/outputs/runs/20260913T144241Z-landing-article-6bf9271b/calculation/landing-strip.html"
+        ],
+        "return_code": 0,
+        "elapsed_seconds": 2.2229586929897778
+      },
+      "render-png": {
+        "argv": [
+          "gs",
+          "-dSAFER",
+          "-dBATCH",
+          "-dNOPAUSE",
+          "-sDEVICE=png16m",
+          "-r120",
+          "-sOutputFile=project/structural/outputs/runs/20260913T144241Z-landing-article-6bf9271b/calculation/landing-strip.png",
+          "project/structural/outputs/runs/20260913T144241Z-landing-article-6bf9271b/calculation/RC-001-landing-strip.pdf"
+        ],
+        "return_code": 0,
+        "elapsed_seconds": 0.09371821401873603
+      },
+      "reproduction": {
+        "argv": [
+          ".venv/bin/python",
+          "scripts/design_landing_strip.py",
+          "--output",
+          "project/structural/outputs/runs/20260913T144241Z-landing-article-6bf9271b/reproduction"
+        ],
+        "return_code": 0,
+        "elapsed_seconds": 0.9530059469980188
+      },
+      "validate": {
+        "argv": [
+          ".venv/bin/python",
+          "-m",
+          "structural_ai",
+          "validate",
+          "--project",
+          "project"
+        ],
+        "return_code": 0,
+        "elapsed_seconds": 0.21396490396000445
+      },
+      "public-file-audit": {
+        "argv": [
+          ".venv/bin/python",
+          "scripts/review_public_files.py"
+        ],
+        "return_code": 0,
+        "elapsed_seconds": 0.07589484198251739
+      }
+    },
+    "stdout_stderr": "Matching <label>.stdout and <label>.stderr in run_path; repository absolute path sanitized where recorded."
+  },
+  "git": {
+    "status_return_code": 128,
+    "history_return_code": 128,
+    "note": "No Git metadata in this snapshot; no init, commit, push or publication."
+  },
+  "failures_preserved": [
+    {
+      "command": "focused-tests-1",
+      "result": "1 of 7 failed",
+      "cause": "Independent shear-answer fixture had a mistyped arithmetic value.",
+      "resolution": "Decimal precision 40 evaluation: 0.75*0.68*(1/400)^(1/3)*sqrt(28)*160 = 58.6024595779236092746 kN. Corrected expected value only; focused-tests-2 passed 7/7."
+    },
+    {
+      "command": "full-tests-1",
+      "result": "1 of 74 failed",
+      "cause": "Checklist referenced reviewed landing-strip.json before result-promotion step.",
+      "resolution": "Verified reproduction and promoted files before final suite; full-tests-2 passed 74/74."
+    }
+  ],
+  "verification": {
+    "software_tests": 74,
+    "skipped_tests": 0,
+    "final_tests_command": "full-tests-2",
+    "cli_validation": "PASS_INPUT_SCREEN_ONLY",
+    "real_local_cases": [
+      "SERVICE",
+      "U1_1.4D",
+      "U2_1.2D_1.6L"
+    ],
+    "refined_case": "U2_1.2D_1.6L",
+    "solver_return_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "force_moment_max_residual_kN_kNm": 4.035882739117369e-12,
+    "mesh_moment_difference_kNm": 3.8546943414985435e-13,
+    "mesh_midspan_displacement_difference_mm": 1.554312234475219e-14,
+    "identical_reproduction_files": [
+      "landing-strip.json",
+      "RC-001-landing-strip.svg"
+    ],
+    "whole_building_rerun": false,
+    "reason": "Existing verified model unchanged; local source-derived strip illustration only."
+  },
+  "visual_review": {
+    "pdf_pages": 1,
+    "inspected_image": "project/structural/outputs/runs/20260913T144241Z-landing-article-6bf9271b/calculation/landing-strip.png",
+    "result": "PASS_READABILITY_AND_SCOPE_LABELS",
+    "checks": [
+      "Source L-shaped footprint and one-metre band shown.",
+      "Selected main/transverse reinforcement and values match JSON.",
+      "Support/anchorage HOLD and NOT FOR CONSTRUCTION visible.",
+      "No clipping or overlap observed."
+    ],
+    "render_source_matches_final_svg": true,
+    "browser_return_code": 0,
+    "browser_stderr_note": "Nonfatal desktop D-Bus warnings; one PDF page rendered and inspected."
+  },
+  "engineering": {
+    "scope": "Selected direct gravity positive flexure, one-way shear, minimum steel, cover and spacing for one existing landing strip.",
+    "governing_combination": "1.2D+1.6L",
+    "Mu_kNm_m": 14.225842425599986,
+    "selected": "D10@200 each direction",
+    "phi_Mn_kNm_m": 20.503557900926467,
+    "steel_mm2_m": 356.65,
+    "minimum_steel_mm2_m": 324,
+    "full_building_design_complete": false,
+    "full_landing_design_complete": false,
+    "construction_release": "BLOCKED"
+  },
+  "research": {
+    "access_date": "2026-09-13",
+    "source_register": "docs/sources.yaml",
+    "reviewed_source_ids": [
+      "taiwan-concrete-code",
+      "tw-practitioner-ntu-2022",
+      "tw-tcea-reinforcement-notes",
+      "tw-rebar-dimensions",
+      "openseespy-landing-load-method"
+    ],
+    "retrieval_limits": [
+      "Code PDF first browser retrieval timed out; direct download and selected text extraction succeeded. Temporary official documents are outside the repository.",
+      "RCAD page could not be fetched again; earlier limited evidence remains labelled."
+    ],
+    "no_new_interview": true,
+    "no_matched_etabs_results": true,
+    "active_labour_seconds": null,
+    "solver_only_wait_seconds": null
+  },
+  "article": {
+    "path": "docs/wordpress-post.md",
+    "body_word_count_approx": 1127,
+    "principal_images": 3,
+    "local_content_complete": true,
+    "wordpress_published": false,
+    "next_milestone": "Editorial review and WordPress publication preparation; publication requires explicit authorization."
+  },
+  "reviewed_output_sha256": {
+    "project/structural/outputs/deliverables/landing-strip.json": "12f5e56d0662623506dfcb17820a761c2079b147d79c9b66bca793a1f119b6e7",
+    "project/structural/outputs/deliverables/RC-001-landing-strip.svg": "0e7af2d600930e05a9de6b51e6023f47dea841defb5714b4d078b7a85a0751f1",
+    "project/structural/outputs/deliverables/RC-001-landing-strip.pdf": "b4bdb30971ad7023dced1aabfba4fbb602b321118e53fa57e015818a63f79bf1",
+    "docs/article-images/landing-strip.png": "ea55ee0af53d2672d8f265fff285a258672ea149c5401d3e99e7e64867a1aab4"
+  },
+  "files_changed_and_why": {
+    "calculation": [
+      "src/structural_ai/landing_detail.py",
+      "scripts/design_landing_strip.py",
+      "project/structural/design/landing-strip.yaml"
+    ],
+    "verification": [
+      "tests/test_landing_detail.py"
+    ],
+    "reader_outputs": [
+      "docs/wordpress-post.md",
+      "docs/article-images/landing-strip.png",
+      "project/structural/outputs/deliverables/landing-strip.md",
+      "project/structural/outputs/deliverables/landing-strip.json",
+      "project/structural/outputs/deliverables/RC-001-landing-strip.svg",
+      "project/structural/outputs/deliverables/RC-001-landing-strip.pdf"
+    ],
+    "supporting_updates": "Source register, stage comparison/effort, checklist/issues/decisions, reading indexes, methods and next-session handoff; existing global solver and model inputs unchanged.",
+    "modified_existing_files": [
+      "AGENTS.md",
+      "docs/current-work.md",
+      "docs/development.md",
+      "docs/industry/taiwan-workflow.md",
+      "docs/scope.md",
+      "docs/sources.yaml",
+      "docs/validation.md",
+      "docs/wordpress-post.md",
+      "docs/workflow.md",
+      "project/README.md",
+      "project/comparison/README.md",
+      "project/comparison/effort.csv",
+      "project/comparison/evidence.yaml",
+      "project/comparison/research-gaps.yaml",
+      "project/comparison/workflow.csv",
+      "project/decisions.md",
+      "project/issues.yaml",
+      "project/structural/design/README.md",
+      "project/structural/design/checklist.yaml",
+      "project/structural/outputs/current.md"
+    ],
+    "added_files": [
+      "docs/article-images/landing-strip.png",
+      "project/structural/design/landing-strip.yaml",
+      "project/structural/outputs/deliverables/RC-001-landing-strip.pdf",
+      "project/structural/outputs/deliverables/RC-001-landing-strip.svg",
+      "project/structural/outputs/deliverables/landing-article-execution.json",
+      "project/structural/outputs/deliverables/landing-strip.json",
+      "project/structural/outputs/deliverables/landing-strip.md",
+      "scripts/design_landing_strip.py",
+      "src/structural_ai/landing_detail.py",
+      "tests/test_landing_detail.py"
+    ],
+    "additional_modified_indexes_outside_inventory": [
+      "README.md",
+      "project/structural/outputs/runs/README.md"
+    ],
+    "deleted_files": []
+  },
+  "file_audit": {
+    "markdown_links_checked": 110,
+    "broken_links": [],
+    "yaml_files_parsed": 17,
+    "source_ids_unique": true,
+    "claim_source_ids_resolve": true,
+    "protected_files_unchanged": 33,
+    "changed_protected": [],
+    "existing_reviewed_outputs_unchanged": 12,
+    "changed_existing_reviewed_outputs": [],
+    "article_image_count": 3,
+    "article_body_word_count_approx": 1127,
+    "public_scan": {
+      "findings": [],
+      "files_checked": 133,
+      "scope": "Limited automated check. Review metadata, images, logs, Git history, data rights and licenses separately."
+    }
+  },
+  "completed_at_utc": "2026-09-13T15:01:17+00:00"
+}

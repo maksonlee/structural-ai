@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#17313d} .small{font-size:2.4px}</style>
+<rect x="8.000" y="8.000" width="404.000" height="281.000" fill="none" stroke="#17313d" stroke-width="0.35"/>
+<text x="14.000" y="19.000" font-size="5" style="fill:#17313d">AR-002  B2 wall joint and entry detailing screens</text>
+<text x="14.000" y="25.000" font-size="2.8" style="fill:#aa3a20">SIMULATED COORDINATION REVIEW CASE STUDY | NOT FOR CONSTRUCTION | 2026-09-13</text>
+<path d="M8.000,278.000 L412.000,278.000" fill="none" stroke="#80949c" stroke-width="0.2" stroke-dasharray=""/>
+<text x="14.000" y="283.000" font-size="2.5" style="fill:#17313d">Source: Architectural model / verified diagnostic basis | SHA256 e0b0102fe76c91c587e7... | units: m unless stated</text>
+<text x="14.000" y="287.000" font-size="2.4" style="fill:#17313d">Retained structural scheme; architectural package, finishes, reinforcement and foundation design remain open.</text>
+<text x="14.000" y="33.000" font-size="2.9" style="fill:#a52d25">The portal clears B2. Wall-column elastic force transfer is modelled; joint reinforcement and full egress remain open.</text>
+<text x="20.000" y="48.000" font-size="3.1" style="fill:#17313d">1F PLAN DETAIL / 1:23.3</text>
+<path d="M164.910,157.950 L84.500,157.950 L84.500,80.550 L164.910,80.550 L164.910,91.300 L95.250,91.300 L95.250,147.200 L164.910,147.200 L164.910,157.950 Z" fill="#e6daed" fill-rule="evenodd" stroke="#775a88" stroke-width=".25" stroke-dasharray=""/>
+<path d="M164.910,194.500 L164.910,69.800 L154.160,69.800 L154.160,194.500 L164.910,194.500 Z" fill="#cfdeea" fill-rule="evenodd" stroke="#527184" stroke-width=".25" stroke-dasharray=""/>
+<path d="M165.770,147.200 L165.770,91.300 L153.300,91.300 L153.300,147.200 L165.770,147.200 Z" fill="white" fill-rule="evenodd" stroke="#34795d" stroke-width=".25" stroke-dasharray=""/>
+<path d="M95.250,147.200 L95.250,95.600 L84.500,95.600 L84.500,147.200 L95.250,147.200 Z" fill="white" fill-rule="evenodd" stroke="#34795d" stroke-width=".25" stroke-dasharray=""/>
+<path d="M96.325,96.675 L46.875,96.675 L46.877,97.107 L46.883,97.538 L46.892,97.969 L46.905,98.401 L46.922,98.832 L46.943,99.263 L46.967,99.694 L46.995,100.124 L47.027,100.555 L47.063,100.985 L47.103,101.415 L47.146,101.844 L47.193,102.273 L47.244,102.701 L47.298,103.130 L47.356,103.557 L47.418,103.984 L47.484,104.411 L47.553,104.837 L47.626,105.262 L47.703,105.687 L47.784,106.111 L47.868,106.534 L47.956,106.956 L48.047,107.378 L48.142,107.799 L48.241,108.219 L48.344,108.638 L48.450,109.056 L48.560,109.474 L48.673,109.890 L48.791,110.305 L48.911,110.720 L49.036,111.133 L49.164,111.545 L49.295,111.956 L49.430,112.366 L49.569,112.774 L49.711,113.182 L49.857,113.588 L50.007,113.993 L50.159,114.396 L50.316,114.798 L50.476,115.199 L50.639,115.599 L50.806,115.997 L50.976,116.393 L51.150,116.788 L51.327,117.182 L51.508,117.573 L51.692,117.964 L51.880,118.352 L52.070,118.739 L52.265,119.125 L52.462,119.508 L52.663,119.890 L52.867,120.271 L53.075,120.649 L53.286,121.025 L53.500,121.400 L53.717,121.773 L53.938,122.144 L54.162,122.513 L54.389,122.880 L54.619,123.244 L54.853,123.607 L55.089,123.968 L55.329,124.327 L55.572,124.684 L55.818,125.038 L56.067,125.391 L56.319,125.741 L56.574,126.089 L56.832,126.435 L57.094,126.778 L57.358,127.119 L57.625,127.458 L57.895,127.795 L58.168,128.129 L58.444,128.461 L58.723,128.790 L59.005,129.117 L59.289,129.442 L59.576,129.764 L59.867,130.083 L60.160,130.400 L60.455,130.714 L60.754,131.026 L61.055,131.335 L61.359,131.641 L61.665,131.945 L61.974,132.246 L62.286,132.545 L62.600,132.840 L62.917,133.133 L63.236,133.424 L63.558,133.711 L63.883,133.995 L64.210,134.277 L64.539,134.556 L64.871,134.832 L65.205,135.105 L65.542,135.375 L65.881,135.642 L66.222,135.906 L66.565,136.168 L66.911,136.426 L67.259,136.681 L67.609,136.933 L67.962,137.182 L68.316,137.428 L68.673,137.671 L69.032,137.911 L69.393,138.147 L69.756,138.381 L70.120,138.611 L70.487,138.838 L70.856,139.062 L71.227,139.283 L71.600,139.500 L71.975,139.714 L72.351,139.925 L72.729,140.133 L73.110,140.337 L73.492,140.538 L73.875,140.735 L74.261,140.930 L74.648,141.120 L75.036,141.308 L75.427,141.492 L75.818,141.673 L76.212,141.850 L76.607,142.024 L77.003,142.194 L77.401,142.361 L77.801,142.524 L78.202,142.684 L78.604,142.841 L79.007,142.993 L79.412,143.143 L79.818,143.289 L80.226,143.431 L80.634,143.570 L81.044,143.705 L81.455,143.836 L81.867,143.964 L82.280,144.089 L82.695,144.209 L83.110,144.327 L83.526,144.440 L83.944,144.550 L84.362,144.656 L84.781,144.759 L85.201,144.858 L85.622,144.953 L86.044,145.044 L86.466,145.132 L86.889,145.216 L87.313,145.297 L87.738,145.374 L88.163,145.447 L88.589,145.516 L89.016,145.582 L89.443,145.644 L89.870,145.702 L90.299,145.756 L90.727,145.807 L91.156,145.854 L91.585,145.897 L92.015,145.937 L92.445,145.973 L92.876,146.005 L93.306,146.033 L93.737,146.057 L94.168,146.078 L94.599,146.095 L95.031,146.108 L95.462,146.117 L95.893,146.123 L96.325,146.125 L96.325,96.675 Z" fill="#e2eddf" fill-rule="evenodd" stroke="#538751" stroke-width=".25" stroke-dasharray=""/>
+<path d="M96.325,96.675 L46.875,96.675" fill="none" stroke="#34795d" stroke-width="0.7" stroke-dasharray=""/>
+<path d="M84.500,211.700 L84.500,99.900 L26.450,99.900 L26.450,211.700 L84.500,211.700 Z" fill="none" fill-rule="evenodd" stroke="#538751" stroke-width=".25" stroke-dasharray="1,1"/>
+<path d="M222.100,91.300 L222.100,69.800 L164.910,69.800 L164.910,91.300 L222.100,91.300 Z" fill="#e4ebe6" fill-rule="evenodd" stroke="#47726b" stroke-width=".25" stroke-dasharray=""/>
+<path d="M161.900,177.300 L161.900,151.500 L136.100,151.500 L136.100,177.300 L161.900,177.300 Z" fill="#455a66" fill-rule="evenodd" stroke="#1b3643" stroke-width=".25" stroke-dasharray="" data-source-guid="3s9lgrSw51zBU52rOG2Osf"/>
+<path d="M161.900,151.500 L161.900,177.300 L154.160,177.300 L154.160,151.500 L161.900,151.500 Z" fill="#f1aa62" fill-rule="evenodd" stroke="#a9641b" stroke-width=".25" stroke-dasharray=""/>
+<text x="140.400" y="168.700" font-size="3.5" style="fill:white">B2</text>
+<text x="118.900" y="120.540" font-size="2.7" style="fill:#34795d">1.28 m clear</text>
+<text x="26.880" y="196.650" font-size="2.5" style="fill:#17313d">South route reservation</text>
+<text x="245.000" y="51.000" font-size="2.65" style="fill:#183848">SOURCE-BASED THROAT CHECK</text>
+<text x="245.000" y="59.000" font-size="2.65" style="fill:#183848">Portal y = 4.60 to 5.90 m.</text>
+<text x="245.000" y="67.000" font-size="2.65" style="fill:#183848">B2 column reaches y = 4.50 m.</text>
+<text x="245.000" y="75.000" font-size="2.65" style="fill:#183848">Unobstructed raw interval = 4.60 to 5.90 m.</text>
+<text x="245.000" y="83.000" font-size="2.65" style="fill:#183848">After two 10 mm finishes: 1.28 m.</text>
+<text x="245.000" y="91.000" font-size="2.65" style="fill:#a52d25">Project passage target: 1.20 m. Nominal pass.</text>
+<text x="245.000" y="99.000" font-size="2.65" style="fill:#183848"></text>
+<text x="245.000" y="107.000" font-size="2.65" style="fill:#183848">OTHER NOMINAL DETAIL SCREENS</text>
+<text x="245.000" y="115.000" font-size="2.65" style="fill:#183848">Ground top hinge opens west; full leaf is north</text>
+<text x="245.000" y="123.000" font-size="2.65" style="fill:#183848">of the reserved south route. Full egress is open.</text>
+<text x="245.000" y="131.000" font-size="2.65" style="fill:#183848">RF jamb: 0.40 m geometric wall length.</text>
+<text x="245.000" y="139.000" font-size="2.65" style="fill:#183848">RF door-to-turn disc gap: 43 mm.</text>
+<text x="245.000" y="147.000" font-size="2.65" style="fill:#183848">Guard: 1.10 m; vertical infill openings &lt;=90 mm.</text>
+<text x="245.000" y="155.000" font-size="2.65" style="fill:#183848">Central guard / rails fit in the 0.22 m well.</text>
+<text x="245.000" y="163.000" font-size="2.65" style="fill:#183848">Rated assemblies and all anchorage are unverified.</text>
+<text x="245.000" y="171.000" font-size="2.65" style="fill:#183848"></text>
+<text x="245.000" y="179.000" font-size="2.65" style="fill:#a52d25">REMAINING STRUCTURAL DESIGN</text>
+<text x="245.000" y="187.000" font-size="2.65" style="fill:#183848">Current code actions, combinations and system checks;</text>
+<text x="245.000" y="195.000" font-size="2.65" style="fill:#183848">beam/column/wall/slab/stair and joint reinforcement;</text>
+<text x="245.000" y="203.000" font-size="2.65" style="fill:#183848">anchorage, foundations and construction details;</text>
+<text x="245.000" y="211.000" font-size="2.65" style="fill:#183848">priced quantities and construction feasibility.</text>
+<text x="245.000" y="219.000" font-size="2.65" style="fill:#183848">Elastic joint verification does not close these gates.</text>
+<text x="20.000" y="245.000" font-size="2.6" style="fill:#17313d">The 1.20 m target is a recorded project screen; this is not a complete statutory egress review.</text>
+<text x="20.000" y="255.000" font-size="2.6" style="fill:#17313d">Ground door and guard lines are geometric reservations; certified products and reinforcement are not designed.</text>
+<text x="20.000" y="265.000" font-size="2.6" style="fill:#a52d25">Main-frame solid geometry and GUIDs remain unchanged. Solver equilibrium does not clear this architectural hold.</text>
+</svg>

@@ -1,0 +1,28 @@
+{
+  "purpose": "H03-C regression after source/known-answer/whole-building verification; not independent engineering truth or capacity approval",
+  "verification_run_id": "20260913T112509Z-candidate-verification-0530d76a",
+  "source_ifc_sha256": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b",
+  "signature_keys": [
+    "nodes",
+    "elements",
+    "supports",
+    "nodal_masses",
+    "load_cases",
+    "sections",
+    "materials",
+    "levels_m",
+    "mapping",
+    "units",
+    "base_elevation_m",
+    "explicit_idealizations",
+    "load_only_mapping",
+    "stair_transfer_method",
+    "source_ifc_sha256",
+    "rigid_joints",
+    "joint_method",
+    "drilling_penalty",
+    "revision"
+  ],
+  "canonical_input_signature_sha256": "d98b7fdf4ec297ab0fdfb317dbd20e224fcef4da14faa7ddbc4bbb04d8685129",
+  "metadata_exclusions": "Source/output basenames and formatting-dependent equipment file hash are excluded; resolved loads, mass, sections, topology, source GUIDs, offsets and constraints are included. Equipment semantic equality is checked in the adoption receipt."
+}

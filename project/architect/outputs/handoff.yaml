@@ -1,0 +1,41 @@
+id: AH-001
+revision: H01
+date: '2026-09-13'
+status: SIMULATED_BRIEF_AND_INVENTORY_NOT_ARCHITECT_ISSUED
+issuer: Project research workflow acting in a simulated architectural role
+scope: First handoff inventory and requirement brief for the existing building; no replacement geometry.
+physical_source_authority: ../../project.yaml
+adopted_requirements:
+- id: AR-01
+  requirement: Three occupied storeys of office use; no basement; retain the adopted frame and core intent.
+  basis: ../../decisions.md#A01-D001 through A01-D004
+- id: AR-02
+  requirement: Retain B2/C2 columns, orthogonal continuous main beams, rear bay and shared stair/lift wall.
+  basis: ../../decisions.md#A01-D002 and A01-D003
+- id: AR-03
+  requirement: Evaluate regulations, architecture, cost and construction feasibility together during iterations.
+  basis: ../../decisions.md#A01-D014
+simulation_assumptions:
+- id: AS-01
+  assumption: Ordinary private office on 1F through 3F; G-2 is the working use classification for intake review.
+  status: PROVISIONAL_NO_MIXED_USE_OR_PUBLIC_ASSEMBLY_PROGRAMME_ADOPTED
+  recheck: Confirm space uses before fixing area-based egress and load categories.
+- id: AS-02
+  assumption: 1F is the intended discharge level and RF access is for maintenance.
+  status: PROVISIONAL_SITE_ROUTE_AND_ROOF_EQUIPMENT_UNRESOLVED
+  recheck: Confirm outside levels, road connection, enclosure and equipment service needs.
+deliverable_inventory:
+- {id: AH-01, product: Coordinated architectural model and plans, status: NOT_AVAILABLE, owner: Simulated architect, action: Develop coordinated architectural information from the retained design intent; the structural IFC is reference only.}
+- {id: AH-02, product: Sections and elevations with finished levels and clearances, status: NOT_AVAILABLE, owner: Simulated architect, action: Resolve structural level versus finish/ceiling conventions and roof enclosure.}
+- {id: AH-03, product: Room/use/area and occupant schedule, status: NOT_AVAILABLE, owner: Simulated architect, action: Separate occupied-room area from floor footprint and statutory area exclusions.}
+- {id: AH-04, product: Site boundary/building line/road/discharge and ground levels, status: NOT_AVAILABLE, owner: Simulated architect and site role, action: Establish labelled synthetic site constraints; village location alone is insufficient.}
+- {id: AH-05, product: Stair/landing/door/fire enclosure/handrail details, status: STRUCTURAL_GEOMETRY_ONLY, owner: Simulated architect and structural role, action: Review nosings/turning/finished widths/door swing and structural anchorage together.}
+- {id: AH-06, product: Lift shaft/pit/overrun/reactions and maintenance clearances, status: SHAFT_VOIDS_ONLY, owner: Simulated equipment and architectural roles, action: Select a documented synthetic equipment basis and test compatibility; no supplier confirmation.}
+- {id: AH-07, product: Toilets/accessible routes/MEP penetrations and finishes, status: NOT_AVAILABLE, owner: Simulated architect and equipment roles, action: Reserve required space and coordinate openings/loads without cutting existing main beams.}
+- {id: AH-08, product: Budget/quantity and construction constraints, status: OBJECTIVES_ONLY, owner: Owner and simulated design/construction roles, action: Start with scoped physical quantities; prices/budget and construction review remain unknown.}
+- {id: AH-09, product: Accepted structural reference, status: AVAILABLE_PRELIMINARY, owner: Structural role, path: ../../structural/inputs/structural.ifc, action: Preserve its hash and GUIDs; do not relabel it as architect-issued.}
+acceptance:
+  intake_inventory_complete: true
+  coordinated_architectural_package_complete: false
+  architectural_acceptance: NOT_GRANTED
+  engineering_approval: false

@@ -1,0 +1,112 @@
+project: A01
+revision: H03-C
+source_ifc: structural.ifc
+status: ADOPTED_GROSS_ELASTIC_DIAGNOSTIC_BASIS
+units:
+  force: kN
+  length: m
+  time: s
+  stress: kN/m2
+  rotation: rad
+base:
+  elevation_m: -1.8
+  restraint: fixed_6_dof
+  source: ANALYST_TRIAL_ASSUMPTION_NOT_GEOTECHNICAL_DESIGN
+  ground_elevation_m: 0.0
+  lateral_soil_springs: false
+  grade_beams: false
+  ground_slab_provides_frame_restraint: false
+materials:
+  concrete_fc_MPa: 28.0
+  rebar_fy_MPa: 420.0
+  E_kN_m2: 25000000.0
+  poisson: 0.2
+  unit_weight_kN_m3: 24.0
+  g_m_s2: 9.80665
+  basis: PROJECT_TRIAL_MATERIAL_PROPERTIES; uncracked linear-elastic baseline
+mesh:
+  target_size_m: 0.75
+  match_floor_wall_and_beam_nodes: true
+  wall_corner_model: physical_midplanes_with_verified_eccentric_rigid_contacts
+  floor_model: semirigid_elastic_shell_NOT_rigid_diaphragm
+loads:
+  office_kN_m2: 2.941995
+  movable_partition_kN_m2: 0.980665
+  roof_kN_m2: 0.980665
+  stairs_kN_m2: 2.941995
+  office_local_patch_kN: 9.80665
+  office_local_patch_size_m:
+  - 0.8
+  - 0.8
+  local_patch_floor: 2F
+  local_patch_center_m:
+  - 3.0
+  - 7.8
+  finishes_and_general_mep_kN_m2: 1.5
+  external_wall_line_load_kN_m: 6.0
+  parapet_line_load_kN_m: 2.0
+  lateral_calibration_total_kN: 100.0
+  classification:
+    occupancy_loads: ADOPTED_FROM_TAIWAN_STRUCTURAL_REGULATIONS_20_21_26; not a complete
+      code load-envelope
+    superimposed_dead: UNCONFIRMED_PROJECT_ASSUMPTIONS
+    facade_load: UNCONFIRMED_EQUIVALENT_GRAVITY_LOAD; no facade stiffness included
+    lateral_calibration: Uniform net floor-area distribution; fixed resultants across
+      meshes; NOT wind/seismic
+  unknown_excluded_loads:
+  - actual_lift_reactions_and_lateral_anchors
+  - tanks
+  - detailed_MEP
+  - construction_loads
+mass:
+  source: D_SELF + D_SUPER + L_PARTITION + D_PANEL + D_EQUIPMENT; no impact or payload
+    mass
+  office_live_load_mass_fraction: 0.0
+  movable_partition_mass_fraction: 1.0
+  source_status: STUDY_MASS_SOURCE_NOT_CODE_SEISMIC_MASS_APPROVAL
+analysis:
+  order: first_order
+  material: linear_elastic
+  p_delta: false
+  cracking: not_modelled
+  modes_requested: 12
+  include_stair_stiffness: false
+  stair_handling: Source-derived released H03 strips; no stiffness or reinforcement
+    design
+  load_combinations: unfactored service illustration only; no strength design combinations
+limitations:
+- No geotechnical/foundation design; base location and complete fixity are trial assumptions.
+- No member capacity, reinforcement, anchorage, punching, foundation bearing or settlement
+  checks.
+- No code earthquake/wind action derivation, accidental torsion or response-spectrum
+  analysis.
+- Gross section stiffness is not a final cracked-RC stiffness model.
+- Stair stiffness and its possible bracing effects are omitted; stair design remains
+  separate.
+- IFC physical layout and solver idealization differ by explicit midplane/beam-offset
+  mapping.
+- OpenSees diagnostic execution is recorded separately in dated deliverables and run
+  manifests; this input file is not verification evidence.
+- Historical custom SciPy results are excluded from this implementation; no reference-solver
+  fallback or independent certification is claimed.
+- Synthetic equipment/roof allowances support diagnostic analysis only; actual reactions,
+  tanks and local support design remain open.
+- Rigid monolithic contacts and short joint zones omit bond slip, finite panel-zone
+  shear flexibility and cracking; no joint reinforcement design.
+source_references:
+  taiwan_structural_rules:
+    official_url: https://www.nlma.gov.tw/ch/legislation/regsearch/6174
+    checked_on: 2026-09-12
+    office_load_rule: Article 20; 300 kgf/m2 and alternative 1 tonne over 0.8m x 0.8m
+    movable_partition_rule: Article 21; 100 kgf/m2 when adopted
+    roof_rule: Article 26; 100 kgf/m2 used without tributary-area reductions
+    stair_rule: Article 17; ordinary private office use assumed; crowd-use minimum
+      not applied
+    missing_load_envelopes: Article 28 pattern loading is NOT performed by the service
+      illustration
+    seismic_mass_note: Article 43-1 includes movable partitions; 100 percent assumed
+      here
+    program_status: No claim of authority filing or acceptance under Article 7
+  opensees_shell: https://openseespydoc.readthedocs.io/en/latest/src/ShellMITC4.html
+  opensees_frame: https://openseespydoc.readthedocs.io/en/latest/src/elasticBeamColumn.html
+  opensees_installation: https://openseespydoc.readthedocs.io/en/latest/

@@ -1,0 +1,51 @@
+revision: H03-B
+date: '2026-09-13'
+owner: Simulated structural engineering role
+status: SYNTHETIC_CANDIDATE_DIAGNOSTICS_ONLY_NOT_APPLIED_TO_H02
+geometry_authority: ../../architect/outputs/core-proposal.yaml
+units: kg, kN, m
+lift:
+  rated_payload_kg: 700
+  rated_payload_source: tmec-mrl-planning-h02; nominal catalogue candidate, no A01 vendor confirmation
+  assumed_car_and_sling_kg: 1000
+  assumed_counterweight_balance_fraction: 0.45
+  assumed_machine_rails_ropes_and_miscellaneous_kg: 600
+  assumption_basis: Explicit synthetic planning envelope; counterweight = car + 0.45 rated payload. Equipment
+    masses and distribution are unverified assumptions, not manufacturer reactions.
+  mass_sensitivity_multipliers:
+  - 1.0
+  - 1.5
+  vertical_envelope_factor: 2.0
+  factor_basis: Taiwan structural rules Article 23 identifies a 100 percent impact addition for elevator
+    supports. Applying 2.0 to the entire assumed loaded system is a conservative project envelope, not
+    a vendor load-case calculation or complete code check.
+  normal_support_case: Place the loaded-system envelope at the head support for preliminary sizing after
+    support geometry is adopted
+  buffer_case: Separate alternative pit-buffer envelope using the same total; do not add both entire-system
+    envelopes simultaneously or claim actual buffer dynamics
+  modal_mass: Use permanent equipment mass only, without the impact multiplier; passenger mass and code
+    seismic mass fractions require the later mass-source review
+  lateral_anchor_loads: NOT_DEFINED; guide-rail spacing, seismic anchorage and machinery forces require
+    a separate calculation
+roof:
+  synthetic_equipment_dead_kN: 20.0
+  sensitivity_upper_kN: 30.0
+  proposed_patch_bounds_m:
+  - 13.5
+  - 8.0
+  - 15.5
+  - 10.0
+  basis: Synthetic allowance for a small office rooftop mechanical installation; no selected equipment
+    or zero-load assumption. Support and wind/seismic anchorage pending.
+  cap_finish_kN_m2: 1.5
+  cap_finish_basis: Synthetic finish/waterproofing allowance, separate from RC self-weight
+  maintenance_live_load: Candidate global diagnostic uses the unreduced H02 roof allowance; maintenance
+    and final code combinations remain separate design gates.
+  tank: NOT_CONFIRMED_NOT_ZERO; water-supply strategy and any tank demand remain open
+limits:
+- Consumed only by the H03-B candidate review builder; H02 adopted loads remain unchanged.
+- Load factors for strength combinations, equipment operating/emergency cases and seismic demands remain
+  to be verified.
+- Pit dimensions do not establish bearing, uplift resistance, settlement, waterproofing or foundation
+  adequacy.
+- Reinforcement and local support capacities are NOT_CHECKED.

@@ -1,0 +1,714 @@
+sources:
+- id: codex-agents
+  title: OpenAI Codex custom instructions with AGENTS.md
+  url: https://developers.openai.com/codex/guides/agents-md/
+  checked_on: 2026-09-13
+  use: Development guidance discovery; not runtime enforcement
+- id: opensees-license
+  title: OpenSees copyright and license
+  url: https://opensees.github.io/OpenSeesDocumentation/developer/license.html
+  checked_on: 2026-09-13
+  use: Review use and redistribution terms; do not relicense dependencies
+- id: openseespy-license
+  title: OpenSeesPy library and license notice
+  url: https://openseespydoc.readthedocs.io/en/latest/
+  checked_on: 2026-09-13
+  use: Installation/platform and commercial redistribution terms
+  editorial_review: '2026-09-13: upstream HTML use and commercial redistribution
+    notice re-read; no unrestricted redistribution claim.'
+- id: github-license
+  title: GitHub licensing a repository
+  url: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository
+  checked_on: 2026-09-13
+  use: Public visibility is not a blanket open-source license
+- id: dejavu-font-license
+  title: DejaVu fonts 2.37 upstream license
+  publisher: DejaVu fonts project; notices identify Bitstream, Tavmjong Bah and other rights holders
+  version_reviewed: version_2_37 release tag
+  url: https://raw.githubusercontent.com/dejavu-fonts/dejavu-fonts/version_2_37/LICENSE
+  related_url: https://dejavu-fonts.github.io/License.html
+  checked_on: '2026-09-14'
+  evidence_type: UPSTREAM_LICENSE
+  locator: Complete release LICENSE; Bitstream Vera and Arev notice-retention clauses
+  retained_file: LICENSES/DejaVu-fonts.txt
+  sha256: 7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93
+  use: Preserve font notices for embedded DejaVu Sans subsets in the reviewed PDFs
+  applies_to:
+  - project/architect/outputs/architectural-review.pdf
+  - project/structural/outputs/deliverables/structural-drawings.pdf
+  - project/structural/outputs/deliverables/RC-001-landing-strip.pdf
+  review: PDF BaseFont entries and decompressed font streams identify DejaVuSans subsets;
+    the complete upstream license was downloaded without changes.
+  limitations: Font attribution only; no standalone font distribution or project-wide
+    license selection. The complete release notice also covers fonts not embedded here.
+- id: taiwan-structural-regulations
+  title: Taiwan Building Technical Regulations - Structural Part
+  url: https://www.nlma.gov.tw/ch/legislation/regsearch/6174
+  checked_on: '2026-09-13'
+  status: SELECTED_PROCEDURAL_CLAUSES_REVIEWED
+  use: Design-deliverable and calculation-software process requirements
+  evidence_type: OFFICIAL_REGULATION
+  publisher: Ministry of the Interior / NLMA
+  original_title: 建築技術規則建築構造編
+  locator: Articles 5-8; Chapter 2 Article 64 considered for investigation applicability
+  execution_review: '2026-09-13: official HTML Articles 1, 3, 5-8 re-opened for diagnostic-stage
+    requirements; no filing/approval determination.'
+  h02_review: Official HTML Articles 10-15 and 17, 20-23, 26 and 28 read for actual
+    permanent weights, use-specific stair/live/partition loads, lift impact and patterned-load
+    gaps. Article 23 elevator support impact is identified for later equipment reactions,
+    not applied to an unknown vendor load.
+  edition_basis: Current consolidated publisher HTML accessed on the review date;
+    separate clause amendment dates not established here.
+  reviewed_via: Official HTML text
+  limitations: Not a complete audit of all structural rules. No inherited A01 numeric
+    design input is validated by this research update.
+- id: taiwan-concrete-code
+  title: Taiwan concrete structural design code
+  url: https://www.nlma.gov.tw/ch/legislation/regsearch/6874
+  checked_on: '2026-09-13'
+  status: EDITION_ERRATA_AND_SELECTED_MODELLING_CLAUSES_REVIEWED
+  evidence_type: OFFICIAL_CODE_PUBLICATION
+  publisher: Ministry of the Interior / NLMA
+  original_title: 建築物混凝土結構設計規範
+  locator: 'Publication history: 2023-08-10 revision effective 2024-01-01; 2024-02-19
+    errata'
+  reviewed_via: Official publication listing plus H03-C selected 6.3/6.9 PDF text
+    and errata; see h03_c_reviews, not a complete code review
+  use: Track applicable edition and errata before implementing individual checks
+  limitations: Does not certify an existing calculation or establish completeness
+    of the implementation.
+  editorial_link_review:
+    accessed: '2026-09-13'
+    alternate_official_pdf: https://www.nlma.gov.tw/filesys/file/EMMA/c1130219-1.pdf
+    locator: Cover page, revision/effective dates and errata notice
+    reviewed_via: Official PDF text; separate errata PDF also opened
+    access_limit: Listing returned HTTP 403 in the browser tool and empty HTML via
+      direct retrieval; original code PDF timed out. Alternate PDF cover verified
+      the stated edition. This link review did not repeat the full clause audit.
+  landing_strip_review:
+    accessed: '2026-09-13'
+    pdf_url: https://www.nlma.gov.tw/uploads/files/011d9249cac7d6c5547786aa348e352a.pdf
+    errata_url: https://www.nlma.gov.tw/uploads/files/40e4370d2726960efcc41074b2d99f53.pdf
+    method: Official listing and selected PDF text; cover-table errata reviewed.
+    locators: Table 5.3.1(a,b) p5-1; 7.6.1.1/7.6.3.1 pp7-4; 7.7.2/7.7.6
+      pp7-6/8; Table 20.5.1.3.1 p20-14 and errata PDF p14; Tables 21.2.1/2
+      pp21-1/3; 22.2.2.1/.4 pp22-2/3; 22.5.5.1(c)/.1/.3 pp22-8/9;
+      24.3.2/.1 and 24.4.3 pp24-7/9; 25.2.1 p25-1.
+    applicability: Selected indoor normal-weight fy420 nonprestressed one-way gravity strip.
+    limitations: Full landing, seismic, continuity, anchorage, fire and serviceability remain unchecked.
+- id: tw-rebar-dimensions
+  title: Reinforcing bar dimensions and theoretical unit mass
+  publisher: 祺峰鋼鐵有限公司
+  url: https://www.cf168.com.tw/specifications.php
+  publication_date: null
+  checked_on: '2026-09-13'
+  evidence_type: VENDOR_PRODUCT_DIMENSIONS
+  locator: Standard specification table; D10 and D13 rows
+  reviewed_via: Rendered HTML table
+  use: D10 9.53mm / 71.33mm2 / 0.56kg/m and D13 12.7mm / 126.7mm2 / 0.994kg/m.
+  limitations: Undated dimensional catalogue; no supplier certification, grade verification,
+    current CNS conformity audit, prices or nationwide practice claim.
+- id: tw-tcea-reinforcement-notes
+  title: 104 reinforcement general drawing notes
+  original_title: 台北市土木技師公會 - 104 鋼筋
+  publisher: Taipei Civil Engineers Association Information Committee
+  url: https://sites.google.com/view/rcbim/%E5%9C%96%E8%A1%A8%E8%88%87%E6%A8%A1%E5%9E%8B/rc01-%E4%B8%80%E8%88%AC%E8%AA%AA%E6%98%8E/104-%E9%8B%BC%E7%AD%8B
+  publication_date: null
+  checked_on: '2026-09-13'
+  evidence_type: ATTRIBUTED_TECHNICAL_DRAWING_EXAMPLE
+  locator: Sections 3 and 8; grade notes and bar-size table; author attribution in footer
+  reviewed_via: Rendered HTML text
+  use: Concrete drawing work-product example includes bar grade, dimensions and detailing notes.
+  limitations: Undated page with historical code references; not current law or a complete
+    firm workflow. Sample D10 SD280W default is not adopted; A01 keeps synthetic fy420.
+- id: openseespy-landing-load-method
+  title: OpenSeesPy eleLoad command
+  publisher: OpenSeesPy upstream documentation
+  url: https://openseespydoc.readthedocs.io/en/latest/src/eleload.html
+  publication_date: null
+  checked_on: '2026-09-13'
+  evidence_type: UPSTREAM_TOOL_METHOD
+  locator: 2D beamUniform; Wy local transverse direction; time-series load factor
+  use: Uniform gravity applied only to selected 2D elasticBeamColumn segments.
+  limitations: Documentation command capability; real installed backend checked separately.
+- id: openseespy-rigid-joint-method
+  title: OpenSeesPy eccentric rigid links and Transformation constraints
+  url: https://openseespydoc.readthedocs.io/en/latest/src/rigidLink.html
+  related_url: https://openseespydoc.readthedocs.io/en/latest/src/TransformationMethod.html
+  checked_on: '2026-09-13'
+  publisher: OpenSeesPy upstream documentation
+  publication: Undated; displayed documentation version 3.5.1.3
+  evidence_type: UPSTREAM_TOOL_METHOD
+  locator: beam option; fixed/constrained/retained node cautions
+  use: H03-C small-rotation six-DOF contacts, checked through installed OpenSees 3.8.0
+  limitations: Command capability is not a physical joint selection, Taiwan practice
+    claim or RC acceptance.
+- id: etabs-design-workflow
+  title: CSI concrete frame design procedure
+  url: https://docs.csiamerica.com/help-files/etabs/Getting_Started/Concrete_Frame_Design_Procedure.htm
+  publisher: Computers and Structures, Inc. (CSI)
+  publication_date: null
+  evidence_type: VENDOR_DOCUMENTATION
+  locator: Steps 3, 5-6, 8-17 and final note on matching final analysis/design sections
+  use: Credit existing analysis, design checks, interactive revision and reporting
+    in the WordPress workflow comparison.
+  reviewed_via: Publisher HTML text
+  checked_on: '2026-09-13'
+  editorial_review: '2026-09-13: publisher procedure re-read, including iterative
+    analysis/design and final section consistency; article capability claim retained.'
+  status: REVIEWED_FOR_LIMITED_PRODUCT_CAPABILITY_CLAIM
+  limitations: Undated product procedure, not observed Taiwan firm practice, a
+    matched ETABS execution, complete Taiwan code coverage or measured productivity.
+- id: tw-practitioner-ntu-2022
+  title: 'Structural design practice: interview with a Jian-Ju structural engineer'
+  original_title: 【十年後，他們在做什麼？】(EP04) 家業和興趣結合！我的結構設計之路
+  publisher: National Taiwan University, Department of Civil Engineering, Du Feng
+    newsletter
+  author: Huang Zi-Huan (黃子桓), B98; interview with structural engineer Yang Xun-Hong
+    (楊巽閎), Jian-Ju (建巨)
+  url: https://www.ntuce-newsletter.tw/archives/11896
+  publication_year: 2022
+  date_evidence_url: https://www.ntuce-newsletter.tw/archives/category/173%E6%9C%9F
+  evidence_type: ATTRIBUTED_PRACTITIONER_INTERVIEW
+  locator: 'Interview sections 1-3: construction experience, design work sequence,
+    architectural requests, beam/column reinforcement interfaces and drawing-team
+    responsibilities'
+  use: Consultant work sequence and division of responsibilities; re-reviewed for
+    H01 handoff and construction-interface scope
+  limitations: One practitioner account; not a current industry census. Do not use
+    its historical review-threshold sidebar as current law.
+  reviewed_via: Publisher HTML text
+  checked_on: '2026-09-13'
+  status: REVIEWED_FOR_LIMITED_WORKFLOW_CLAIM
+- id: tw-practice-zhuyuan-2018
+  title: Firsthand internship account at Zhuyuan engineering consultants
+  original_title: 暑期實習：築遠工程顧問有限公司
+  publisher: National Taiwan University, Department of Civil Engineering, Du Feng
+    newsletter
+  url: https://www.ntuce-newsletter.tw/archives/4108
+  publication_year: 2018
+  date_evidence_url: https://www.ntuce-newsletter.tw/archives/category/131%E6%9C%9F
+  evidence_type: HISTORICAL_FIRSTHAND_PRACTICE_REPORT
+  locator: Paragraphs on drawing checking, CAD-to-ETABS modelling, and DRAWRC
+  author: Chen Jie-Min (陳杰民), NTU civil engineering student
+  execution_review: '2026-09-13: article paragraphs on CAD/ETABS idealization and
+    DRAWRC/human correction directly re-opened; issue 131 directory also opened.'
+  use: Historical observed CAD / analysis / automated detailing / human checking route
+  limitations: Historical internship, not a firm-wide 2026 SOP. No adoption percentage,
+    current product certification or timing inference.
+  reviewed_via: Publisher HTML text
+  checked_on: '2026-09-13'
+  status: REVIEWED_FOR_LIMITED_WORKFLOW_CLAIM
+- id: tw-point-bim-2025
+  title: Introducing BIM to improve structural design workflows
+  original_title: 導入BIM，優化結構設計流程
+  publisher: Point Structure / 點構土木結構技師事務所
+  url: https://www.po-str.com/post/導入bim，優化結構設計流程
+  published_on: '2025-03-13'
+  updated_on: '2025-04-15'
+  evidence_type: FIRM_AUTHORED_WORKFLOW_DESCRIPTION
+  locator: Text paragraphs on Dynamo / Excel and model-to-document applications
+  use: A documented BIM automation approach, not merely a software feature listing
+  limitations: Firm-authored description; quantitative benefits not independently
+    measured. Embedded video was not reviewed.
+  reviewed_via: Publisher HTML text
+  checked_on: '2026-09-13'
+  status: REVIEWED_FOR_LIMITED_WORKFLOW_CLAIM
+- id: tw-point-model-transfer-2025
+  title: Using BIM to transfer a structural analysis model
+  original_title: 運用BIM快速轉換結構分析模型
+  publisher: Point Structure / 點構土木結構技師事務所
+  url: https://www.po-str.com/post/運用bim快速轉換結構分析模型
+  published_on: '2025-04-15'
+  evidence_type: FIRM_AUTHORED_WORKFLOW_DESCRIPTION
+  locator: Text describing SketchUp, Revit, Dynamo and coordinate/line extraction
+  use: Example of a geometric transfer route into analysis
+  limitations: Focused on complex geometry. Not a mandatory workflow for a small regular
+    RC building. No universal IFC import claim.
+  reviewed_via: Publisher HTML text
+  checked_on: '2026-09-13'
+  status: REVIEWED_FOR_LIMITED_WORKFLOW_CLAIM
+- id: tw-rcad-beam-workflow
+  title: RCAD ASCO beam reinforcement drawing workflow
+  original_title: 主流程-梁配筋5步驟
+  publisher: RCAD / 璟佳富科技
+  url: https://www.rcad.com.tw/rcad-asco/tips-5-steps-draw-beam-rebar/
+  evidence_type: LOCAL_VENDOR_MANUAL
+  publication_date: null
+  locator: Preparation, grouping, drawing flags, whole-building calculation and DWG/DXF
+    export
+  reviewed_via: Substantive publisher text in web search index; direct fetch unavailable
+    during initial review
+  use: Credit existing commercial automation in comparisons
+  limitations: Product documentation, not evidence of market share, complete current-code
+    coverage or observed execution.
+  checked_on: '2026-09-13'
+  status: REVIEWED_FOR_LIMITED_WORKFLOW_CLAIM
+- id: tw-rcad-beam-design
+  title: RCAD ASCO whole-building RC beam calculation
+  original_title: M4 全棟計算 [RC梁]
+  publisher: RCAD / 璟佳富科技
+  url: https://rcad.com.tw/rcad-asco/rc-beam-calculate-v240101/
+  evidence_type: LOCAL_VENDOR_MANUAL
+  publication_date: null
+  locator: Design input methods, drawing-update options, log and calculation-file
+    output
+  reviewed_via: Substantive publisher text in web search index
+  use: Distinguish analysis-force design from use of ETABS reinforcement results
+  limitations: Historical code references appear in the manual; do not transplant
+    its formulas/defaults into A01 without official-code verification.
+  checked_on: '2026-09-13'
+  status: REVIEWED_FOR_LIMITED_WORKFLOW_CLAIM
+- id: tw-rcad-column-design
+  title: RCAD ASCO whole-building RC column calculation
+  original_title: M3 全棟計算 [RC柱]
+  publisher: RCAD / 璟佳富科技
+  url: https://rcad.com.tw/rcad-asco/rc-column-calculate-v240101/
+  evidence_type: LOCAL_VENDOR_MANUAL
+  publication_date: null
+  locator: Input alternatives, design options, reinforcement updates and report/log
+    outputs
+  reviewed_via: Substantive publisher text in web search index
+  use: Column postprocessing capability comparison
+  limitations: Options/defaults are not authoritative engineering prescriptions. No
+    product execution or full code-coverage validation.
+  checked_on: '2026-09-13'
+  status: REVIEWED_FOR_LIMITED_WORKFLOW_CLAIM
+- id: tw-standard-calc-2008
+  title: 'Rural housing standard drawings: Type A structural calculation report'
+  original_title: 鄉村地區住宅標準圖樣及說明書－結構計算書 A型
+  publisher: Construction and Planning Agency / current NLMA host
+  url: https://www.nlma.gov.tw/uploads/files/75f1bf1b948e2b748ee604c8ee236898.pdf
+  publication_year: 2008
+  evidence_type: HISTORICAL_GOVERNMENT_HOSTED_DESIGN_EXAMPLE
+  locator: 'PDF pages 1-5, especially page 5 / printed page 4: structural design and
+    CONKER output'
+  reviewed_via: Parsed PDF text; page 5 visually inspected
+  use: Historical deliverable structure and analysis-to-design handoff
+  limitations: Two-storey residential standard design, not a current Taipei office
+    project. Do not adopt old loads, equations, assumptions or software versions.
+    Full drawings are not included in this eight-page PDF.
+  checked_on: '2026-09-13'
+  status: REVIEWED_FOR_LIMITED_WORKFLOW_CLAIM
+- id: taipei-special-review-2024
+  title: Taipei special-structure commissioned-review principles
+  original_title: 臺北市特殊結構建築物委託審查原則
+  publisher: Taipei City Government
+  url: https://laws.gov.taipei/Law/LawSearch/LawArticleContent/FL004134
+  amended_on: '2024-06-07'
+  effective_on: '2024-06-27'
+  evidence_type: OFFICIAL_LOCAL_ADMINISTRATIVE_RULE
+  locator: 'Points 2 and 4: applicability triggers and review documents'
+  use: Flag review applicability rather than assuming all low-rise projects are exempt
+  limitations: Exact parcel, ground conditions and project characteristics are required
+    for a case determination. A01 has no surveyed parcel.
+  reviewed_via: Publisher HTML text
+  checked_on: '2026-09-13'
+  status: REVIEWED_FOR_LIMITED_WORKFLOW_CLAIM
+- id: taipei-permit-forms
+  title: Taipei building-permit application forms and examples
+  original_title: 【建造執照申請】相關表格
+  publisher: Taipei City Construction Management Office
+  url: https://cmo.gov.taipei/News_Content.aspx?n=86AE9621E67E4E38&s=CD3A9AFEC045954D&sms=2E387488DF04DDAA
+  evidence_type: OFFICIAL_FORM_DIRECTORY_WITH_LEGACY_EXAMPLES
+  locator: Structural attachment information form and structural/equipment engineer
+    certification-report attachments
+  reviewed_via: Official directory; the two linked sample PDFs were visually inspected
+  use: Document inventory and role/signature field examples
+  limitations: Examples contain historical dates. Not evidence of a current real submission,
+    current technical thresholds, or completeness of the permit package.
+  checked_on: '2026-09-13'
+  status: REVIEWED_FOR_LIMITED_WORKFLOW_CLAIM
+- id: opensees-diagnostic-api-2026
+  title: OpenSees frame, shell, transformation and modal interfaces
+  publisher: OpenSees / OpenSeesPy developers
+  evidence_type: UPSTREAM_TOOL_DOCUMENTATION
+  checked_on: '2026-09-13'
+  version_reviewed: OpenSees v3.8.0 source; live OpenSeesPy documentation (whose page
+    header still says 3.5.1.3)
+  url: https://openseespydoc.readthedocs.io/en/latest/src/elasticBeamColumn.html
+  related_urls:
+  - https://openseespydoc.readthedocs.io/en/latest/src/LinearTransf.html
+  - https://openseespydoc.readthedocs.io/en/latest/src/ShellMITC4.html
+  - https://openseespydoc.readthedocs.io/en/latest/src/modalProperties.html
+  - https://opensees.github.io/OpenSeesDocumentation/user/manual/analysis/eigen.html
+  - https://github.com/OpenSees/OpenSees/blob/v3.8.0/SRC/element/shell/ShellMITC4.cpp
+  - https://github.com/OpenSees/OpenSees/blob/v3.8.0/SRC/material/section/ElasticMembranePlateSection.cpp
+  locator: Element arguments; global joint offsets; shell node order; setResponse/getResponse;
+    modal properties theory; eigenproblem and ARPACK cautions
+  reviewed_via: Official HTML and tagged raw C++ source
+  use: Adapter and result interpretation, independently tested through the actual
+    installed backend
+  limitations: Tool formulation/capability, not Taiwan office practice, code adequacy
+    or permit approval.
+- id: openseespy-distribution-2026
+  title: OpenSeesPy and OpenSeesPyLinux release metadata
+  publisher: OpenSeesPy maintainers via PyPI
+  evidence_type: UPSTREAM_DISTRIBUTION_METADATA
+  url: https://pypi.org/project/openseespy/3.8.0.0/
+  related_urls:
+  - https://pypi.org/project/openseespylinux/3.8.0.0/
+  - https://openseespydoc.readthedocs.io/en/latest/src/installation.html
+  published_on: '2026-03-18'
+  checked_on: '2026-09-13'
+  locator: Release 3.8.0.0; requires-python and wheel metadata
+  reviewed_via: PyPI HTML and JSON; actual venv installation and import
+  use: Meta-package requires Python >=3.10 and Linux package >=3.12; this installed
+    stack ran on Python 3.14.4 x86_64.
+  limitations: Metadata is not a promise for every interpreter/platform; only the
+    recorded environment was executed. Upstream license terms remain separate.
+- id: ifcopenshell-audit-api-2026
+  title: IfcOpenShell geometry processing and EXPRESS validation
+  publisher: IfcOpenShell developers
+  evidence_type: UPSTREAM_TOOL_DOCUMENTATION
+  url: https://docs.ifcopenshell.org/ifcopenshell-python/geometry_processing.html
+  related_urls:
+  - https://docs.ifcopenshell.org/autoapi/ifcopenshell/validate/index.html
+  checked_on: '2026-09-13'
+  version_reviewed: 0.8.5
+  locator: create_shape/world-coordinate geometry; validate and express_rules
+  reviewed_via: Official HTML; installed API execution
+  use: Independently check source/generated IFC bounds, volumes, openings and available
+    schema rules.
+  limitations: Not engineering load-path or code validation. EXPRESS execution additionally
+    required pytest; first failed attempt is retained.
+- id: taiwan-design-construction-2026
+  title: Building Technical Regulations - Design and Construction Part, current intake
+    clauses
+  original_title: 建築技術規則建築設計施工編
+  publisher: Ministry of the Interior; MOJ consolidated legal database and NLMA
+  url: https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0070115
+  related_urls:
+  - https://www.nlma.gov.tw/ch/legislation/regsearch/6175
+  - https://www.moi.gov.tw/News_Content.aspx?n=145&s=337030
+  amended_on: '2026-02-23'
+  latest_amendment_effective_on: '2026-07-01'
+  checked_on: '2026-09-13'
+  evidence_type: OFFICIAL_REGULATION
+  locator: Articles 1(19), 33-35, 69, 89-98, 140-142, 167 through 167-3; edition header
+  reviewed_via: Direct MOJ/NLMA HTML; MOJ Article 170 attached table PDF page 3 also
+    inspected
+  use: Intake applicability and stair dimensional scenarios, fire/discharge/accessibility
+    interfaces and basement intent screening.
+  limitations: Consolidation cutoff shown as 2026-09-04; Article 301 has separate
+    pending commencement. The July amendment concerns civil-defence provisions, not
+    new stair dimensions. No complete Taipei permit, land-use, fire or access approval.
+  access_notes: Gazette wrapper returned an internal error; the current operative
+    civil-defence text was read in MOJ instead. NLMA general history page alone was
+    insufficient to establish the current edition.
+  h02_review: Articles 76, 90, 92, 93, 95 and 97 directly read as single-article HTML.
+    The proposed private-office circulation is screened under the ordinary-use route
+    branch; doors, protected enclosure and final all-point travel remain open.
+- id: taiwan-accessibility-stairs-2020
+  title: Accessible building facilities design specification, stair provisions
+  original_title: 建築物無障礙設施設計規範
+  publisher: Ministry of the Interior / NLMA
+  url: https://www.nlma.gov.tw/ch/legislation/regsearch/927
+  full_text_url: https://www.nlma.gov.tw/uploads/files/e9abb44ff171074d23a7d1d5ee35b4a4.pdf
+  revised_on: '2019-01-04'
+  effective_on: '2019-07-01'
+  errata_on: '2020-05-11'
+  checked_on: '2026-09-13'
+  evidence_type: OFFICIAL_DESIGN_SPECIFICATION
+  locator: Chapter 3 sections 303-306; PDF pages 32-43 / printed pages 26-37; 304.1
+    spans PDF pages 37-38
+  reviewed_via: Official version listing and linked full PDF text; H01/H02 figure
+    retrieval was unsuccessful. H03-A visually reviewed selected current PDF figures;
+    see h03_a_reviews below.
+  use: Individual flight riser/tread/comfort screens and identification of turning,
+    guarding, handrail and finish work.
+  limitations: Not a complete accessibility audit. Inter-flight uniformity and finished
+    details remain unresolved; the residential exception is not adopted for this office.
+  access_notes: First linked-PDF fetch timed out; direct retry succeeded. Only selected
+    clauses reviewed; PDF is not redistributed.
+  h02_review: Sections 303-305 and 404-406 read as text; riser uniformity, door/rail
+    turns, 1.50 m lift lobby and 0.90 m door/1.35 m cabin depth requirements considered.
+    Local PDF download returned a 245-byte rejection page, recorded as failure; no
+    bypass or figure verification claimed.
+- id: tw-envision-coordination-service
+  title: Structural consultant service scope - architectural collaboration, alternatives
+    and construction
+  original_title: 服務項目
+  publisher: Envision / 築遠工程顧問有限公司
+  author: Firm-authored service description
+  url: https://www.envision-tw.com/service-1
+  published_on: null
+  checked_on: '2026-09-13'
+  evidence_type: UNDATED_FIRM_REPORTED_SERVICE
+  locator: Residential, factory/office and construction-services sections
+  reviewed_via: Direct publisher HTML text
+  use: Attributable stated service includes architectural collaboration, comparing
+    cost/reliability/performance and construction feasibility.
+  limitations: Undated marketing description, not an observed workflow, measured savings,
+    contractor review or evidence of nationwide prevalence.
+- id: tmec-mrl-planning-h02
+  title: MRL elevator planning catalogue and new-installation service
+  original_title: 無機房電梯型錄；新機規劃設置
+  publisher: Taiwan Mitsubishi Elevator Co., Ltd. / 台灣三菱電梯股份有限公司
+  author: Manufacturer technical and service publications
+  url: https://www.tmec.com.tw/product-detail/el/
+  related_urls:
+  - https://www.tmec.com.tw/product-download/5/
+  - https://www.tmec.com.tw/solution/new-installation/
+  published_on: null
+  checked_on: '2026-09-13'
+  evidence_type: VENDOR_TECHNICAL_CAPABILITY_AND_COORDINATION_REQUIREMENTS
+  locator: PDF page 13 (printed 23-24) P10 700kg 2S 60m/min table and notes; page
+    14 CO entrance detail; pages 19-20 (printed 35-38) accessibility options, excluded
+    construction/electrical work and installation coordination.
+  reviewed_via: Official product/service HTML and downloaded PDF; pages 13, 14, 15,
+    19 and 20 visually inspected. Page 15 is feature text, not a 2S entrance detail.
+  use: Select a dimensional candidate and identify pit, overrun, tolerance, entrance,
+    wall inserts, waterproofing, finish levels and electrical interface deliverables.
+  limitations: Publication date not established; no 2S construction opening detail
+    or A01 reaction schedule verified. Catalogue minimum finished shaft dimensions
+    exclude plumb tolerance. No supply quotation, order, supplier confirmation or
+    nationwide practice claim.
+  temporary_inspection_sha256: 25e174ac5871f9b39fa635ef3cffc8b1b8835070790c21c3374100e82c12d183
+- id: hitachi-yungtay-uas-2022
+  title: UAS eight-person MRL elevator catalogue
+  original_title: 日立永大 UAS 無機房 8 人乘
+  publisher: Hitachi Yungtay / 日立永大
+  author: Manufacturer catalogue YT-EL-0168
+  url: https://www.hitachi-yungtay.com.tw/wp-content/uploads/2022/12/日立永大電梯_UAS無機房8人乘_YT-EL-0168.pdf
+  published_on: 2022-12
+  checked_on: '2026-09-13'
+  evidence_type: DATED_VENDOR_TECHNICAL_EXAMPLE
+  locator: PDF pages 7-8 planning dimensions; excluded building/electrical construction
+    scope; catalogue date code
+  reviewed_via: Direct PDF text; figures not visually reviewed
+  use: Reject residential 800 mm door and 1310 mm cabin depth as the ordinary-office
+    accessibility basis; recognize need for supplier-specific civil interfaces.
+  limitations: Dated residential product; its reaction table is not imported into
+    the different TMEC candidate and is not an A01 confirmed demand. No nationwide
+    practice inference.
+h03_b_reviews:
+  accessed_on: '2026-09-13'
+  audit_run_id: 20260913T085723Z-h03b-adoption-review-fed7efe8
+  scope: Targeted candidate core, enclosure and equipment interfaces; not a complete
+    legal or industry survey.
+  records:
+  - source_id: taiwan-design-construction-2026
+    authority: Ministry of the Interior; MOJ and NLMA official text
+    edition: Amended 2026-02-23; latest July provisions effective 2026-07-01; consolidation
+      cutoff 2026-09-04.
+    locators: Articles 35-36 via NLMA; Articles 38, 70, 71, 73, 76 and 97 via MOJ
+      single-article pages.
+    urls:
+    - https://www.nlma.gov.tw/ch/legislation/regsearch/6175
+    - https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070115&flno=38
+    - https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070115&flno=70
+    - https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070115&flno=73
+    - https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070115&flno=76
+    - https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070115&flno=97
+    reviewed: Direct official text. MOJ Article 35 retrieval failed; NLMA operative
+      text was read instead.
+    applicability: Selected headroom, rail/guard and rated enclosure/door requirements
+      for the proposed ordinary office.
+    limitations: Article 71 was read but is not the one-hour wall basis; use Article
+      73 for that selected prescriptive scope. Lightweight vestibule assembly remains
+      unselected and uncertified. No full fire/egress review.
+  - source_id: taiwan-structural-regulations
+    authority: Ministry of the Interior; MOJ
+    edition: Article 23 consolidated text, page cutoff 2026-09-04; clause amendment
+      date not established.
+    url: https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070116&flno=23
+    locators: Elevator-support impact paragraph
+    reviewed: Direct official text re-read before candidate loading.
+    applicability: Basis for the 100 percent impact addition in a separately labelled
+      synthetic vertical envelope.
+    limitations: Whole-system placement, mass values and distribution are A01 assumptions;
+      not manufacturer reactions, dynamic buffer analysis or complete combinations.
+  - source_id: tw-practitioner-ntu-2022
+    authority: NTU Civil Engineering Du Feng; Huang Zi-Huan interviewing Yang Xun-Hong
+      of Jian-Ju
+    publication: Issue 173, 2022
+    url: https://www.ntuce-newsletter.tw/archives/11896
+    locators: Sections 2-3
+    reviewed: Publisher HTML re-read for architectural changes, structural/drawing
+      roles, alternatives and construction interfaces.
+    applicability: Attributed practitioner account supporting iterative architectural-to-structural
+      review.
+    limitations: One account; no new interview, national SOP, observed A01 office
+      review or timing measurement.
+  - source_id: opensees-rigid-link-future-review
+    authority: OpenSeesPy documentation contributors
+    publication: Undated documentation; displayed documentation version 3.5.1.3
+    urls:
+    - https://openseespydoc.readthedocs.io/en/latest/src/rigidLink.html
+    - https://openseespydoc.readthedocs.io/en/latest/src/TransformationMethod.html
+    locators: rigidLink beam option; Transformation method constraint cautions
+    reviewed: Direct upstream HTML for a possible subsequent joint implementation.
+    applicability: Potential kinematic constraint option only; no rigidLink was implemented
+      or runtime-verified in H03-B.
+    limitations: A command capability does not select joint stiffness or reinforcement.
+      Chained/constrained retained nodes need explicit review and real-backend tests
+      before use.
+  reused_reviews: H03-A current accessibility figures and H02/H03-A TMEC dimensions/interfaces.
+    No new figure or supplier-reaction verification claimed.
+h03_a_reviews:
+  accessed_on: '2026-09-13'
+  audit_run_id: 20260913T064310Z-h03-core-review-660a2491
+  scope: Selected core coordination sources; no full legal or national-practice acceptance.
+  records:
+  - source_id: taiwan-design-construction-2026
+    authority: Ministry of the Interior; MOJ official consolidated database
+    edition: Amended 2026-02-23; July amendments effective 2026-07-01; page cutoff
+      2026-09-04. Pending Article 301 is unrelated to these screens.
+    locators: Articles 33 notes 4-5, 34, 76 and 97; Article 33 attached one-page figure
+    urls:
+    - https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070115&flno=33
+    - https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070115&flno=34
+    - https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070115&flno=76
+    - https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070115&flno=97
+    - https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000234940&lan=C
+    reviewed: Direct official text and actual local visual inspection of the Article
+      33 figure.
+    applicability: Selected stair-turn, landing, fire-door and protected enclosure
+      screens for the simulated ordinary office.
+    limitations: Certified assemblies, all-point egress, final use/area and permit
+      applicability remain open.
+  - source_id: taiwan-accessibility-stairs-2020
+    authority: Ministry of the Interior / NLMA
+    edition: Revised 2019-01-04, effective 2019-07-01, errata 2020-05-11; official
+      current listing checked.
+    url: https://www.nlma.gov.tw/uploads/files/e9abb44ff171074d23a7d1d5ee35b4a4.pdf
+    locators: Sections 207, 303.2-303.3, 304.1, 305 and 306; figures 303.2.1-303.2.3.
+      Visually reviewed PDF pages 34, 36 and 37 / printed pages 27, 29 and 30.
+    reviewed: Selected official PDF text and actual local visual inspection; selected
+      figure gap from H02 now resolved.
+    applicability: Uniform finished risers/treads, one-tread retreat, headroom, rail
+      and warning-strip coordination; no residential exception assumed.
+    limitations: Final rail/guard fabrication, dimensional tolerances, WC, complete
+      accessibility and all-point route acceptance remain open.
+    access: Initial Python HTTPS certificate validation failed; normal curl with TLS
+      verification retrieved the current PDF. No bypass. A Taipei compilation was
+      an intermediate text lead, not the final check authority.
+  - source_id: taiwan-structural-regulations
+    authority: Ministry of the Interior; NLMA and MOJ
+    edition: Official consolidated Article 23 text; displayed cutoff 2026-08-28. Individual
+      amendment date not established.
+    url: https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070116&flno=23
+    locators: Article 23 elevator-support impact; NLMA Articles 1 and 5-6 also re-read
+      for rational method/deliverables.
+    reviewed: Direct official HTML text.
+    applicability: Selected impact basis for synthetic equipment planning envelope.
+    limitations: A01 masses, load placement and whole-system factor application are
+      project assumptions. No supplier reaction, strength combination or local capacity
+      acceptance.
+  - source_id: tw-practitioner-ntu-2022
+    authority: NTU Civil Engineering Du Feng; author Huang Zi-Huan, interviewee Yang
+      Xun-Hong of Jian-Ju
+    publication: Issue 173, 2022
+    url: https://www.ntuce-newsletter.tw/archives/11896
+    locators: Interview sections 2-3
+    reviewed: Publisher HTML re-read for architectural revisions, structural alternatives,
+      construction interfaces and drawing responsibilities.
+    applicability: Attributed practitioner coordination account.
+    limitations: One account, not nationwide SOP, an interview conducted by this project,
+      current legal triggers or observed timing.
+  - source_id: tmec-mrl-planning-h02
+    authority: Taiwan Mitsubishi Elevator Co., Ltd.
+    publication: Undated catalogue; date not established
+    url: https://www.tmec.com.tw/product-download/5/
+    locators: PDF page 13 / printed 23-24, P10 700 kg 2S 60 m/min; pages 19-20 / printed
+      35-38 civil/electrical coordination
+    reviewed: Selected table and interface text re-read; earlier H02 visual inspection
+      remains separately recorded.
+    applicability: Dimensional candidate with 1.50 m pit and 4.30 m overhead; coordination
+      work scope.
+    limitations: No A01 vendor confirmation, 2S construction entrance detail, equipment
+      reactions, procurement or nationwide practice claim.
+h03_c_reviews:
+  accessed_on: '2026-09-13'
+  audit_run_id: 20260913T103848Z-h03c-joint-review-a4083ffd
+  records:
+  - source_id: taiwan-concrete-code
+    authority: Ministry of the Interior / NLMA
+    edition: 2023-08-10 revision effective 2024-01-01; 2024-02-19 errata
+    urls:
+    - https://www.nlma.gov.tw/ch/legislation/regsearch/6874
+    - https://www.nlma.gov.tw/uploads/files/011d9249cac7d6c5547786aa348e352a.pdf
+    - https://www.nlma.gov.tw/uploads/files/40e4370d2726960efcc41074b2d99f53.pdf
+    locators: 6.3.1.1 and 6.3.1.3, printed 6-4/6-5 (PDF 70/71); 6.9.1-6.9.5, printed
+      6-18 (PDF 84); errata page 1
+    reviewed: Official edition listing and selected PDF text; errata corrects the
+      commentary transliteration at 6.3.1.3. Main-PDF screenshot requests timed out;
+      no figure-based check claimed.
+    applicability: Consistent rational stiffness assumptions, section changes, fit-for-purpose
+      FE modelling/results and drawing-to-analysis dimensions.
+    limitations: Selected clauses only; no code member checks, cracked stiffness adoption
+      or approval. The errata PDF has unrelated embedded title metadata, but its actual
+      first-page text identifies the errata correctly.
+  - source_id: taiwan-structural-regulations
+    authority: Ministry of the Interior; MOJ and NLMA
+    urls:
+    - https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0070116&flno=375-3
+    - https://www.nlma.gov.tw/ch/legislation/regsearch/6174
+    locators: Articles 375-2 and 375-3
+    edition: Consolidated text accessed 2026-09-13; retrieved MOJ page displayed cutoff
+      2026-05-29. Individual amendment date not established.
+    reviewed: MOJ Article 375-3 direct text and NLMA current text; MOJ Article 375-2
+      retrieval failed.
+    applicability: System/member connections, force transfer and construction feasibility
+      must be considered.
+    limitations: Neither text selects A01 joint stiffness or approves this software.
+  - source_id: tw-practitioner-ntu-2022
+    authority: NTU Du Feng; Huang Zi-Huan, interview with Yang Xun-Hong of Jian-Ju
+    publication: Issue 173, 2022
+    url: https://www.ntuce-newsletter.tw/archives/11896
+    locators: Sections 2-3
+    reviewed: Publisher text re-read for architectural revisions, structural alternatives,
+      interface questions and drawing responsibilities.
+    applicability: Attributed coordination workflow context for this modelling revision.
+    limitations: One account; no nationwide SOP, new interview, current timing or
+      numerical reference model.
+  - source_id: openseespy-rigid-joint-method
+    authority: OpenSeesPy upstream documentation
+    publication: Undated; displayed documentation version 3.5.1.3
+    urls:
+    - https://openseespydoc.readthedocs.io/en/latest/src/rigidLink.html
+    - https://openseespydoc.readthedocs.io/en/latest/src/TransformationMethod.html
+    locators: rigidLink beam option and Transformation constraint cautions
+    reviewed: Direct upstream HTML; implementation also requires actual installed-backend
+      tests.
+    applicability: Six-DOF eccentric kinematics; fixed-node, repeated-slave and chained-master
+      restrictions.
+    limitations: Tool capability, not Taiwan practice or physical joint/RC acceptance.
+research_policy:
+  as_of: '2026-09-13'
+  subject: Taiwan practice relevant to A01; no industry prevalence survey
+  code_and_workflow_are_separate: true
+  copyright: Bibliographic links and short original summaries only. No third-party
+    PDFs, models, contact lists or full articles redistributed.
+  pending_full_case_comparison: true
+article_review:
+  access_date: '2026-09-13'
+  purpose: Short WordPress workflow explanation; no new code check implemented
+  sources:
+  - source_id: tw-practitioner-ntu-2022
+    publisher: NTU Du Feng, Huang Zi-Huan interviewing Yang Xun-Hong
+    publication: 2022, issue 173
+    url: https://www.ntuce-newsletter.tw/archives/11896
+    locator: Sections 2-3
+    result: REVIEWED_TEXT
+    use: Architectural drawings, structural alternatives, calculations/drafting and
+      coordination roles
+    limit: One attributed practice account; no new interview or national prevalence
+      claim
+  - source_id: taiwan-concrete-code
+    publisher: Ministry of the Interior / NLMA
+    edition: Revision 2023-08-10, effective 2024-01-01; earlier recorded selected-clause
+      review retained
+    url: https://www.nlma.gov.tw/ch/legislation/regsearch/6874
+    locator: Official edition listing
+    result: LISTING_REOPENED_NO_NEW_CLAUSE_REVIEW
+    limit: Do not treat this editorial retrieval as a repeated full regulation audit
+  - source_id: tw-rcad-beam-workflow
+    publisher: RCAD
+    publication: No new publication date established
+    url: https://www.rcad.com.tw/rcad-asco/tips-5-steps-draw-beam-rebar/
+    locator: Earlier registered five-step beam drawing workflow review
+    result: REFETCH_FAILED_502
+    limit: Earlier scoped vendor-capability evidence retained; this edit did not reverify
+      the page

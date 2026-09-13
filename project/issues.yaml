@@ -1,0 +1,149 @@
+issues:
+- id: A01-001
+  title: Coordinated architectural input
+  status: OPEN_H03_C_DIAGNOSTIC_GEOMETRY_ADOPTED
+  detail: H03-C geometry adopted for diagnostics and nominal core dimensions reviewed.
+    Full protected egress, rated products, guard/rail details, WC/MEP and external
+    architectural acceptance remain open.
+  evidence: structural/outputs/deliverables/structural-review.md
+- id: A01-002
+  title: IFC and analysis mapping
+  status: PARTIAL_H03_C_SOURCE_AND_INTERFACE_VERIFIED
+  detail: Current candidate/extended IFC schema, 164/183 product bounds/volumes and
+    17 voids each are verified. Received R05 retains its historical metadata defect.
+    Owned wall/frame mapping is verified for diagnostics; local shell/frame demand
+    and final stiffness remain open.
+  evidence: structural/outputs/deliverables/structural-review.md
+- id: A01-003
+  title: First actual OpenSees execution
+  status: CLOSED_SCOPED_DIAGNOSTIC_MILESTONE
+  detail: Actual OpenSees 3.8.0 whole-building gravity, 12 modes and X/Y calibration
+    were verified and reproduced on 2026-09-13. Known solutions, force/moment/nodal
+    equilibrium, eigenpairs, mass, superposition and global mesh sensitivity passed.
+    This does not close code design or local-force convergence.
+  evidence: structural/outputs/deliverables/structural-review.md
+- id: A01-004
+  title: Code design actions
+  status: OPEN
+  detail: Verify current official rules and applicability, wind, earthquake, mass,
+    combinations, pattern loads, torsion, stiffness and second-order assumptions.
+- id: A01-005
+  title: RC member design
+  status: PARTIAL_SCOPED_ARTICLE_EXAMPLE
+  detail: RC-001 checks one existing landing strip for direct gravity flexure, shear,
+    minimum steel and spacing. Whole landing, beams, columns, walls, flights,
+    joints, anchorage, seismic and full serviceability remain incomplete.
+- id: A01-006
+  title: Foundations
+  status: OPEN
+  detail: Create explicitly simulated ground conditions, compare appropriate foundation
+    options, analyze/design and feed stiffness back to the superstructure.
+- id: A01-007
+  title: Lift / circulation requirements
+  status: OPEN
+  detail: Current geometry screens record 1.238 m nominal finished flights, uniform
+    133.333 mm risers and a 1.28 m finished portal clear of B2. Pit and roof geometry
+    are represented, but supplier-compatible lift clearances and reactions, rated
+    doors, guards/rails, protected egress and discharge/accessibility remain open.
+    Nominal dimensions and synthetic equipment inputs are not acceptance.
+  evidence: architect/outputs/architectural-review.md
+- id: A01-008
+  title: Drawings and report
+  status: OPEN
+  detail: Current H03-C architectural and structural review sheets exist. Reinforcement
+    schedules, foundation details and complete structural design drawings/calculations
+    remain unfinished; article figures are diagnostic review outputs.
+- id: A01-009
+  title: Industry comparison
+  status: OPEN
+  detail: First Taiwan source review and stage matrix recorded; full comparison, recent
+    matched project records, actual timings and independent practitioner review remain
+    open. See comparison/research-gaps.yaml.
+- id: A01-010
+  title: Public release review
+  status: OPEN
+  detail: Select project-wide license, review upstream terms, check data rights/secrets/history,
+    lock validated environment, record limitations.
+- id: A01-011
+  title: Real-submission calculation-software procedure
+  status: OPEN
+  detail: Track Article 7 software-filing and verification requirements. No OpenSees
+    acceptance or rejection has been established. This does not block clearly labelled
+    simulated analysis.
+  source_ids:
+  - taiwan-structural-regulations
+- id: A01-012
+  title: Taipei special-review applicability
+  status: OPEN
+  detail: Review current local triggers against explicitly selected site and excavation
+    conditions. Do not assume exemption solely because A01 has three storeys.
+  source_ids:
+  - taipei-special-review-2024
+- id: A01-013
+  title: Coordinated stair and landing load-transfer revision
+  status: PARTIAL_DIAGNOSTIC_GRAVITY_REVISION_VERIFIED
+  detail: H02 now derives released flight/landing reactions and first moments from
+    source geometry, removes top bearing overlap, includes architectural stair finish
+    load/mass and preserves nine load-only GUID records. Whole-building runs and drawings/quantities/trial-base
+    reactions updated. Landing centroid and upper interface discrepancies are corrected;
+    RC/anchorage, end restraint, stair bracing and ground-landing design remain open
+    alongside A01-017.
+  removed_historical_evidence: structural/outputs/deliverables/coordination-review-H02.md
+  evidence_limit: Earlier output and its cleanup record are no longer retained;
+    no new completion claim. Current evidence is indexed in structural/outputs/current.md.
+- id: A01-014
+  title: Local result convergence and design interpretation
+  status: OPEN
+  detail: Five H03-C 19-case/12-mode variants and ordinary CLI reproduction passed;
+    109 nominal result files are identical. Twelve modes capture 93.39 percent X and
+    81.73 percent Y free mass; code modal sufficiency and local force convergence
+    remain open. Review signed section cuts, collectors, concentrated shell forces
+    and effective stiffness before member design.
+  evidence: structural/outputs/deliverables/structural-review.md
+- id: A01-015
+  title: Cost control basis and alternatives
+  status: OPEN
+  detail: Current analysis removes duplicated concrete accounting; this does not
+    change physical concrete quantities or establish savings. The landing example
+    compares ideal reinforcement-grid mass only. Establish comparable concrete,
+    reinforcement and formwork quantities plus a dated cost basis, including laps,
+    anchorage and waste. Budget and verified prices are absent; label synthetic
+    assumptions and do not claim cost compliance or savings from solver timing.
+- id: A01-016
+  title: Construction feasibility review
+  status: OPEN
+  detail: Current review sheets identify wall/frame, stair, portal and lift/pit/roof
+    interfaces; analytical rigid connections do not establish buildable joints.
+    The landing sketch leaves anchorage and continuity on hold. Review congestion,
+    laps, concrete placement, formwork, sequencing and site constraints with traceable
+    details and attributable practice evidence. No contractor review or construction
+    approval has occurred.
+- id: A01-017
+  title: Finished stair and lift/pit/roof interface revision
+  status: OPEN_H03_C_GEOMETRY_ADOPTED_FINISHED_DETAILS_PENDING
+  detail: H03-C geometry adopted for diagnostics and nominal core dimensions reviewed.
+    Full protected egress, rated products, guard/rail details, WC/MEP and external
+    architectural acceptance remain open. B2 clears the 1.28 m finished portal; equipment
+    inputs are synthetic and now applied in diagnostics. Full foundations remain open.
+  evidence: structural/outputs/deliverables/structural-review.md
+- id: A01-018
+  title: Floor and patch load first moments under mesh refinement
+  status: CLOSED_SCOPED_H03_C_LOAD_RESULTANT_MAPPING
+  detail: H03-C retains actual mesh station precision and integrates uniform net source-floor
+    calibration area. All 19 force/position-moment resultants agree across 0.75/0.50
+    m meshes within 3.64e-10 kNm for moments; independent patch/pressure tests pass.
+    Earlier H02/H03-B drift and the failed first H03-C verification remain historical
+    evidence. Local force convergence and code lateral distribution are separate open
+    checks.
+  evidence: structural/outputs/deliverables/structural-review.md
+- id: A01-019
+  title: Proposed core wall/frame/portal and foundation interfaces
+  status: CLOSED_SCOPED_DIAGNOSTIC_INTERFACE_ADOPTION
+  detail: All 31 wall/frame intersections have direct shared or eccentric rigid contact
+    groups; 4.06848 m3 duplicated accounting is removed. Real-backend tests, five
+    whole-building variants and ordinary CLI reproduction passed; current inputs and
+    four review sheets are adopted together. Rigid joint flexibility assumptions,
+    RC, anchorage and foundations remain open under A01-004/005/006/014/016.
+  evidence: structural/outputs/deliverables/structural-review.md
+tracking_scope: Engineering backlog; these open items do not prevent an introductory
+  article with explicit limitations. See docs/scope.md.

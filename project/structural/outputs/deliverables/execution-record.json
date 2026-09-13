@@ -1,0 +1,1057 @@
+{
+  "scope": "Compact original execution evidence retained before owner-authorized removal of obsolete/duplicate raw runs. Not a new solver run.",
+  "retained_full_verification_run": "20260913T112509Z-candidate-verification-0530d76a",
+  "retained_full_verification_manifest_sha256": "f8154ef71999810eae08646dea975fbe50b0adc43a93ac2e7135d07a44f57d45",
+  "environment": {
+    "python": "3.14.4",
+    "dependencies": {
+      "numpy": "2.5.3",
+      "shapely": "2.1.2",
+      "PyYAML": "6.0.3",
+      "openseespy": "3.8.0.0",
+      "openseespylinux": "3.8.0.0",
+      "ifcopenshell": "0.8.5"
+    },
+    "platform": {
+      "system": "Linux",
+      "machine": "x86_64",
+      "libc": [
+        "glibc",
+        "2.43"
+      ]
+    }
+  },
+  "solver": "OpenSees 3.8.0",
+  "original_commands": {
+    "render-architect-pages": {
+      "command": [
+        "gs",
+        "-q",
+        "-dSAFER",
+        "-dBATCH",
+        "-dNOPAUSE",
+        "-sDEVICE=png16m",
+        "-r110",
+        "-sOutputFile=project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/architect-drawings/page-%02d.png",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/architect-drawings/core-review-H03-C.pdf"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.2719998770044185,
+      "finished_at_utc": "2026-09-13T11:46:29.678846+00:00"
+    },
+    "render-structural-pages": {
+      "command": [
+        "gs",
+        "-q",
+        "-dSAFER",
+        "-dBATCH",
+        "-dNOPAUSE",
+        "-sDEVICE=png16m",
+        "-r110",
+        "-sOutputFile=project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/interface-drawings/page-%02d.png",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/interface-drawings/wall-interface-H03-C.pdf"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.1215247759828344,
+      "finished_at_utc": "2026-09-13T11:46:29.855565+00:00"
+    },
+    "adopted-core-review": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "structural_ai",
+        "core-review",
+        "--project",
+        "project"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 1.54194520204328,
+      "finished_at_utc": "2026-09-13T11:45:46.330608+00:00"
+    },
+    "initial-tests": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 5.559164397011045,
+      "finished_at_utc": "2026-09-13T10:39:12.077168+00:00"
+    },
+    "adoption-authority-tests": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_repository.py",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.3612680009682663,
+      "finished_at_utc": "2026-09-13T11:45:21.265683+00:00"
+    },
+    "wall-interface-tests-1": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_wall_interfaces.py",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 4.753184792993125,
+      "finished_at_utc": "2026-09-13T11:01:20.986233+00:00"
+    },
+    "full-tests-after-precision": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 18.916399907961022,
+      "finished_at_utc": "2026-09-13T11:25:01.938293+00:00"
+    },
+    "node-moment-regression-after": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_wall_interfaces.py",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 1,
+      "process_elapsed_seconds": 2.6903510820120573,
+      "finished_at_utc": "2026-09-13T11:23:35.939715+00:00"
+    },
+    "full-tests-1": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 10.364115281030536,
+      "finished_at_utc": "2026-09-13T11:02:40.092745+00:00"
+    },
+    "structural-interface-drawings": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/draw_wall_interfaces.py",
+        "--source",
+        "project/structural/inputs/structural.ifc",
+        "--verification",
+        "project/structural/outputs/runs/20260913T112509Z-candidate-verification-0530d76a",
+        "--output",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/interface-drawings"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 1.801733646017965,
+      "finished_at_utc": "2026-09-13T11:45:48.183774+00:00"
+    },
+    "pdf-metadata-tool-check": {
+      "command": [
+        "gs",
+        "-q",
+        "-dNODISPLAY",
+        "-dBATCH",
+        "-sFile=project/architect/outputs/core-review-H03-C.pdf",
+        "-dDumpXML",
+        "pdf_info.ps"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.16758051101351157,
+      "finished_at_utc": "2026-09-13T12:13:27.488606+00:00"
+    },
+    "pdf-metadata-tool-check-2": {
+      "command": [
+        "gs",
+        "-q",
+        "-dNODISPLAY",
+        "-dBATCH",
+        "--permit-file-read=project/architect/outputs/core-review-H03-C.pdf",
+        "-sFile=project/architect/outputs/core-review-H03-C.pdf",
+        "pdf_info.ps"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.028621966019272804,
+      "finished_at_utc": "2026-09-13T12:13:45.086753+00:00"
+    },
+    "adopted-input-signature": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/check_input_signature.py",
+        "project/structural/outputs/runs/20260913T114521Z-build-c89e9029/analytical_model.json"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.3094584290520288,
+      "finished_at_utc": "2026-09-13T11:45:44.735060+00:00"
+    },
+    "render-architect-pdf": {
+      "command": [
+        "chromium",
+        "--headless",
+        "--disable-gpu",
+        "--no-pdf-header-footer",
+        "--print-to-pdf=project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/architect-drawings/core-review-H03-C.pdf",
+        "file://<repository-root>/project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/architect-drawings/core-proposal.html"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 2.117276134027634,
+      "finished_at_utc": "2026-09-13T11:46:28.544041+00:00"
+    },
+    "adopted-reproduction-check": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/check_analysis.py",
+        "project/structural/outputs/runs/20260913T112509Z-candidate-verification-0530d76a/baseline-build",
+        "project/structural/outputs/runs/20260913T112509Z-candidate-verification-0530d76a/baseline-analysis",
+        "project/structural/outputs/runs/20260913T114521Z-build-c89e9029",
+        "project/structural/outputs/runs/20260913T114723Z-opensees-db48ba9b",
+        "--output",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/adopted-reproduction.json"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 3.061709408997558,
+      "finished_at_utc": "2026-09-13T11:52:10.665578+00:00"
+    },
+    "final-public-files-2": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/review_public_files.py"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.0823464950080961,
+      "finished_at_utc": "2026-09-13T12:15:50.781862+00:00"
+    },
+    "trial-build-2": {
+      "command": [
+        ".venv/bin/python",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/build_trial.py",
+        "build-2"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 3.88757464295486,
+      "finished_at_utc": "2026-09-13T10:52:47.994786+00:00"
+    },
+    "final-integrity-3": {
+      "command": [
+        ".venv/bin/python",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/final_integrity.py"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 9.654640861961525,
+      "finished_at_utc": "2026-09-13T12:16:00.514631+00:00"
+    },
+    "trial-build-1": {
+      "command": [
+        ".venv/bin/python",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/build_trial.py",
+        "build-1"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 1,
+      "process_elapsed_seconds": 1.945837190025486,
+      "finished_at_utc": "2026-09-13T10:50:43.288315+00:00"
+    },
+    "node-moment-regression-before": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_wall_interfaces.py",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 1,
+      "process_elapsed_seconds": 5.042961182945874,
+      "finished_at_utc": "2026-09-13T11:23:04.426685+00:00"
+    },
+    "adopted-analysis": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "structural_ai",
+        "analyze",
+        "--project",
+        "project",
+        "--model",
+        "project/structural/outputs/runs/20260913T114521Z-build-c89e9029/analytical_model.json",
+        "--case",
+        "all",
+        "--modes",
+        "12"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 210.05653709796024,
+      "finished_at_utc": "2026-09-13T11:50:53.979672+00:00"
+    },
+    "final-tests": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 18.667365543020424,
+      "finished_at_utc": "2026-09-13T12:04:46.978806+00:00"
+    },
+    "joint-tests-2": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_joint_constraints.py",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.15032522100955248,
+      "finished_at_utc": "2026-09-13T11:00:36.770158+00:00"
+    },
+    "mesh-moment-regression-after": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_wall_interfaces.py",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 1,
+      "process_elapsed_seconds": 2.651611763983965,
+      "finished_at_utc": "2026-09-13T11:23:58.994735+00:00"
+    },
+    "final-integrity-2": {
+      "command": [
+        ".venv/bin/python",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/final_integrity.py"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 9.36235603800742,
+      "finished_at_utc": "2026-09-13T12:14:14.715456+00:00"
+    },
+    "final-public-files": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/review_public_files.py"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.08702004299266264,
+      "finished_at_utc": "2026-09-13T12:10:50.621464+00:00"
+    },
+    "trial-selfweight-3": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "structural_ai.opensees_runner",
+        "--model",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/build-3/analytical_model.json",
+        "--output",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/selfweight-3",
+        "--case",
+        "D_SELF",
+        "--modes",
+        "0"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 4.1222098270081915,
+      "finished_at_utc": "2026-09-13T10:56:20.371074+00:00"
+    },
+    "trial-build-3": {
+      "command": [
+        ".venv/bin/python",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/build_trial.py",
+        "build-3"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 3.9439653189620003,
+      "finished_at_utc": "2026-09-13T10:55:57.318364+00:00"
+    },
+    "render-structural-pdf": {
+      "command": [
+        "chromium",
+        "--headless",
+        "--disable-gpu",
+        "--no-pdf-header-footer",
+        "--print-to-pdf=project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/interface-drawings/wall-interface-H03-C.pdf",
+        "file://<repository-root>/project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/interface-drawings/wall-interface-review.html"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.7554923700517975,
+      "finished_at_utc": "2026-09-13T11:46:29.356519+00:00"
+    },
+    "adopted-build": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "structural_ai",
+        "build",
+        "--project",
+        "project"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 4.1555192319792695,
+      "finished_at_utc": "2026-09-13T11:45:25.761490+00:00"
+    },
+    "interface-audit-3": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/audit_wall_interfaces.py",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/build-3/analytical_model.json",
+        "--output",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/interface-audit-3.json"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.4999904559808783,
+      "finished_at_utc": "2026-09-13T10:58:34.885599+00:00"
+    },
+    "adopt-inputs": {
+      "command": [
+        ".venv/bin/python",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/adopt_inputs.py",
+        "project/structural/outputs/runs/20260913T112509Z-candidate-verification-0530d76a"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 1.2422879730002023,
+      "finished_at_utc": "2026-09-13T11:45:20.849256+00:00"
+    },
+    "final-integrity-1": {
+      "command": [
+        ".venv/bin/python",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/final_integrity.py"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 1,
+      "process_elapsed_seconds": 11.631644865032285,
+      "finished_at_utc": "2026-09-13T12:12:59.615381+00:00"
+    },
+    "candidate-verification-C1": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/verify_core_candidate.py",
+        "--project",
+        "project",
+        "--revision",
+        "H03-C"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 1,
+      "process_elapsed_seconds": 1119.8126706440235,
+      "finished_at_utc": "2026-09-13T11:21:40.602750+00:00"
+    },
+    "joint-tests-1": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_joint_constraints.py",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.20364421396516263,
+      "finished_at_utc": "2026-09-13T10:42:27.572405+00:00"
+    },
+    "adopted-validate": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "structural_ai",
+        "validate",
+        "--project",
+        "project"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 0.23214717203518376,
+      "finished_at_utc": "2026-09-13T11:45:21.551386+00:00"
+    },
+    "mesh-moment-regression-after-2": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_wall_interfaces.py",
+        "-v"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 12.85653311299393,
+      "finished_at_utc": "2026-09-13T11:24:29.777811+00:00"
+    },
+    "candidate-verification-C2": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/verify_core_candidate.py",
+        "--project",
+        "project",
+        "--revision",
+        "H03-C"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 1149.1426581239793,
+      "finished_at_utc": "2026-09-13T11:44:18.415578+00:00"
+    },
+    "candidate-summary-C2": {
+      "command": [
+        ".venv/bin/python",
+        "scripts/summarize_core_candidate.py",
+        "project/structural/outputs/runs/20260913T112509Z-candidate-verification-0530d76a",
+        "--output",
+        "project/structural/outputs/runs/20260913T103848Z-h03c-joint-review-a4083ffd/reviewed-results"
+      ],
+      "wrapper": "codex-build-limited -- (inherited by this recorded child)",
+      "return_code": 0,
+      "process_elapsed_seconds": 8.285727542999666,
+      "finished_at_utc": "2026-09-13T11:45:00.493359+00:00"
+    }
+  },
+  "final_tests": {
+    "passed": 67,
+    "skipped": 0,
+    "stderr": "test_asymmetric_tetrahedron_volume_and_centroid (test_coordination.CoordinationGeometryTests.test_asymmetric_tetrahedron_volume_and_centroid) ... ok\ntest_beam_plan_uses_elevation_instead_of_storey_name (test_coordination.CoordinationGeometryTests.test_beam_plan_uses_elevation_instead_of_storey_name) ... ok\ntest_vertical_ray_nearest_plane_and_missing_overhead (test_coordination.CoordinationGeometryTests.test_vertical_ray_nearest_plane_and_missing_overhead) ... ok\ntest_stair_centroids_against_independent_extrusion_integral (test_coordination.CoordinationIFCTests.test_stair_centroids_against_independent_extrusion_integral) ... ok\ntest_unknown_finishes_and_roof_remain_open (test_coordination.CoordinationIFCTests.test_unknown_finishes_and_roof_remain_open) ... ok\ntest_voids_are_subtracted_and_do_not_become_occupied_room_area (test_coordination.CoordinationIFCTests.test_voids_are_subtracted_and_do_not_become_occupied_room_area) ... ok\ntest_candidate_reproduces_without_altering_adopted_source (test_core_candidate.CandidateBoundaryTests.test_candidate_reproduces_without_altering_adopted_source) ... ok\ntest_l_landing_is_not_bounding_rectangle (test_core_candidate.CandidateBoundaryTests.test_l_landing_is_not_bounding_rectangle) ... ok\ntest_six_flight_volumes_and_bearing_deduction (test_core_candidate.CandidateBoundaryTests.test_six_flight_volumes_and_bearing_deduction) ... ok\ntest_equipment_position_and_alternative_envelopes (test_core_candidate.CandidateLoadTests.test_equipment_position_and_alternative_envelopes) ... ok\ntest_mass_excludes_impact_payload_and_ground_panels (test_core_candidate.CandidateLoadTests.test_mass_excludes_impact_payload_and_ground_panels) ... ok\ntest_clipped_l_area_first_and_mixed_moments (test_core_candidate.IntegrationTests.test_clipped_l_area_first_and_mixed_moments) ... ok\ntest_outside_and_nonorthogonal_regions_are_rejected (test_core_candidate.IntegrationTests.test_outside_and_nonorthogonal_regions_are_rejected) ... ok\ntest_portal_column_intrusion_is_not_a_door_swing_pass (test_core_candidate.IntegrationTests.test_portal_column_intrusion_is_not_a_door_swing_pass) ... ok\ntest_exact_circle_bound_and_sector_area (test_core_review.EnvelopeTests.test_exact_circle_bound_and_sector_area) ... ok\ntest_uniform_counts_and_landing_setback_known_coordinates (test_core_review.EnvelopeTests.test_uniform_counts_and_landing_setback_known_coordinates) ... ok\ntest_current_column_and_door_constraints (test_core_review.ProjectProposalTests.test_current_column_and_door_constraints) ... ok\ntest_equipment_envelopes_are_synthetic_and_not_mass_factors (test_core_review.ProjectProposalTests.test_equipment_envelopes_are_synthetic_and_not_mass_factors) ... ok\ntest_l_shaped_landing_area_has_explicit_step_setback (test_core_review.ProjectProposalTests.test_l_shaped_landing_area_has_explicit_step_setback) ... ok\ntest_proposal_does_not_close_architecture_or_analysis (test_core_review.ProjectProposalTests.test_proposal_does_not_close_architecture_or_analysis) ... ok\ntest_chain_repeated_slave_and_fixed_node_rejected (test_joint_constraints.JointConstraintTests.test_chain_repeated_slave_and_fixed_node_rejected) ... ok\ntest_real_eccentric_joint_static_flexibility_and_force_recovery (test_joint_constraints.JointConstraintTests.test_real_eccentric_joint_static_flexibility_and_force_recovery) ... ok\ntest_real_eccentric_mass_six_eigenvalues_and_participation (test_joint_constraints.JointConstraintTests.test_real_eccentric_mass_six_eigenvalues_and_participation) ... WARNING - the 'fullGenLapack' eigen solver is VERY SLOW. Consider using the default eigen solver.Using DomainModalProperties - Developed by: Massimo Petracca, Guido Camata, ASDEA Software Technology\nok\ntest_real_frame_wall_patch_axial_sharing (test_joint_constraints.JointConstraintTests.test_real_frame_wall_patch_axial_sharing) ... ok\ntest_virtual_work_and_eccentric_moment_signs (test_joint_constraints.JointConstraintTests.test_virtual_work_and_eccentric_moment_signs) ... ok\ntest_eccentric_offset_axial_load (test_opensees.OpenSeesTests.test_eccentric_offset_axial_load) ... ok\ntest_frame_axes_signs_axial_biaxial_bending_and_torsion (test_opensees.OpenSeesTests.test_frame_axes_signs_axial_biaxial_bending_and_torsion) ... ok\ntest_shell_bending_square_plate_against_navier_series (test_opensees.OpenSeesTests.test_shell_bending_square_plate_against_navier_series) ... ok\ntest_shell_membrane_in_floor_and_wall_planes (test_opensees.OpenSeesTests.test_shell_membrane_in_floor_and_wall_planes) ... ok\ntest_tip_mass_cantilever_eigenvalue_and_participation (test_opensees.OpenSeesTests.test_tip_mass_cantilever_eigenvalue_and_participation) ... ok\ntest_nonfinite_rejected (test_opensees.ResultantTests.test_nonfinite_rejected) ... ok\ntest_position_and_applied_couple (test_opensees.ResultantTests.test_position_and_applied_couple) ... ok\ntest_cli_defaults_to_single_project (test_repository.RepositoryTests.test_cli_defaults_to_single_project) ... ok\ntest_code_parses (test_repository.RepositoryTests.test_code_parses) ... ok\ntest_current_build_cannot_fall_back_to_legacy_hash (test_repository.RepositoryTests.test_current_build_cannot_fall_back_to_legacy_hash) ... ok\ntest_full_case_scope_tracked (test_repository.RepositoryTests.test_full_case_scope_tracked) ... ok\ntest_immutable_received_source_hash_guard (test_repository.RepositoryTests.test_immutable_received_source_hash_guard) ... ok\ntest_imported_source_hash_preserved (test_repository.RepositoryTests.test_imported_source_hash_preserved) ... ok\ntest_license_notice_preserved (test_repository.RepositoryTests.test_license_notice_preserved) ... ok\ntest_no_custom_solver_in_mainline (test_repository.RepositoryTests.test_no_custom_solver_in_mainline) ... ok\ntest_no_duplicate_workspaces (test_repository.RepositoryTests.test_no_duplicate_workspaces) ... ok\ntest_only_one_authoritative_ifc (test_repository.RepositoryTests.test_only_one_authoritative_ifc) ... ok\ntest_preliminary_input_validation (test_repository.RepositoryTests.test_preliminary_input_validation) ... ok\ntest_relocated_build_requires_unchanged_input_hash (test_repository.RepositoryTests.test_relocated_build_requires_unchanged_input_hash) ... ok\ntest_run_output_is_excluded_from_input_inventory (test_repository.RepositoryTests.test_run_output_is_excluded_from_input_inventory) ... ok\ntest_run_records_do_not_overwrite (test_repository.RepositoryTests.test_run_records_do_not_overwrite) ... ok\ntest_scope_and_publication_separated (test_repository.RepositoryTests.test_scope_and_publication_separated) ... ok\ntest_solver_rejects_changed_architectural_scheme (test_repository.RepositoryTests.test_solver_rejects_changed_architectural_scheme) ... ok\ntest_solver_rejects_changed_equipment_before_execution (test_repository.RepositoryTests.test_solver_rejects_changed_equipment_before_execution) ... ok\ntest_step_reader_resolves_references (test_repository.RepositoryTests.test_step_reader_resolves_references) ... ok\ntest_step_value_roundtrip (test_repository.RepositoryTests.test_step_value_roundtrip) ... ok\ntest_candidate_development_preserves_adopted_h02_signature (test_stair_transfer.BuildingStairTests.test_candidate_development_preserves_adopted_h02_signature) ... ok\ntest_equipment_and_stair_holds_survive_dimensional_screen (test_stair_transfer.BuildingStairTests.test_equipment_and_stair_holds_survive_dimensional_screen) ... ok\ntest_landings_use_actual_resultant_and_upper_interface (test_stair_transfer.BuildingStairTests.test_landings_use_actual_resultant_and_upper_interface) ... ok\ntest_source_centroids_and_bearing_deduction (test_stair_transfer.BuildingStairTests.test_source_centroids_and_bearing_deduction) ... ok\ntest_stair_weight_moments_and_mass (test_stair_transfer.BuildingStairTests.test_stair_weight_moments_and_mass) ... ok\ntest_eccentric_and_reversed_load_rejected (test_stair_transfer.StripTests.test_eccentric_and_reversed_load_rejected) ... ok\ntest_off_grid_wall_projection_preserves_position (test_stair_transfer.StripTests.test_off_grid_wall_projection_preserves_position) ... ok\ntest_real_opensees_eccentric_strip_reactions (test_stair_transfer.StripTests.test_real_opensees_eccentric_strip_reactions) ... ok\ntest_overlapping_interval_owners_are_subtracted_once (test_wall_interfaces.WallOwnershipTests.test_overlapping_interval_owners_are_subtracted_once) ... ok\ntest_all_load_resultants_are_mesh_independent (test_wall_interfaces.WholeCandidateInterfaceTests.test_all_load_resultants_are_mesh_independent) ... ok\ntest_calibration_resultants_follow_source_floor_area (test_wall_interfaces.WholeCandidateInterfaceTests.test_calibration_resultants_follow_source_floor_area) ... ok\ntest_independent_horizontal_slice_ownership_and_direct_groups (test_wall_interfaces.WholeCandidateInterfaceTests.test_independent_horizontal_slice_ownership_and_direct_groups) ... ok\ntest_joint_forest_limits_and_source_derived_web_centroid (test_wall_interfaces.WholeCandidateInterfaceTests.test_joint_forest_limits_and_source_derived_web_centroid) ... ok\ntest_load_moments_use_actual_node_coordinates (test_wall_interfaces.WholeCandidateInterfaceTests.test_load_moments_use_actual_node_coordinates) ... ok\ntest_mass_and_stair_resultants_survive_interface_partition (test_wall_interfaces.WholeCandidateInterfaceTests.test_mass_and_stair_resultants_survive_interface_partition) ... ok\ntest_reviewed_h03c_numerical_inputs_include_joint_constraints (test_wall_interfaces.WholeCandidateInterfaceTests.test_reviewed_h03c_numerical_inputs_include_joint_constraints) ... ok\n\n----------------------------------------------------------------------\nRan 67 tests in 18.085s\n\nOK\nProcess 0 Terminating\n"
+  },
+  "reproduction": {
+    "status": "PASS_IDENTICAL_RESULT_FILES",
+    "baseline_run_id": "20260913T112509Z-candidate-verification-0530d76a",
+    "adopted_build_run_id": "20260913T114521Z-build-c89e9029",
+    "adopted_analysis_run_id": "20260913T114723Z-opensees-db48ba9b",
+    "identical_result_file_count": 109,
+    "result_sha256": {
+      "LIFT_BUFFER_ENVELOPE_joint_actions.csv": "468f6b14ba28cc5e79dcc95239c174bce65fbc9bf3cbd3fca287019362714f35",
+      "mode_03_nodes.csv": "270c271ba3767716a70e9fa7ae8a236121939953bd69bad051f612e43ed32225",
+      "SERVICE_STAIR_FINISH_HIGH_reactions.csv": "b741b162dcbf2ebfebac093536651198344246d9e82f5a5843d570e1821b5828",
+      "L_OFFICE_shell_resultants.csv": "efaf76b669043c440cd955103cff61ad6f9bd9bfb84aa1727b4dd1b5be6d4f0b",
+      "SERVICE_LIFT_BUFFER_frame_end_forces.csv": "1335e334b122996b66e784781b81a2aa22d37451eb03c3387dda3363e0cf7509",
+      "D_PANEL_reactions.csv": "78f67cb38d6fbb1663693fa68e0cd261717087b774fee8e40ab3dd8670e7bf7b",
+      "modal_properties.json": "a502cb9ef734dbbfb26481a3ced986690f79164c459ddc4651ebf985503a5838",
+      "SERVICE_ILLUSTRATION_nodes.csv": "56275825d0205f6a49fa2e63c07bf1be657e2a11315f956d2b5371c6d144067e",
+      "SERVICE_LIFT_BUFFER_joint_actions.csv": "e836b38897694e037d60cafa6d0a2b85d4eb3cc5c1a44967043ffb3de7f46bef",
+      "L_ROOF_reactions.csv": "978a92f79070a6f56e937e9f2ce7ef7cc75ebb5248152f26a033bf2b9cc0d264",
+      "Y100_CALIBRATION_frame_end_forces.csv": "e58aabbcb1e8fdec7e011f6a7603102a846500d9b150d15e13ece28d3c5b4975",
+      "mode_10_nodes.csv": "e656f0352355501e4020760dc15d5102f1515344d2d1f4b3a58210fffe9fa44b",
+      "SERVICE_ILLUSTRATION_reactions.csv": "fb11fd40aaa50c0d248c1c873b7d1d21a4af1bc192beb546e59fbaa4527c31cd",
+      "LIFT_BUFFER_ENVELOPE_frame_end_forces.csv": "d736064d39e418efb5ba68c879843471aedc0914adde163f912e887616dd8d9e",
+      "mode_09_nodes.csv": "3f839850d6fe827c36e536ff3b019133008f8725a88a722438df5403e63c1d71",
+      "L_POINT_SINGLE_reactions.csv": "0e79511a1dbc0b55e865ea832e0ee94d6b41d12bbd5454abbb1ddc5849375dab",
+      "mode_04_nodes.csv": "28192ae93118e33dbdaf10379b597b9e39220440452ec195d37f72ba9d8e9216",
+      "D_SELF_shell_resultants.csv": "a88407b8572c917a205e7cf5b5269a981dba0e9d229020a676353887851a545e",
+      "L_ROOF_shell_resultants.csv": "00c6cc3bf2deb219ce16be7887af915e68ec82d99f51d9e0d6899c6ed8449c8a",
+      "SERVICE_ILLUSTRATION_shell_resultants.csv": "66687c05f8d5d1493e255cc4475905dcab1fbfbefe792a59bec6be704fca5946",
+      "SERVICE_STAIR_FINISH_HIGH_frame_end_forces.csv": "9663386efda5125c8e3a3c003ef9cb84b03fc35592402315aab3044b556bfa8f",
+      "L_OFFICE_joint_actions.csv": "71d71aac3aa48b0c9fdb9e522dbb629abcb1d58844c638f87f24b56d278ea41e",
+      "L_STAIRS_shell_resultants.csv": "48c25d1d9a764f75179c87f3f15da3f118f895282c8a7baa2383a8a637c84f4f",
+      "L_POINT_SINGLE_joint_actions.csv": "1ebe74713a4c2b6c4c826fa7805b560ec8f4b6ae756039e5cd65534aec2fca3c",
+      "D_SUPER_shell_resultants.csv": "f64a1df96c8e1f3e2fb912c5a74e350f67645f834132ed743ac4fa0e327d34a6",
+      "D_SELF_joint_actions.csv": "e6abda0606d99e2f4b599daf84c6bfc6050b47198a1fb146aa7a569b4c8865b2",
+      "Y100_CALIBRATION_shell_resultants.csv": "aa599d5bbe6dac7606d57b52deab07380b31fe39d76f2a7e7c67c2f33bb49b72",
+      "L_PARTITION_shell_resultants.csv": "b60cf7b418def75ef285e5387b56f4689b236d2ce2f12912b471a28861d45489",
+      "SERVICE_STAIR_FINISH_LOW_frame_end_forces.csv": "9110c0fa14a189a100fc49d56cf522cac0abca3bc47dc29ccb61bc1452b279e9",
+      "mode_06_nodes.csv": "174b10cfc84e32435970c2177c7b0f42e6e8f4a8b4748639dc1c99121bf5ca69",
+      "LIFT_HEAD_ENVELOPE_frame_end_forces.csv": "c53b43a76495ed1454f9516fa2304de0cc1f21fe54226d3b19f0613bb406f381",
+      "D_PANEL_shell_resultants.csv": "a5a4e35a72e087054eb2fbef5cae1db22ff6dc038e09a67e8f5461d698305951",
+      "LIFT_BUFFER_ENVELOPE_reactions.csv": "3aab45415bcb5bce84d59aa7f7360eb269eb73aeb3ccbdee2b519233e13a1078",
+      "D_SUPER_joint_actions.csv": "17b7f6175574c03ecf7e31e1141c8467ad022ccbbb503f2aa98eb92720ad424c",
+      "L_ROOF_frame_end_forces.csv": "ad4e9528c6250448e76422181d370bd282bb3c5cdcf80bc31fa3f78b8b31953d",
+      "SERVICE_LIFT_HEAD_shell_resultants.csv": "aac6490ce1b89958f7aade615de63886605b77996499e081700d2d5eea43d8cb",
+      "mode_11_nodes.csv": "6d0046f3c07f29f2d7784e58a982b689764212ca0f58f9f8c02388feb5c91989",
+      "L_ROOF_joint_actions.csv": "b1da85b9183e80d8e39f5490b68f842acf889d92b8d55a1fbaef98b76b2460c7",
+      "SERVICE_LIFT_HEAD_nodes.csv": "fe4aa8d5647bed107c0d6165dd83e061bf338c208dfb96ca50d93e14bc0f46a1",
+      "L_PARTITION_frame_end_forces.csv": "cefb7d0540d9a96b1d43add35a35e4325ebcbb43befcad6a3b739e491193cf56",
+      "mode_07_nodes.csv": "f6cd8bc38319ec751854059ee4f0aa32e16c2d115543c2c78bb9d3a786500604",
+      "D_SUPER_frame_end_forces.csv": "b55b7d5c55689a68ce6aa40c75056bcdc56ae5d0af6a3a89821212cb43cebf52",
+      "SERVICE_STAIR_FINISH_HIGH_nodes.csv": "ad3157bfff02f9abfd3961fa4a451aeac279e24a0d4775c05ec5c38dc9e8285a",
+      "L_STAIRS_joint_actions.csv": "fc49185724e41066d2947bda692612bb3583d8b409f4049f049e8bda43eb3a51",
+      "SERVICE_ILLUSTRATION_frame_end_forces.csv": "0d3ebbfcf2e5441b129bf3212c83cd65bb9d23a3c8bb5465583e8d2920baca52",
+      "SERVICE_LIFT_HEAD_reactions.csv": "3f4e8594c761d942b60d0f08d3561f3c177280f616391705ecc8027fa3af2b7a",
+      "D_EQUIPMENT_shell_resultants.csv": "3057c202ae227fefddc72d275877fb25dc97edfeaa7f712a592538ccebe410c8",
+      "D_SELF_nodes.csv": "3e807d8e41b2b9e85840f710e41b0ede62baa74859409c1bdd62ce03f98f7f82",
+      "L_POINT_SINGLE_shell_resultants.csv": "f0663e0792c22283cc2ef66e574778120f23f5945f41c263e72ace3d5e8383fb",
+      "SERVICE_STAIR_FINISH_HIGH_shell_resultants.csv": "7ee95ba3c6f2bccb7bca30e0d284c52a23551d6e23e39a1c94882099c9843ab0",
+      "summary.json": "a063e97bf6eea9f4b1f0da82574727fce476d58749ea4446ce66a055e3363d3d",
+      "mode_12_nodes.csv": "2008a7e5f3c5a09dc44bd370487f1c8f9952ba968d53632c4b29a77e16803d41",
+      "D_PANEL_joint_actions.csv": "d34b3bf50a6dcb0afa873b1a0b372a6b1318698b5f9bbd2bb607f928b2d4a559",
+      "L_PARTITION_joint_actions.csv": "4dd5bfe40a0c36342526973745659a4eb187b0f1165416639b5ecb956c88f23a",
+      "L_LIFT_frame_end_forces.csv": "900157647862efdd583aef976b3dbf71dbb2667bb379caa13590f79a5a5e9a2f",
+      "L_LIFT_reactions.csv": "f4d9990ee7c1a0bc60625547454ee4d42ffbb2344053225d931158a9a9f4d789",
+      "SERVICE_LIFT_HEAD_frame_end_forces.csv": "9e8931c9faa7209be8b0198361c224ccb2524accb02941db66c6b54783dc6a62",
+      "D_PANEL_nodes.csv": "09571774d6f459d3217ac06cb095fae54f05ee66ac1eefc2404ae423e51dd08a",
+      "L_STAIRS_frame_end_forces.csv": "67e943e60cb64b9d73628031306ee84824d2dc69098e9f5b15b79f880bdcb516",
+      "L_OFFICE_frame_end_forces.csv": "8e7e75f4105f29e801970d183c69cae23435b99d2dcca527bcf1180cf51ad8ec",
+      "mode_01_nodes.csv": "6e73ef46b68e5b80fbe98da89834a5263fcda1f472dcd2eb982eb4bc39a0b42a",
+      "L_POINT_SINGLE_nodes.csv": "2d875395e707296e59bd82c13f2b6b3af1c87dd31d9e8d599b92c6786f168cee",
+      "SERVICE_ILLUSTRATION_joint_actions.csv": "77dc9c6cbc18ce0567c3da10ba2fec5835ffa55bd302b56a5691ac1b97fe6693",
+      "SERVICE_LIFT_HEAD_joint_actions.csv": "261e09e5afd38c49a0448d6df406bd8154450f821e08b198f65bc6dd4574a7df",
+      "L_LIFT_nodes.csv": "9b6b2cc3e96a51a71b98e763e1d6200ec7037b669036efe1088b7015650a842b",
+      "L_OFFICE_reactions.csv": "653597119125852b7b4e1489323b7f7b6e34a466d527b7ae98ad9eac11e0c6e1",
+      "D_SUPER_reactions.csv": "0f0702ec5afbca96e108e2fe2f0150af32cbb2d0a3de21e20399fe714960fb88",
+      "SERVICE_STAIR_FINISH_LOW_shell_resultants.csv": "8658519d37bbb093563d4b1c5bae2a8e840dd634573a1a2b92b4259d95417aec",
+      "LIFT_HEAD_ENVELOPE_nodes.csv": "ce937babf64e45b56126f24f39973fa3db2bf77bdb126ecd6a11768fec6b28b0",
+      "L_STAIRS_reactions.csv": "6fc86c1fe0b05bf1e2f49e6f410ce3b1ebc88651d8637a2ec519443a7d7b46ec",
+      "D_SELF_frame_end_forces.csv": "7ad0ecb6a9a1b7e9e8eeb13e7a28e386397d0a84cedd1b21800b87448b93e088",
+      "X100_CALIBRATION_reactions.csv": "21315210dd9429ec8b93ffd44d8cd3bef9b5f521aaec8ba452d492ed01cbf879",
+      "mode_08_nodes.csv": "54eab107269949d5786b174c960b6be4d8ad1acf91d8969301d022df9d3b75c5",
+      "L_OFFICE_nodes.csv": "6842242083da7bb24e23ac3f4dbd53ba5a1c3e8c311dc8d2c9e81b79a09ecd65",
+      "SERVICE_STAIR_FINISH_LOW_nodes.csv": "c8edab8baeb271a8afe60933ac1c0755a827585b12430423f07fd270eed06f3f",
+      "LIFT_HEAD_ENVELOPE_shell_resultants.csv": "2a095ac11dd58835e38795e737c031e08b8ca72256beffa15239d40008060610",
+      "SERVICE_LIFT_BUFFER_nodes.csv": "57432954eb9daec16db44c0d7c6fc1027db9ff0f831cf3810658406df3819d42",
+      "SERVICE_LIFT_BUFFER_reactions.csv": "907ea97115808c716d627d075c1f62d41542756caf1ee900770bd37d47626fe1",
+      "L_LIFT_joint_actions.csv": "da44cec787322e1ae79e89ac2e68c0ea53eb9c07c6b9859093e48a475b95bad5",
+      "L_ROOF_nodes.csv": "ee4d6738981a669a240a44e3e795d31204827d1027fb7b40365fedd8ccdceff4",
+      "Y100_CALIBRATION_nodes.csv": "53ebca75f33b7ab6e824a3696bb066e5bb2f780193613ac0f94f7bc48cbd8ff1",
+      "D_EQUIPMENT_reactions.csv": "c81d847d9f90c7881fd13cdc4c6ddb9aaded871e0f1ff7e837ba9f54d655dc3e",
+      "D_SUPER_nodes.csv": "e10e8290f209bf99c46b4ec80c94f47211455af1bdeaa6883f5170978647e97f",
+      "SERVICE_STAIR_FINISH_LOW_reactions.csv": "aafa7636441145f812662169d34f9e882218fe633d7dfeb58adfe5587dcce578",
+      "LIFT_BUFFER_ENVELOPE_nodes.csv": "ee6aac03280249cf20ce6df26a1bb7aee7f291c67c74c925c92704f914fad066",
+      "SERVICE_STAIR_FINISH_HIGH_joint_actions.csv": "e8ee7a5eb7164bf5c68077423189c74279de710e28011a9b30b514d163450904",
+      "LIFT_BUFFER_ENVELOPE_shell_resultants.csv": "53e1484f4d913a9a911585dc168b78af1181bcc92b02170d0c70edb184a9f255",
+      "SERVICE_STAIR_FINISH_LOW_joint_actions.csv": "2b589e0e6a00d4fd604eb873988e931af3880f63438167fd4c6f7d89ae770920",
+      "L_LIFT_shell_resultants.csv": "62fe73f333bcf8581ad4b947ee1fdeb2810b9d1ce5f21846bdd96f56c9da511d",
+      "mode_02_nodes.csv": "c47356a3b58a6d2dff98fec8feece7a07701f51b52486ca4966cd6ef86e972ea",
+      "X100_CALIBRATION_shell_resultants.csv": "8aa7e35b73fa06ade784449685962d0fff3d58df29bf8cd9b4d692fe6c00683e",
+      "D_EQUIPMENT_nodes.csv": "00b89040a5e719ea56c7d80b37280feb962a725e3e1d02e530405bdb57bdc7a9",
+      "LIFT_HEAD_ENVELOPE_reactions.csv": "663087d45531999cc8b055d8f7448d76fdb7d1308173d874b4d1a76d8b710901",
+      "Y100_CALIBRATION_reactions.csv": "330b1a386b244602f22be1f65c67cd62d19d4371b95494eeec1cb2fda2d865ff",
+      "X100_CALIBRATION_frame_end_forces.csv": "afb78a385df03d5e2c4cda13df212133fbb67e11226bfd881e4a11d1cf56295a",
+      "D_PANEL_frame_end_forces.csv": "d7d5df389bb1789546559cd63be4b2a08143b1e67416d0c29d073f1e0dbb76c9",
+      "D_EQUIPMENT_joint_actions.csv": "c78ab4a9547e7c27694940cb81762158d16388bcd7b71e8bc3b2bf3bcf32469f",
+      "SERVICE_LIFT_BUFFER_shell_resultants.csv": "212b94d5c887a64789193d2b95d48963a1b68afc18b08ab03e1aaf5af6ca0d9f",
+      "X100_CALIBRATION_joint_actions.csv": "79b9278ef2f6e940cba021edd88d76218f4c37277fa0c963bd56d499c789bf2c",
+      "L_PARTITION_nodes.csv": "026b62cf422d657d1b346b46e5a0b0b874a3e07f1ae137d4f7919c9363df4d23",
+      "L_PARTITION_reactions.csv": "5459fa889fe15e2c181287856bdc80aa93e4b1912a260412dbf0bff52fb75423",
+      "X100_CALIBRATION_nodes.csv": "5ec6f97f3a83e1c042dc2e9edf6f300e60fbe420c86d71549dbaea0991f2bb7e",
+      "L_POINT_SINGLE_frame_end_forces.csv": "eea3159beadac7212fc3501e77762d9bae5dcb84165afd24bb52dfb1c2431c8a",
+      "D_SELF_reactions.csv": "73534c26c8fa232b9f87cb76f39fdd0e25d7c31219f22313f5bc58a8e45f4d01",
+      "mode_05_nodes.csv": "7078a23cee962b818d9107b3b3adb2a978dfcc0a4eba84d033fe47c810e9d45f",
+      "L_STAIRS_nodes.csv": "ab78237841d0480a4f0f43504f9f5bd9439c61684e4fd5787ed5d6b0e46664a6",
+      "Y100_CALIBRATION_joint_actions.csv": "c70dd81b872598605ad383374bc93b412cc590b63585b37526c57ba84ed65f7d",
+      "LIFT_HEAD_ENVELOPE_joint_actions.csv": "b47b99dc691b06244016ff11845632e5e3621c7d5bd049dd799f995c4a4f97a4",
+      "D_EQUIPMENT_frame_end_forces.csv": "fd898bb41522faa975046b8abb9729603ede67c3e7e861068542a6442a9d98b9"
+    },
+    "canonical_input_signature_sha256": "d98b7fdf4ec297ab0fdfb317dbd20e224fcef4da14faa7ddbc4bbb04d8685129",
+    "scope": "Input and raw-result reproduction, not physical/code approval"
+  },
+  "visual_review": {
+    "reviewed_at_utc": "2026-09-13T11:47:23+00:00",
+    "reviewer": "AI-assisted visual review, not professional approval",
+    "pages": {
+      "architect-drawings/page-01.png": "cb45175b2cc32adb78f1491974ce0079b44ac329729711a31ca3fac564231980",
+      "architect-drawings/page-02.png": "707f79e9ebc2f2aa46e19179be8342ae506c409490a8f88014a6504b23d44868",
+      "interface-drawings/page-01.png": "99d023b3c55f6c52bde72393488c36aaaa5a7f9bda501fb13dbbad7259332b3f",
+      "interface-drawings/page-02.png": "e0469cdde3967e9dd11a6d61c3f84b6472b2e1578690ca6f1974df7a6cdf76dc"
+    },
+    "scope": [
+      "Actually viewed all four rendered pages",
+      "Checked retained columns, portal, overlap colours and eccentric contact diagrams",
+      "Checked web/slab offsets, result labels, source captions, legibility and no clipping"
+    ],
+    "limitations": "Coordinate/diagnostic review sheets only; no reinforcement, full egress or construction acceptance"
+  },
+  "final_integrity_before_cleanup": {
+    "checked_at_utc": "2026-09-13T12:15:50+00:00",
+    "findings": [],
+    "scope": "Evidence identity, file links, YAML syntax and limited PDF metadata/text privacy; not engineering or publication approval",
+    "original_H02_H01_trees": {
+      "runs": 14,
+      "files_verified_unchanged": 450
+    },
+    "other_retained_manifest_checks": {
+      "20260913T064310Z-h03-core-review-660a2491": {
+        "status": "COMPLETED_H03_A_ARCHITECTURAL_PROPOSAL_WITH_ADOPTION_HOLDS",
+        "recorded_files_checked": 73
+      },
+      "20260913T071954Z-core-proposal-c163ca31": {
+        "status": "COMPLETED_ARCHITECTURAL_PROPOSAL_WITH_STRUCTURAL_ADOPTION_HOLD",
+        "recorded_files_checked": 6
+      },
+      "20260913T085723Z-h03b-adoption-review-fed7efe8": {
+        "status": "COMPLETED_H03_B_CANDIDATE_REVIEW_ADOPTION_HELD",
+        "recorded_files_checked": 252
+      },
+      "20260913T093651Z-candidate-verification-1815d985": {
+        "status": "COMPLETED_CANDIDATE_DIAGNOSTICS_ADOPTION_HELD",
+        "recorded_files_checked": 532
+      },
+      "20260913T100710Z-core-proposal-ffd70bc0": {
+        "status": "COMPLETED_ARCHITECTURAL_PROPOSAL_WITH_STRUCTURAL_ADOPTION_HOLD",
+        "recorded_files_checked": 6
+      },
+      "20260913T110300Z-candidate-verification-30e0255b": {
+        "status": "FAILED_CANDIDATE_VERIFICATION",
+        "recorded_files_checked": 632
+      },
+      "20260913T112509Z-candidate-verification-0530d76a": {
+        "status": "COMPLETED_CANDIDATE_DIAGNOSTICS_AWAITING_ADOPTION_REVIEW",
+        "recorded_files_checked": 637
+      },
+      "20260913T114521Z-build-c89e9029": {
+        "status": "COMPLETED_GEOMETRY_AND_ANALYSIS_INPUTS_ONLY",
+        "recorded_files_checked": 10
+      },
+      "20260913T114544Z-core-proposal-6c13b1f1": {
+        "status": "COMPLETED_ARCHITECTURAL_REVIEW_WITH_DIAGNOSTIC_GEOMETRY_ADOPTED",
+        "recorded_files_checked": 6
+      },
+      "20260913T114723Z-opensees-db48ba9b": {
+        "status": "SOLVER_COMPLETED_NOT_DESIGN_APPROVAL",
+        "recorded_files_checked": 111
+      }
+    },
+    "original_H03_A_B_evidence_limit": "Recorded output hashes checked; original H02/H01 trees additionally have independent pre-task tree digests.",
+    "consolidated_files_checked": 23,
+    "run_directories": 25,
+    "adoption": {
+      "identity_files": 6,
+      "numerical_source_files": 13,
+      "equipment_semantic_equality": true,
+      "historical_fixture_files_unchanged": 2
+    },
+    "reviewed_outputs": {
+      "promoted_files": 12,
+      "visually_reviewed_pages": 4,
+      "identical_result_files": 109
+    },
+    "software_tests": {
+      "passed": 67,
+      "skipped": 0,
+      "evidence": "final-tests-command.json"
+    },
+    "limited_public_file_scan": {
+      "findings": [],
+      "files_checked": 166,
+      "scope": "Limited automated check. Review metadata, images, logs, Git history, data rights and licenses separately."
+    },
+    "pdf_metadata_and_text": [
+      {
+        "path": "project/architect/outputs/core-review-H03-C.pdf",
+        "sha256": "a16f59fc521073544a13fc5b5a556b270a7bbf935e2a57751853cbf23859b32d",
+        "pages": 2,
+        "metadata_command": [
+          "gs",
+          "-q",
+          "-dNODISPLAY",
+          "-dBATCH",
+          "--permit-file-read=project/architect/outputs/core-review-H03-C.pdf",
+          "-sFile=project/architect/outputs/core-review-H03-C.pdf",
+          "pdf_info.ps"
+        ],
+        "text_command": [
+          "gs",
+          "-q",
+          "-dBATCH",
+          "-dNOPAUSE",
+          "-sDEVICE=txtwrite",
+          "-sOutputFile=-",
+          "project/architect/outputs/core-review-H03-C.pdf"
+        ],
+        "metadata_return_code": 0,
+        "text_return_code": 0,
+        "local_private_path_found": false,
+        "metadata": "\n        project/architect/outputs/core-review-H03-C.pdf has 2 pages\n\nTitle: H03-C architectural review\nCreator: Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36\nProducer: Skia/PDF m152\nCreationDate: D:20260913114628+00'00'\nModDate: D:20260913114628+00'00'\n\nPage 1 MediaBox: [0 0 1191.12 841.92] Rotate = 0\n\nPage 2 MediaBox: [0 0 1191.12 841.92] Rotate = 0\n\n\nFonts Needed that are not embedded (system fonts required):\n    AAAAAA+DejaVuSans    <4141414141412B44656A61567553616E73>\n"
+      },
+      {
+        "path": "project/structural/outputs/deliverables/wall-interface-H03-C.pdf",
+        "sha256": "4b41cf6047c84a1beeca4a402b9c65e4f74d8c8072b89007ef7b8e33562de70f",
+        "pages": 2,
+        "metadata_command": [
+          "gs",
+          "-q",
+          "-dNODISPLAY",
+          "-dBATCH",
+          "--permit-file-read=project/structural/outputs/deliverables/wall-interface-H03-C.pdf",
+          "-sFile=project/structural/outputs/deliverables/wall-interface-H03-C.pdf",
+          "pdf_info.ps"
+        ],
+        "text_command": [
+          "gs",
+          "-q",
+          "-dBATCH",
+          "-dNOPAUSE",
+          "-sDEVICE=txtwrite",
+          "-sOutputFile=-",
+          "project/structural/outputs/deliverables/wall-interface-H03-C.pdf"
+        ],
+        "metadata_return_code": 0,
+        "text_return_code": 0,
+        "local_private_path_found": false,
+        "metadata": "\n        project/structural/outputs/deliverables/wall-interface-H03-C.pdf has 2 pages\n\nTitle: H03-C interface review\nCreator: Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36\nProducer: Skia/PDF m152\nCreationDate: D:20260913114629+00'00'\nModDate: D:20260913114629+00'00'\n\nPage 1 MediaBox: [0 0 1191.12 841.92] Rotate = 0\n\nPage 2 MediaBox: [0 0 1191.12 841.92] Rotate = 0\n\n\nFonts Needed that are not embedded (system fonts required):\n    AAAAAA+DejaVuSans    <4141414141412B44656A61567553616E73>\n"
+      }
+    ],
+    "changed_files": {
+      "added": 31,
+      "removed": 0,
+      "modified": 42
+    },
+    "changed_markdown_local_links_checked": 134,
+    "changed_yaml_files_parsed": 11,
+    "checklist_workflow_source_and_effort_links": "CHECKED",
+    "git": {
+      "status": {
+        "command": [
+          "git",
+          "status",
+          "--short",
+          "--branch"
+        ],
+        "return_code": 128,
+        "stdout": "",
+        "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+      },
+      "history": {
+        "command": [
+          "git",
+          "log",
+          "-5",
+          "--oneline"
+        ],
+        "return_code": 128,
+        "stdout": "",
+        "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+      },
+      "diff": {
+        "command": [
+          "git",
+          "diff",
+          "--stat"
+        ],
+        "return_code": 129,
+        "stdout": "",
+        "stderr": "warning: Not a git repository. Use --no-index to compare two paths outside a working tree\nusage: git diff --no-index [<options>] <path> <path> [<pathspec>...]\n\nDiff output format options\n    -p, --patch           generate patch\n    -s, --no-patch        suppress diff output\n    -u                    generate patch\n    -U, --unified[=<n>]   generate diffs with <n> lines context\n    -W, --[no-]function-context\n                          generate diffs with <n> lines context\n    --raw                 generate the diff in raw format\n    --patch-with-raw      synonym for '-p --raw'\n    --patch-with-stat     synonym for '-p --stat'\n    --numstat             machine friendly --stat\n    --shortstat           output only the last line of --stat\n    -X, --dirstat[=<param1>,<param2>...]\n                          output the distribution of relative amount of changes for each sub-directory\n    --cumulative          synonym for --dirstat=cumulative\n    --dirstat-by-file[=<param1>,<param2>...]\n                          synonym for --dirstat=files,<param1>,<param2>...\n    --check               warn if changes introduce conflict markers or whitespace errors\n    --summary             condensed summary such as creations, renames and mode changes\n    --name-only           show only names of changed files\n    --name-status         show only names and status of changed files\n    --stat[=<width>[,<name-width>[,<count>]]]\n                          generate diffstat\n    --stat-width <width>  generate diffstat with a given width\n    --stat-name-width <width>\n                          generate diffstat with a given name width\n    --stat-graph-width <width>\n                          generate diffstat with a given graph width\n    --stat-count <count>  generate diffstat with limited lines\n    --[no-]compact-summary\n                          generate compact summary in diffstat\n    --binary              output a binary diff that can be applied\n    --[no-]full-index     show full pre- and post-image object names on the \"index\" lines\n    --[no-]color[=<when>] show colored diff\n    --ws-error-highlight <kind>\n                          highlight whitespace errors in the 'context', 'old' or 'new' lines in the diff\n    -z                    do not munge pathnames and use NULs as output field terminators in --raw or --numstat\n    --[no-]abbrev[=<n>]   use <n> digits to display object names\n    --src-prefix <prefix> show the given source prefix instead of \"a/\"\n    --dst-prefix <prefix> show the given destination prefix instead of \"b/\"\n    --line-prefix <prefix>\n                          prepend an additional prefix to every line of output\n    --no-prefix           do not show any source or destination prefix\n    --default-prefix      use default prefixes a/ and b/\n    --inter-hunk-context <n>\n                          show context between diff hunks up to the specified number of lines\n    --output-indicator-new <char>\n                          specify the character to indicate a new line instead of '+'\n    --output-indicator-old <char>\n                          specify the character to indicate an old line instead of '-'\n    --output-indicator-context <char>\n                          specify the character to indicate a context instead of ' '\n\nDiff rename options\n    -B, --break-rewrites[=<n>[/<m>]]\n                          break complete rewrite changes into pairs of delete and create\n    -M, --find-renames[=<n>]\n                          detect renames\n    -D, --irreversible-delete\n                          omit the preimage for deletes\n    -C, --find-copies[=<n>]\n                          detect copies\n    --[no-]find-copies-harder\n                          use unmodified files as source to find copies\n    --no-renames          disable rename detection\n    --[no-]rename-empty   use empty blobs as rename source\n    --[no-]follow         continue listing the history of a file beyond renames\n    -l <n>                prevent rename/copy detection if the number of rename/copy targets exceeds given limit\n\nDiff algorithm options\n    --minimal             produce the smallest possible diff\n    -w, --ignore-all-space\n                          ignore whitespace when comparing lines\n    -b, --ignore-space-change\n                          ignore changes in amount of whitespace\n    --ignore-space-at-eol ignore changes in whitespace at EOL\n    --ignore-cr-at-eol    ignore carrier-return at the end of line\n    --ignore-blank-lines  ignore changes whose lines are all blank\n    -I, --[no-]ignore-matching-lines <regex>\n                          ignore changes whose all lines match <regex>\n    --[no-]indent-heuristic\n                          heuristic to shift diff hunk boundaries for easy reading\n    --patience            generate diff using the \"patience diff\" algorithm\n    --histogram           generate diff using the \"histogram diff\" algorithm\n    --diff-algorithm <algorithm>\n                          choose a diff algorithm\n    --anchored <text>     generate diff using the \"anchored diff\" algorithm\n    --word-diff[=<mode>]  show word diff, using <mode> to delimit changed words\n    --word-diff-regex <regex>\n                          use <regex> to decide what a word is\n    --color-words[=<regex>]\n                          equivalent to --word-diff=color --word-diff-regex=<regex>\n    --[no-]color-moved[=<mode>]\n                          moved lines of code are colored differently\n    --[no-]color-moved-ws <mode>\n                          how white spaces are ignored in --color-moved\n\nOther diff options\n    --[no-]relative[=<prefix>]\n                          when run from subdir, exclude changes outside and show relative paths\n    -a, --[no-]text       treat all files as text\n    -R                    swap two inputs, reverse the diff\n    --[no-]exit-code      exit with 1 if there were differences, 0 otherwise\n    --[no-]quiet          disable all output of the program\n    --[no-]ext-diff       allow an external diff helper to be executed\n    --[no-]textconv       run external text conversion filters when comparing binary files\n    --ignore-submodules[=<when>]\n                          ignore changes to submodules in the diff generation\n    --submodule[=<format>]\n                          specify how differences in submodules are shown\n    --ita-invisible-in-index\n                          hide 'git add -N' entries from the index\n    --ita-visible-in-index\n                          treat 'git add -N' entries as real in the index\n    -S <string>           look for differences that change the number of occurrences of the specified string\n    -G <regex>            look for differences that change the number of occurrences of the specified regex\n    --pickaxe-all         show all changes in the changeset with -S or -G\n    --pickaxe-regex       treat <string> in -S as extended POSIX regular expression\n    -O <file>             control the order in which files appear in the output\n    --rotate-to <path>    show the change in the specified path first\n    --skip-to <path>      skip the output to the specified path\n    --find-object <object-id>\n                          look for differences that change the number of occurrences of the specified object\n    --diff-filter [(A|C|D|M|R|T|U|X|B)...[*]]\n                          select files by diff type\n    --max-depth <depth>   maximum tree depth to recurse\n    --output <file>       output to a specific file\n\n"
+      }
+    },
+    "status": "PASS_SCOPED_INTEGRITY"
+  },
+  "failed_verification": {
+    "run_id": "20260913T110300Z-candidate-verification-30e0255b",
+    "status": "FAILED_CANDIDATE_VERIFICATION",
+    "failure_text": "Traceback (most recent call last):\n  File \"<repository-root>/scripts/verify_core_candidate.py\", line 103, in main\n    execute(label+'-comparison',['scripts/check_analysis.py',builds['baseline'],analyses['baseline'],\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        builds[label],analyses[label],'--output',relative(run/(label+'-comparison.json'))])\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<repository-root>/scripts/verify_core_candidate.py\", line 46, in execute\n    if proc.returncode:raise RuntimeError(f'{label} failed; evidence retained')\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: mesh050-comparison failed; evidence retained\n",
+    "commands": {
+      "commands": [
+        {
+          "label": "candidate-ifc",
+          "command": [
+            "python",
+            "scripts/audit_ifc.py",
+            "project/architect/outputs/core-candidate.ifc",
+            "--output",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/candidate-ifc.json"
+          ],
+          "return_code": 0,
+          "process_elapsed_seconds": 1.974653028009925
+        },
+        {
+          "label": "connections",
+          "command": [
+            "python",
+            "scripts/audit_wall_interfaces.py",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/baseline-build/analytical_model.json",
+            "--output",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/connections.json"
+          ],
+          "return_code": 0,
+          "process_elapsed_seconds": 0.48929905699333176
+        },
+        {
+          "label": "baseline-analysis",
+          "command": [
+            "python",
+            "-m",
+            "structural_ai.opensees_runner",
+            "--model",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/baseline-build/analytical_model.json",
+            "--output",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/baseline-analysis/results",
+            "--case",
+            "all",
+            "--modes",
+            "12"
+          ],
+          "return_code": 0,
+          "process_elapsed_seconds": 209.41627329197945
+        },
+        {
+          "label": "repeat-analysis",
+          "command": [
+            "python",
+            "-m",
+            "structural_ai.opensees_runner",
+            "--model",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/repeat-build/analytical_model.json",
+            "--output",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/repeat-analysis/results",
+            "--case",
+            "all",
+            "--modes",
+            "12"
+          ],
+          "return_code": 0,
+          "process_elapsed_seconds": 214.22218532598345
+        },
+        {
+          "label": "mesh050-analysis",
+          "command": [
+            "python",
+            "-m",
+            "structural_ai.opensees_runner",
+            "--model",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/mesh050-build/analytical_model.json",
+            "--output",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/mesh050-analysis/results",
+            "--case",
+            "all",
+            "--modes",
+            "12"
+          ],
+          "return_code": 0,
+          "process_elapsed_seconds": 243.53381902404362
+        },
+        {
+          "label": "equipment-high-analysis",
+          "command": [
+            "python",
+            "-m",
+            "structural_ai.opensees_runner",
+            "--model",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/equipment-high-build/analytical_model.json",
+            "--output",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/equipment-high-analysis/results",
+            "--case",
+            "all",
+            "--modes",
+            "12"
+          ],
+          "return_code": 0,
+          "process_elapsed_seconds": 210.27172951202374
+        },
+        {
+          "label": "base-deeper-analysis",
+          "command": [
+            "python",
+            "-m",
+            "structural_ai.opensees_runner",
+            "--model",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/base-deeper-build/analytical_model.json",
+            "--output",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/base-deeper-analysis/results",
+            "--case",
+            "all",
+            "--modes",
+            "12"
+          ],
+          "return_code": 0,
+          "process_elapsed_seconds": 211.1159105009865
+        },
+        {
+          "label": "repeat-comparison",
+          "command": [
+            "python",
+            "scripts/check_analysis.py",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/baseline-build",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/baseline-analysis",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/repeat-build",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/repeat-analysis",
+            "--output",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/repeat-comparison.json"
+          ],
+          "return_code": 0,
+          "process_elapsed_seconds": 3.090323565003928
+        },
+        {
+          "label": "mesh050-comparison",
+          "command": [
+            "python",
+            "scripts/check_analysis.py",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/baseline-build",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/baseline-analysis",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/mesh050-build",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/mesh050-analysis",
+            "--output",
+            "project/structural/outputs/runs/20260913T110300Z-candidate-verification-30e0255b/mesh050-comparison.json"
+          ],
+          "return_code": 1,
+          "process_elapsed_seconds": 3.5548104629851878
+        }
+      ]
+    },
+    "correction": "Node/contact precision was corrected; no acceptance tolerance was relaxed. Full corrected verification is retained."
+  },
+  "removed_raw_evidence_limit": "Original repeat build/solve/task files and failed-run raw vectors are removed after identity review. Their compact records remain historical; only the named complete verification retains raw data."
+}

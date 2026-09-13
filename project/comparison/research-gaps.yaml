@@ -1,0 +1,118 @@
+as_of: '2026-09-13'
+owner: Project research / AI-assisted evidence collection
+completion_policy: Progress the simulated project with explicit assumptions; do not
+  turn unverified industry/legal claims into facts.
+article_stage_update: RC-001 adds selected current concrete-code clauses, an attributed
+  drawing-note example and supplier bar dimensions. It does not close complete-package,
+  firm-prevalence, matched-software, labour, procurement or construction-review gaps.
+questions:
+- id: TW-G01
+  title: Recent full small-office reference project
+  needed_evidence: Legitimately public, internally consistent RC office plans, design
+    calculations and review trail.
+  current_limit: No matched recent full package found in this first review.
+  stages:
+  - architectural_input
+  - deliverables
+  status: OPEN
+- id: TW-G02
+  title: Current analysis conventions
+  needed_evidence: Attributable current practice/checklist for stiffness, diaphragm,
+    mass, base, load patterns and envelopes.
+  current_limit: Do not treat historical example settings as current standards.
+  progress: A01 diagnostic analysis has now run and been reproduced. The Chen Jie-Min
+    account was directly re-reviewed for model idealization and existing automation;
+    no current firm stiffness, diaphragm, base or mass checklist was established.
+    This gap remains open.
+  stages:
+  - analysis
+  - structural_model
+  status: OPEN
+- id: TW-G03
+  title: Low-rise ground and foundation workflow
+  needed_evidence: Current geotechnical report content and foundation design/review
+    example comparable to A01.
+  current_limit: No surveyed A01 parcel or matched contemporary ground report.
+  stages:
+  - design_basis
+  - foundation
+  status: OPEN
+- id: TW-G04
+  title: Detailing and independent checking
+  needed_evidence: Current reinforcement/checking/release process from identifiable
+    practitioner evidence.
+  current_limit: Manual capability is not a witnessed company procedure.
+  stages:
+  - rc_design
+  - deliverables
+  status: OPEN
+- id: TW-G05
+  title: Calculation-software acceptance
+  needed_evidence: Authoritative Taipei procedure or response on Article 7 applicability
+    for the exact toolchain.
+  current_limit: No accepted-software status asserted for OpenSees.
+  stages:
+  - analysis
+  - deliverables
+  status: OPEN
+- id: TW-G06
+  title: Special-review applicability
+  needed_evidence: Apply current Taipei triggers to explicitly selected site conditions
+    and design.
+  current_limit: Three-storey height and village name are insufficient.
+  stages:
+  - design_basis
+  - foundation
+  - deliverables
+  status: OPEN
+- id: TW-G07
+  title: Paired performance or numerical comparison
+  needed_evidence: Legitimate matched ETABS results and/or observed comparable task
+    timing.
+  current_limit: All industry time and equivalence fields remain unmeasured.
+  stages:
+  - industry_comparison
+  status: OPEN
+- id: TW-G08
+  title: Current code and circulation/equipment checks
+  needed_evidence: Official current clauses plus documented assumptions and appropriate
+    equipment technical data.
+  current_limit: H01 covers selected raw stair dimensions only; full finished egress/accessibility,
+    equipment envelopes and design loads remain unverified.
+  progress: H03-C adopts synthetic equipment loads for diagnostics and reviews selected
+    current modelling clauses. Certified products, actual reactions, full egress,
+    code actions/stiffness/combinations and final acceptance remain open.
+  stages:
+  - design_basis
+  - architectural_input
+  - rc_design
+  status: OPEN
+- id: TW-G09
+  title: Architectural handoff and coordination review
+  needed_evidence: Attributable Taiwan examples of architect deliverable inventories,
+    structural coordination questions, revision responsibilities and drawing acceptance
+    checks.
+  current_limit: Existing accounts establish broad roles and tools, not a complete
+    handoff checklist for this case. The owner's requested cycle is an A01 objective
+    rather than national practice evidence.
+  progress: H03-C records structural adoption after interface correction, actual verification
+    and four reviewed sheets. NTU sections 2-3 re-read; no new interview or complete
+    current firm handoff SOP.
+  stages:
+  - architectural_input
+  - iteration
+  status: OPEN
+- id: TW-G10
+  title: Cost and construction review during design
+  needed_evidence: Attributable Taiwan quantity/cost comparison and reinforcement/formwork/site
+    construction review examples, with scope, date and limitations.
+  current_limit: No current price basis, project budget, comparable full quantities
+    or contractor review is available. No savings or construction approval is claimed.
+  progress: H03-C corrects 4.06848 m3 duplicated wall/frame accounting without changing
+    the physical candidate. Reinforcement, formwork, current prices and contractor
+    review remain unavailable.
+  stages:
+  - cost_control
+  - constructability
+  - iteration
+  status: OPEN

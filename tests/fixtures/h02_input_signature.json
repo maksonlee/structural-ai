@@ -1,0 +1,35 @@
+{
+  "purpose": "H02 regression after independent source/statics/OpenSees checks; not a reference solution or design approval. Original imported signature remains separate.",
+  "source_ifc_sha256": "ef15b682abe8b5318365d58588a88c8150138602e4a0b4e187b5ac037d956438",
+  "signature_keys": [
+    "nodes",
+    "elements",
+    "supports",
+    "nodal_masses",
+    "load_cases",
+    "sections",
+    "materials",
+    "levels_m",
+    "mapping",
+    "units",
+    "base_elevation_m",
+    "explicit_idealizations",
+    "load_only_mapping",
+    "stair_transfer_method"
+  ],
+  "canonical_input_signature_sha256": "b2224196e25c269ce0f138d9f95093ca0490666566d0784e275e5ae5912a762d",
+  "unchanged_structural_keys": [
+    "nodes",
+    "elements",
+    "supports",
+    "sections",
+    "materials",
+    "levels_m",
+    "mapping",
+    "units",
+    "base_elevation_m",
+    "source_ifc_sha256"
+  ],
+  "unchanged_structural_sha256": "74bb127ed99c9cb86189eee700e2ce497ba43906f05dd00e3edc95a7ac87e30b",
+  "inherited_signature": "23f600ea5b614dfdf12b73105828dff25c37374bf271b8c30d4bc00de0c35bc9"
+}

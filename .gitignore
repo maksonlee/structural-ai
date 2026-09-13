@@ -1,0 +1,33 @@
+# Local environments, machine configuration, and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.codex/
+.local/
+private/
+.vscode/
+.idea/
+*.pem
+*.key
+
+# Python/build caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Per-run generated outputs, not reviewed design deliverables
+/project/structural/outputs/runs/*
+!/project/structural/outputs/runs/README.md
+
+# Operating-system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,29 @@
+id: RC-001
+purpose: Article example within the adopted building; local gravity strip only
+source_name: STL-1F-MID
+source_guid: 3WBnbFw6v18ePpRsZLm4Gj
+strip_y_m: [10.20, 11.20]
+cover_mm: 20.0
+maximum_aggregate_mm: 20.0
+exposure: SYNTHETIC_INTERIOR_NOT_EXPOSED_TO_WEATHER_OR_EARTH
+reinforcement_grade: Adopt fy from analysis.yaml, including D10; no supplier confirmation
+bar_dimensions_source: tw-rebar-dimensions
+bars:
+  D10: {diameter_mm: 9.53, area_mm2: 71.33, mass_kg_m: 0.56}
+  D13: {diameter_mm: 12.70, area_mm2: 126.7, mass_kg_m: 0.994}
+alternatives:
+  - {bar: D10, spacing_mm: 250}
+  - {bar: D10, spacing_mm: 200}
+  - {bar: D13, spacing_mm: 300}
+selected: {bar: D10, spacing_mm: 200}
+scope:
+  - Derive geometry and loads from current IFC and adopted verification ledger.
+  - Use the ledger's released support lines; no new loads enter the global model.
+  - Check direct gravity positive flexure, one-way shear, minimum steel and spacing.
+  - Show bottom main bars and transverse distribution for this strip only.
+not_checked:
+  - Whole landing plate action, adjacent flight reactions and wall continuity
+  - Negative moments, seismic actions and stair bracing effects
+  - Anchorage, splices, integrity reinforcement and support joint design
+  - Cracked and long-term deflection, vibration and fire resistance
+  - Supplier grade confirmation, fabrication lengths, congestion and priced quantities

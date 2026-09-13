@@ -1,0 +1,7 @@
+{
+  "source": "project/structural/outputs/runs/20260913T112509Z-candidate-verification-0530d76a/baseline-analysis/results/SERVICE_ILLUSTRATION_reactions.csv",
+  "source_sha256": "fb11fd40aaa50c0d248c1c873b7d1d21a4af1bc192beb546e59fbaa4527c31cd",
+  "derived_table_sha256": "36b758f01776100fc22d2a32cf2fab06d3d56f6a719b6e3be065edd8f858b98b",
+  "model_sha256": "4bbd0bdc5562145ba76a54db0a19d7686d657e160d99eda9b9ed190e0ee081ad",
+  "status": "H03_C_UNFACTORED_DIAGNOSTIC_FIXED_BASE_NOT_FOUNDATION_DESIGN"
+}

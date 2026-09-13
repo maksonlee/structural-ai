@@ -1,0 +1,13 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+# Preserve exact generated CSV bytes bound to reviewed output hashes.
+*.csv -text
+*.ifc text eol=lf
+*.png binary
+*.pdf binary
+*.zip binary

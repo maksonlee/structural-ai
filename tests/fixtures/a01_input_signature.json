@@ -1,0 +1,23 @@
+{
+  "purpose": "Regression reference for preserving imported analysis INPUTS during repository reorganization. NOT a trusted solution, a design approval, or an OpenSees benchmark.",
+  "source_ifc_sha256": "ef15b682abe8b5318365d58588a88c8150138602e4a0b4e187b5ac037d956438",
+  "signature_keys": [
+    "nodes",
+    "elements",
+    "supports",
+    "nodal_masses",
+    "load_cases",
+    "sections",
+    "materials",
+    "levels_m",
+    "mapping",
+    "units",
+    "base_elevation_m",
+    "explicit_idealizations"
+  ],
+  "canonical_input_signature_sha256": "23f600ea5b614dfdf12b73105828dff25c37374bf271b8c30d4bc00de0c35bc9",
+  "nodes": 3788,
+  "elements": 4236,
+  "supports": 71,
+  "source_archive_member": "structural-ai/baseline/r06/analytical_model.json"
+}

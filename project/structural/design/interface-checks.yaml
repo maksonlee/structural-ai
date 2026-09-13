@@ -1,0 +1,97 @@
+revision: H03-C
+status: VERIFIED_SCOPED_DIAGNOSTICS_NOT_FULL_CODE_DESIGN
+source_register: ../../../docs/sources.yaml
+method: ../../../docs/wall-interface-method.md
+edition: 建築物混凝土結構設計規範; 2023-08-10 revision effective 2024-01-01; 2024-02-19 errata
+units: kN, m, s, rad, kNm; concrete volumes in m3
+checks:
+- id: H03C-M01
+  source_ids:
+  - taiwan-concrete-code
+  clause: 6.3.1.1 and 6.3.1.3; printed 6-4/6-5
+  location: Whole frame/core, especially B2/B3 and adjacent beam-web intersections
+  combination: All 19 linear diagnostic cases; code combinations remain NOT_CHECKED
+  inputs: Physical candidate, frame sections, ownership partition and explicit contact
+    groups
+  method: Source-derived sections/midplanes; independent polygon-layer volume and
+    first-moment audit; actual eccentric-joint benchmarks
+  result: Interface implementation verified by focused tests; complete design stiffness
+    selection remains open
+  status: PARTIAL_DIAGNOSTIC_METHOD_ONLY
+  coverage: Gross elastic assumptions are not the cracked design-stiffness model
+- id: H03C-M02
+  source_ids:
+  - taiwan-concrete-code
+  clause: 6.9.1 and 6.9.2; printed 6-18
+  location: Whole building and independent formulation tests
+  combination: Gravity components/service illustrations, X/Y 100 kN calibration and
+    modes
+  inputs: OpenSees elasticBeamColumn, ShellMITC4, rigidLink beam and Transformation
+  method: Known answers, mapping/ownership, finite response, equilibrium, mass, modes,
+    repeat and mesh sensitivity
+  result: Five 19-case/12-mode variants, repeat/mesh/eigenpair and IFC audits passed;
+    adopted CLI reproduced 109 identical nominal result files
+  status: VERIFIED_SCOPED_DIAGNOSTICS
+  coverage: FE permission does not approve this software or verify all local design
+    demands
+- id: H03C-M03
+  source_ids:
+  - taiwan-concrete-code
+  clause: 6.9.3; printed 6-18
+  location: Analysis method
+  combination: Linear diagnostic cases
+  inputs: First-order linear elastic analysis; no inelastic analysis
+  method: Applicability review
+  result: Separate inelastic combination rule does not apply to this linear diagnostic
+    stage
+  status: NOT_APPLICABLE
+  reason: No inelastic load-combination analysis is performed; revisit if that method
+    is selected
+- id: H03C-M04
+  source_ids:
+  - taiwan-concrete-code
+  clause: 6.9.4; printed 6-18
+  location: Whole-building diagnostics and reviewed outputs
+  combination: Five diagnostic variants; not final design combinations
+  inputs: Recorded solver results and source/model hashes
+  method: Check force and position moments, reduced nodal residuals, constraint compatibility,
+    superposition, eigenpairs and sensitivity
+  result: Five 19-case/12-mode variants, repeat/mesh/eigenpair and IFC audits passed;
+    adopted CLI reproduced 109 identical nominal result files
+  status: VERIFIED_SCOPED_DIAGNOSTICS
+  coverage: Local section-cut force convergence and complete design review remain
+    NOT_CHECKED
+- id: H03C-M05
+  source_ids:
+  - taiwan-concrete-code
+  clause: 6.9.5; printed 6-18
+  location: All final construction-drawing member dimensions
+  combination: Final governing design combinations are not yet assembled
+  inputs: Coordinated construction drawings and final analytical sections are not
+    available
+  method: Future drawing-to-analysis section comparison; source partition review is
+    supporting evidence only
+  result: No construction-drawing acceptance
+  status: NOT_CHECKED
+  coverage: The 10 percent dimension criterion is not a mesh tolerance or permission
+    to silently change geometry
+- id: H03C-M06
+  source_ids:
+  - taiwan-structural-regulations
+  clause: Articles 375-2 and 375-3
+  location: Whole structural system and member connections
+  combination: Final design and construction conditions remain open
+  inputs: Diagnostic contacts and physical geometry; reinforcement and sequencing
+    unavailable
+  method: Direct force-transfer audit now; later RC, anchorage, congestion and construction
+    review
+  result: Analytical contact mapping only; physical capacity and construction feasibility
+    unaccepted
+  status: PARTIAL_DIAGNOSTIC_METHOD_ONLY
+  coverage: No joint reinforcement, contractor review or construction approval
+full_design_complete: false
+construction_release: BLOCKED
+evidence:
+- interface-audit.json
+- ../outputs/deliverables/structural-review.md
+- ../outputs/deliverables/model-adoption.json

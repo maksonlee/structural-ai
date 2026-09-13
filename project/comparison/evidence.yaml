@@ -1,0 +1,340 @@
+research_status: DOCUMENTED_PARTIAL
+last_reviewed: '2026-09-13'
+claims:
+- id: TW-01
+  kind: DOCUMENTED_PRACTICE
+  source_ids:
+  - tw-practitioner-ntu-2022
+  claim: An identified practitioner describes preliminary design, analysis, calculation/drawing
+    work and review responses, with drafting support.
+  limitations: One attributed account; not a universal SOP.
+  stages:
+  - architectural_input
+  - structural_model
+  - deliverables
+  checked_on: '2026-09-13'
+- id: TW-02
+  kind: HISTORICAL_OBSERVATION
+  source_ids:
+  - tw-practice-zhuyuan-2018
+  claim: A 2018 firsthand account reports CAD-based ETABS modelling and DRAWRC detailing
+    followed by human correction.
+  limitations: Historical company experience; not 2026 prevalence.
+  stages:
+  - structural_model
+  - analysis
+  - rc_design
+  - iteration
+  checked_on: '2026-09-13'
+- id: TW-03
+  kind: FIRM_REPORTED_METHOD
+  source_ids:
+  - tw-point-bim-2025
+  claim: A 2025 firm article describes using Dynamo and Excel to transfer design information
+    into BIM.
+  limitations: No measured productivity or evidence of universal adoption.
+  stages:
+  - structural_model
+  - iteration
+  - deliverables
+  checked_on: '2026-09-13'
+- id: TW-04
+  kind: FIRM_REPORTED_METHOD
+  source_ids:
+  - tw-point-model-transfer-2025
+  claim: A 2025 firm article describes extracting coordinates and lines through SketchUp,
+    Revit and Dynamo for analysis.
+  limitations: Complex-geometry example, not a requirement to use BIM or IFC.
+  stages:
+  - architectural_input
+  - structural_model
+  checked_on: '2026-09-13'
+- id: TW-05
+  kind: DOCUMENTED_TOOL_CAPABILITY
+  source_ids:
+  - tw-rcad-beam-workflow
+  claim: ASCO documentation includes grouped beam detailing and DWG/DXF export following
+    whole-building calculation.
+  limitations: Manual reviewed; application not executed.
+  stages:
+  - rc_design
+  - deliverables
+  checked_on: '2026-09-13'
+- id: TW-06
+  kind: DOCUMENTED_TOOL_CAPABILITY
+  source_ids:
+  - tw-rcad-beam-design
+  - tw-rcad-column-design
+  claim: Beam/column manuals distinguish using ETABS reinforcement data from force-based
+    design and describe updates and error logs.
+  limitations: Not certification of all current Taiwan checks.
+  stages:
+  - rc_design
+  - iteration
+  checked_on: '2026-09-13'
+- id: TW-07
+  kind: REGULATORY_REQUIREMENT
+  source_ids:
+  - taiwan-structural-regulations
+  claim: Structural drawings, calculation records and construction-quality specifications
+    have express content and consistency requirements.
+  limitations: Selected Articles 5-8 only; not a complete permit determination.
+  stages:
+  - deliverables
+  checked_on: '2026-09-13'
+- id: TW-08
+  kind: REGULATORY_REQUIREMENT
+  source_ids:
+  - taiwan-structural-regulations
+  claim: Article 7 addresses filing of calculation software and possible independent
+    verification when computer records substitute for calculation books.
+  limitations: No determination that this OpenSees toolchain is accepted or prohibited;
+    local procedure remains unverified.
+  stages:
+  - analysis
+  - deliverables
+  checked_on: '2026-09-13'
+- id: TW-09
+  kind: LOCAL_REVIEW_APPLICABILITY
+  source_ids:
+  - taipei-special-review-2024
+  claim: Taipei special review can be triggered below 50 m, including specified liquefaction
+    and excavation conditions.
+  limitations: A01 site-specific applicability remains unresolved.
+  stages:
+  - design_basis
+  - foundation
+  - deliverables
+  checked_on: '2026-09-13'
+- id: TW-10
+  kind: HISTORICAL_DELIVERABLE_EXAMPLE
+  source_ids:
+  - tw-standard-calc-2008
+  claim: An old low-rise standard-design report separates ETABS analysis, CONKER member
+    design, slab and foundation design.
+  limitations: Format reference only; not current calculations or a matched A01 project.
+  stages:
+  - analysis
+  - rc_design
+  - foundation
+  - deliverables
+  checked_on: '2026-09-13'
+- id: TW-11
+  kind: OFFICIAL_PUBLICATION_METADATA
+  source_ids:
+  - taiwan-concrete-code
+  claim: The official listing identifies the 112-year concrete edition effective 2024-01-01
+    and a 2024-02-19 errata notice.
+  limitations: Listing checked; individual design clauses still require verification.
+  stages:
+  - design_basis
+  - rc_design
+  checked_on: '2026-09-13'
+- id: TW-12
+  kind: DOCUMENT_TEMPLATE_EVIDENCE
+  source_ids:
+  - taipei-permit-forms
+  claim: The city directory provides structural attachment and professional certification
+    report examples.
+  limitations: Legacy examples, not a live-project submission or current engineering
+    rule.
+  stages:
+  - deliverables
+  checked_on: '2026-09-13'
+- id: TW-14
+  kind: UNDATED_FIRM_REPORTED_SERVICE
+  source_ids:
+  - tw-envision-coordination-service
+  claim: Envision describes architectural collaboration and comparing cost, reliability,
+    performance and construction feasibility in its service scope.
+  limitations: Undated firm-authored description; no observed estimating procedure,
+    measured savings, contractor acceptance or claim of national prevalence.
+  stages:
+  - architectural_input
+  - cost_control
+  - constructability
+  - iteration
+  checked_on: '2026-09-13'
+- id: TW-H02-01
+  kind: CURRENT_LEGAL_REQUIREMENTS_SELECTED_CLAUSES
+  source_ids:
+  - taiwan-design-construction-2026
+  - taiwan-accessibility-stairs-2020
+  - taiwan-structural-regulations
+  claim: H02 coordinates selected escape-door/protected-circulation/accessibility
+    requirements with rational gravity modelling and permanent/occupancy weights.
+  limitations: Selected clauses only; all-point travel, stair uniformity, door/rail
+    turns, RC detail and equipment impact remain open. No complete legal compliance
+    claim.
+  stages:
+  - architectural_input
+  - design_basis
+  - structural_model
+  - iteration
+  checked_on: '2026-09-13'
+- id: TW-H02-02
+  kind: VENDOR_CAPABILITY_AND_COORDINATION_SCOPE
+  source_ids:
+  - tmec-mrl-planning-h02
+  - hitachi-yungtay-uas-2022
+  claim: Vendor planning information distinguishes product dimensions from building/electrical
+    interface works and supplier-specific reaction/entrance details.
+  limitations: TMEC P10 2S is a dimensional candidate only. No A01 submittal or reaction
+    confirmation; the different residential Hitachi example is not the design load
+    basis.
+  stages:
+  - architectural_input
+  - design_basis
+  - constructability
+  checked_on: '2026-09-13'
+- id: TW-H02-03
+  kind: A01_SIMULATED_DESIGN_CHOICE
+  source_ids:
+  - tw-practitioner-ntu-2022
+  - tw-envision-coordination-service
+  claim: H02 implements one architectural finish request through structural load/mass
+    revision, verified diagnostics, quantities/reactions and review sheets while preserving
+    interface holds.
+  limitations: The sources support role/coordination objectives, not this specific
+    strip mechanism or synthetic finish weight. No architect/contractor acceptance,
+    ETABS equivalence or productivity measurement.
+  stages:
+  - iteration
+  - architectural_input
+  - structural_model
+  - analysis
+  - cost_control
+  - constructability
+  - deliverables
+  checked_on: '2026-09-13'
+- id: TW-H03-C-01
+  kind: CURRENT_LEGAL_REQUIREMENTS_SELECTED_CLAUSES
+  source_ids:
+  - taiwan-concrete-code
+  - taiwan-structural-regulations
+  claim: Selected 6.3/6.9 modelling and verification requirements and structural Articles
+    375-2/375-3 were reviewed before the wall/frame implementation.
+  limitations: Selected current official text only; no complete code review, software
+    approval, cracked-design model or construction acceptance.
+  evidence_paths:
+  - workflow-example.md
+  - ../structural/design/interface-checks.yaml
+  stages:
+  - structural_model
+  - analysis
+  - constructability
+  checked_on: '2026-09-13'
+- id: TW-H03-C-02
+  kind: ATTRIBUTED_PRACTICE_AND_SEPARATE_UPSTREAM_METHOD
+  source_ids:
+  - tw-practitioner-ntu-2022
+  - openseespy-rigid-joint-method
+  claim: NTU sections 2-3 supply coordination and drawing-role context; upstream documentation
+    separately supplies the selected eccentric constraint capability and restrictions.
+  limitations: Neither establishes widespread Taiwanese use of this adapter, the physical
+    validity of A01 joints, ETABS equivalence or measured productivity.
+  evidence_paths:
+  - workflow-example.md
+  stages:
+  - iteration
+  - structural_model
+  - analysis
+  - deliverables
+  - industry_comparison
+  checked_on: '2026-09-13'
+- id: A01-H03-C-20260913
+  kind: A01_SIMULATED_IMPLEMENTATION_AND_EXECUTION
+  source_ids:
+  - taiwan-concrete-code
+  - taiwan-structural-regulations
+  - tw-practitioner-ntu-2022
+  - openseespy-rigid-joint-method
+  claim: H03-C corrects wall/frame ownership and eccentric contacts, verifies five
+    whole-building variants, adopts the unchanged physical candidate and reproduces
+    109 identical nominal result files through the ordinary CLI; four reviewed sheets
+    and trial reactions follow the same revision.
+  limitations: Gross elastic research diagnostics and nominal geometry screens only.
+    Failed precision/contact checks are preserved. Code criteria/actions, RC/foundations,
+    complete architecture, prices and construction acceptance remain open; no ETABS
+    equivalence or measured productivity.
+  evidence_paths:
+  - workflow-example.md
+  - effort.csv
+  - ../structural/outputs/deliverables/structural-review.md
+  - ../structural/outputs/deliverables/model-adoption.json
+  stages:
+  - architectural_input
+  - structural_model
+  - analysis
+  - iteration
+  - cost_control
+  - constructability
+  - deliverables
+  - industry_comparison
+  checked_on: '2026-09-13'
+- id: TW-RC001-01
+  kind: CURRENT_LEGAL_REQUIREMENTS_SELECTED_CLAUSES
+  source_ids: [taiwan-concrete-code]
+  claim: Current concrete-code gravity combinations, section strength, minimum slab
+    steel, cover and spacing provisions inform the scoped RC-001 calculation.
+  limitations: No complete landing, seismic, anchorage, fire or serviceability compliance claim.
+  evidence_paths: [../structural/outputs/deliverables/landing-strip.md]
+  stages: [design_basis, rc_design, deliverables]
+  checked_on: '2026-09-13'
+- id: TW-RC001-02
+  kind: ATTRIBUTED_PRACTICE_AND_DRAWING_EXAMPLE
+  source_ids: [tw-practitioner-ntu-2022, tw-tcea-reinforcement-notes]
+  claim: The practitioner account links architectural inputs to calculations and drawings;
+    public association notes illustrate bar grades, sizes and detail annotations.
+  limitations: One account and an undated technical example; no universal office SOP.
+    Historical/default grade notes are not imported as current design requirements.
+  evidence_paths: [../structural/outputs/deliverables/landing-strip.md]
+  stages: [rc_design, deliverables, industry_comparison]
+  checked_on: '2026-09-13'
+- id: A01-RC001-01
+  kind: A01_SIMULATED_IMPLEMENTATION_WITH_SEPARATE_TOOL_AND_VENDOR_EVIDENCE
+  source_ids: [tw-rebar-dimensions, openseespy-landing-load-method]
+  claim: An existing landing's geometry and load ledger feed a real local OpenSees
+    calculation and selected code checks; RC-001 shows the resulting reinforcement
+    choice with unresolved ends. Supplier table supports bar dimensions only.
+  limitations: Local direct-gravity illustration with synthetic materials/exposure;
+    no global redesign, complete detailing, supplier certification, prices or savings.
+  evidence_paths: [../structural/outputs/deliverables/landing-strip.md, effort.csv]
+  stages: [rc_design, cost_control, constructability, deliverables, industry_comparison]
+  checked_on: '2026-09-13'
+- id: TOOL-ETABS-01
+  kind: DOCUMENTED_TOOL_CAPABILITY
+  source_ids: [etabs-design-workflow]
+  claim: CSI documents concrete-frame analysis, design checks, interactive revision,
+    report generation and repeated analysis using the final design sections.
+  limitations: Undated vendor procedure, not an observed Taiwan office workflow,
+    matched A01 ETABS results, current Taiwan code certification or measured savings.
+  stages: [analysis, rc_design, iteration, deliverables, industry_comparison]
+  checked_on: '2026-09-13'
+policy:
+  documented_workflow: Must cite an attributable source; product features alone do
+    not establish how every firm works.
+  measured_industry_effort: Requires matched project/task measurements or identified
+    external evidence.
+  numerical_equivalence: Requires matching model/assumptions and actual reference-software
+    results.
+  productivity_claim: Never infer a percentage from unsupported estimates or omit
+    setup/debugging time.
+  historical_chat_claims: Leads only; not verified evidence.
+  taiwan_priority: Use dated Taiwan practitioner accounts and attributable project
+    records for practice, official current sources for law, and local manuals for
+    tool capability.
+  opensees_or_ifc_adoption: A01 tool selection is a research choice, not evidence
+    of widespread Taiwanese use.
+  case_specific_model_decisions: Do not generalize A01 geometry constraints into universal
+    design rules.
+  no_synthetic_interviews: No invented company conversations, schedules, costs or
+    survey percentages.
+not_available:
+- Matched ETABS model/results for A01
+- Measured Taiwan firm effort for comparable tasks
+- Independent practitioner review of A01
+- Recent complete matched small-office design package
+article_scope: Current case plus attributable practice/tool/regulatory evidence. Older
+  case narrative rows removed with obsolete outputs; source-register review history
+  remains.

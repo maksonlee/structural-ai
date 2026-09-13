@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "structural-ai"
+version = "0.1.0.dev0"
+description = "A reproducible structural-design case study with AI assistance and industry-workflow comparison"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "shapely>=2.0,<3", "PyYAML>=6,<7"]
+# No project-wide license declared until the owner selects it; see docs/publishing.md.
+
+[project.optional-dependencies]
+analysis = ["openseespy>=3.7.1.2,<4"]
+# IfcOpenShell's EXPRESS rule executor imports pytest assertion rewriting.
+ifc-validation = ["ifcopenshell>=0.8,<1", "pytest>=8,<10"]
+
+[project.scripts]
+structural-ai = "structural_ai.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

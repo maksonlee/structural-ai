@@ -1,0 +1,140 @@
+id: AH-007
+revision: H03-B
+date: '2026-09-13'
+issuer: Simulated architectural design role
+status: CANDIDATE_DIMENSIONS_REVIEWED_STRUCTURAL_JOINT_ADOPTION_HOLD
+basis: scheme.yaml for retained use/site/finishes; structural IFC for existing geometry and levels
+authority_note: H03-B candidate geometry only; regenerate core-candidate.ifc from the unchanged received
+  source with core_revision. H02 remains the adopted structural input.
+units: m
+selection:
+  preferred: Keep floor heights; extend the stair enclosure locally and place its fire door in a west-side
+    vestibule
+  reason: Resolve nominal stair/door geometry while preserving the regular main frame, B2/C2, rear 7.50
+    m bay and shared stair/lift wall
+  rejected: Reducing first-storey height from 4.00 to 3.90 m would permit 150 mm uniform risers, but changes
+    every upper frame/floor elevation and still requires door coordination
+stair:
+  outer_south_y_m: 3.5
+  outer_north_y_m: 11.68
+  tread_m: 0.29
+  risers_by_storey:
+  - - 15
+    - 15
+  - - 14
+    - 13
+  - - 14
+    - 13
+  first_up_nosing_y_m: 5.9
+  turning_envelope_radius_m: 1.44
+  turning_basis: Conservative half-disc over the 2.88 m flight/well interior; retain 20 mm project allowance
+    beyond this envelope.
+  finish_vertical_build_up_m: 0.05
+  nominal_waist_normal_thickness_m: 0.18
+  nominal_landing_thickness_m: 0.18
+  dimensional_allowance_m: 0.02
+  handrail_height_above_nosing_m: 0.8
+  handrail_extension_m: 0.3
+  warning_offset_m: 0.3
+  warning_depth_m: 0.3
+  finish_notes: Identical vertical build-up on floors, landings and treads; closed risers, flush contrasting
+    nonslip strips and no projecting nosing in this proposal
+  handrail_notes: One-tread setback at every rising flight transition; continuous central handrail route
+    proposed. Bracket/guard strength, joints and final three-dimensional bend fabrication remain for detailing.
+  raw_flight_width_m: 1.33
+  central_well_width_m: 0.22
+  upper_bearing_length_m: 0.15
+  guard_height_m: 1.1
+  guard_max_clear_spacing_m: 0.09
+  guard_thickness_m: 0.02
+  guard_layout: Vertical, non-climbable infill; no horizontal climbing members; strength and bracket anchorage
+    NOT_CHECKED.
+vestibule:
+  outer_bounds_m:
+  - 4.5
+  - 4.35
+  - 6.37
+  - 6.15
+  enclosure_thickness_m: 0.25
+  wall_basis: Load-only lightweight 1-hour rated assembly reservation, synthetic face weight; selected
+    assembly and rated interfaces remain unconfirmed.
+  side_portal_y_m:
+  - 4.6
+  - 5.9
+  portal_clear_height_m: 2.3
+  door_rough_y_m:
+  - 4.6
+  - 5.8
+  door_frame_each_side_m: 0.025
+  door_leaf_thickness_m: 0.045
+  door_leaf_height_m: 2.2
+  door_hinge_m:
+  - 4.775
+  - 4.625
+  door_swing: Closed leaf points north; opens east into the vestibule
+  protected_approach_bounds_m:
+  - 3.15
+  - 3.1
+  - 4.5
+  - 6.15
+  west_office_new_door_xy_m:
+  - 3.85
+  - 6.15
+  protected_route_centerline:
+  - - 3.825
+    - 3.1
+  - - 3.825
+    - 5.1
+  - - 6.37
+    - 5.1
+  assembly_requirements: One-hour fire resistance and half-hour insulation with smoke performance; no
+    threshold; self-closing, no key needed for escape, no hold-open stop. Product and rated wall/door
+    junctions not certified.
+  ground_discharge: Door opens west toward the protected discharge route at 1F; 2F/3F entries open east
+    into the vestibule. The separate RF south door opens north into the stair.
+  ground_discharge_note: Upper hinge opens west; full-open leaf clears the proposed south route geometrically.
+    All-point egress remains open. Source B2 north face is y=4.50 m, leaving 0.10 m before the portal.
+  panel_face_weight_kN_m2: 0.75
+  ground_door_hinge_m:
+  - 4.775
+  - 5.775
+  ground_south_route_bounds_m:
+  - 3.15
+  - 3.1
+  - 4.5
+  - 5.7
+lift_and_roof:
+  stair_cap_structural_top_z_m: 13.85
+  lift_cap_structural_top_z_m: 12.25
+  cap_trial_thickness_m: 0.18
+  pit_floor_build_up_m: 0.05
+  pit_base_trial_thickness_m: 0.3
+  pit_waterproofing: Tanked enclosure and drained maintenance access required; drainage route and groundwater
+    design pending
+  roof_access: Maintenance only; fire door on the south of the proposed stair headhouse; finished landing
+    and surface drainage to be checked separately
+  roof_door_rough_x_m:
+  - 6.77
+  - 7.97
+  roof_door_hinge_m:
+  - 6.795
+  - 3.76
+  roof_door_frame_each_side_m: 0.025
+  roof_door_leaf_thickness_m: 0.045
+  roof_door_swing: Closed toward east; opens north into the stair for escape from the maintenance roof.
+    No west vestibule is proposed at RF.
+  equipment_dimensions: Retain H02 TMEC P10 700 kg 2S dimensional candidate; supplier-specific entrance,
+    guide and support details remain unconfirmed
+structural_review_required:
+- Stair west/south/north/shared wall geometry, changed door openings and B2/frame-wall intersections
+- L-shaped mid-landings and different left/right floor-opening edges; preserve actual source GUID mapping
+- Stair stiffness/restraint, landing support, reinforcement and anchorage
+- Stepped roof caps and load transfer through the shared wall
+- Pit below the diagnostic fixed base; soil, waterproofing and foundation interaction
+- Synthetic equipment and roof allowances in ../../structural/design/core-interface-loads.yaml
+- Converter and independent IFC consistency audit before adopting any source change
+acceptance:
+  architectural_package_complete: false
+  structural_adoption: HOLD_DIRECT_WALL_COLUMN_JOINT_IDEALIZATION_AND_QUANTITY_OWNERSHIP
+  new_whole_building_analysis: CANDIDATE_DIAGNOSTICS_RECORDED_SEPARATELY_NOT_ADOPTION
+  construction_release: BLOCKED

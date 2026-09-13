@@ -1,0 +1,1957 @@
+{
+  "model_sha256": "4bbd0bdc5562145ba76a54db0a19d7686d657e160d99eda9b9ed190e0ee081ad",
+  "source_sha256": "e0b0102fe76c91c587e71a1e45c30cfe9055cebde9d0f49f5553711d08905b9b",
+  "physical_ifc_sha256": "ef603b239434f8e3b993bf4d54e3eb2819f04737aad89705de029de397564fac",
+  "wall_records": [
+    {
+      "source_name": "SW-STAIR-W-1F",
+      "source_guid": "0meE0RiqH3SO9gn8K$Tx0k",
+      "gross_after_openings_m3": 7.432499999999999,
+      "owned_volume_m3": 6.474107999999999,
+      "removed_frame_overlap_m3": 0.9583919999999999,
+      "expected_volume_and_first_moments_m3_m4": [
+        6.474107999999999,
+        40.47689318,
+        51.54033531999999,
+        13.07691548
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        6.474108,
+        40.47689317999994,
+        51.54033531999998,
+        13.076915479999993
+      ],
+      "residual_m3_m4": [
+        8.881784197001252e-16,
+        5.684341886080802e-14,
+        7.105427357601002e-15,
+        7.105427357601002e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-S-1F",
+      "source_guid": "0pHsdblmTEHO6DL43kizn$",
+      "gross_after_openings_m3": 2.88,
+      "owned_volume_m3": 2.88,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        2.88,
+        22.492800000000003,
+        10.44,
+        5.76
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        2.8800000000000003,
+        22.492800000000003,
+        10.44,
+        5.759999999999999
+      ],
+      "residual_m3_m4": [
+        4.440892098500626e-16,
+        0.0,
+        0.0,
+        8.881784197001252e-16
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-N-1F",
+      "source_guid": "2OPgxAtI5CPezR_ApJR$pt",
+      "gross_after_openings_m3": 2.88,
+      "owned_volume_m3": 2.6104320000000003,
+      "removed_frame_overlap_m3": 0.2695679999999996,
+      "expected_volume_and_first_moments_m3_m4": [
+        2.6104320000000003,
+        20.387473920000005,
+        30.154106880000008,
+        4.800337920000001
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        2.6104320000000008,
+        20.38747392,
+        30.15410688,
+        4.8003379200000005
+      ],
+      "residual_m3_m4": [
+        4.440892098500626e-16,
+        3.552713678800501e-15,
+        7.105427357601002e-15,
+        8.881784197001252e-16
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-SHARED-STAIR-LIFT-1F",
+      "source_guid": "03zRJPydr6IuKojMT8t3eN",
+      "gross_after_openings_m3": 8.18,
+      "owned_volume_m3": 8.1046,
+      "removed_frame_overlap_m3": 0.07540000000000013,
+      "expected_volume_and_first_moments_m3_m4": [
+        8.1046,
+        75.980625,
+        61.596593999999996,
+        16.091575999999996
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        8.104599999999998,
+        75.98062499999992,
+        61.59659399999998,
+        16.091576000000003
+      ],
+      "residual_m3_m4": [
+        1.7763568394002505e-15,
+        8.526512829121202e-14,
+        1.4210854715202004e-14,
+        7.105427357601002e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-S-1F",
+      "source_guid": "3tQQHmlvb5iROlABtHiReE",
+      "gross_after_openings_m3": 1.3600000000000012,
+      "owned_volume_m3": 1.3600000000000012,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        1.3600000000000012,
+        14.314000000000012,
+        6.290000000000006,
+        3.3065000000000024
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        1.3600000000000012,
+        14.31400000000001,
+        6.290000000000006,
+        3.3065000000000015
+      ],
+      "residual_m3_m4": [
+        0.0,
+        1.7763568394002505e-15,
+        0.0,
+        8.881784197001252e-16
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-N-1F",
+      "source_guid": "092fz5cN94dh3MEVbnoapw",
+      "gross_after_openings_m3": 2.0500000000000007,
+      "owned_volume_m3": 2.0500000000000007,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        2.0500000000000007,
+        21.576250000000005,
+        14.196250000000004,
+        4.100000000000001
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        2.0500000000000007,
+        21.57625000000001,
+        14.196250000000008,
+        4.100000000000001
+      ],
+      "residual_m3_m4": [
+        0.0,
+        3.552713678800501e-15,
+        3.552713678800501e-15,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-E-1F",
+      "source_guid": "29pa9bNO5CiB6bzwy4O20m",
+      "gross_after_openings_m3": 2.5500000000000007,
+      "owned_volume_m3": 2.5500000000000007,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        2.5500000000000007,
+        29.77125000000001,
+        14.726250000000006,
+        5.100000000000001
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        2.5499999999999994,
+        29.771250000000006,
+        14.726249999999993,
+        5.100000000000003
+      ],
+      "residual_m3_m4": [
+        1.3322676295501878e-15,
+        3.552713678800501e-15,
+        1.2434497875801753e-14,
+        1.7763568394002505e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-W-2F",
+      "source_guid": "0mxaNqJyz0KBrqZEk$3Mq6",
+      "gross_after_openings_m3": 6.614499999999999,
+      "owned_volume_m3": 5.719467999999998,
+      "removed_frame_overlap_m3": 0.8950320000000005,
+      "expected_volume_and_first_moments_m3_m4": [
+        5.719467999999998,
+        35.76194877999999,
+        45.74580171999998,
+        33.21707227999999
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        5.719468,
+        35.761948780000004,
+        45.74580171999998,
+        33.21707227999998
+      ],
+      "residual_m3_m4": [
+        1.7763568394002505e-15,
+        1.4210854715202004e-14,
+        0.0,
+        7.105427357601002e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-S-2F",
+      "source_guid": "3X79TAbB5DrhkBOOtFkWan",
+      "gross_after_openings_m3": 2.5919999999999996,
+      "owned_volume_m3": 2.5919999999999996,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        2.5919999999999996,
+        20.24352,
+        9.395999999999999,
+        15.033599999999998
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        2.5919999999999996,
+        20.243519999999997,
+        9.395999999999997,
+        15.033599999999998
+      ],
+      "residual_m3_m4": [
+        0.0,
+        3.552713678800501e-15,
+        1.7763568394002505e-15,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-N-2F",
+      "source_guid": "0yiPFvOPj4Kv$c5oxVcGzX",
+      "gross_after_openings_m3": 2.592,
+      "owned_volume_m3": 2.322432,
+      "removed_frame_overlap_m3": 0.26956800000000003,
+      "expected_volume_and_first_moments_m3_m4": [
+        2.322432,
+        18.138193920000003,
+        26.82626688,
+        13.103493119999998
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        2.322432,
+        18.138193920000003,
+        26.826266880000002,
+        13.10349312
+      ],
+      "residual_m3_m4": [
+        0.0,
+        0.0,
+        3.552713678800501e-15,
+        1.7763568394002505e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-SHARED-STAIR-LIFT-2F",
+      "source_guid": "3CPeXI16H56PWlDIK7njRa",
+      "gross_after_openings_m3": 7.361999999999999,
+      "owned_volume_m3": 7.286599999999999,
+      "removed_frame_overlap_m3": 0.07540000000000013,
+      "expected_volume_and_first_moments_m3_m4": [
+        7.286599999999999,
+        68.31187499999999,
+        55.38797399999999,
+        42.159735999999995
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        7.286599999999999,
+        68.311875,
+        55.387973999999986,
+        42.159736
+      ],
+      "residual_m3_m4": [
+        0.0,
+        1.4210854715202004e-14,
+        7.105427357601002e-15,
+        7.105427357601002e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-S-2F",
+      "source_guid": "1O2qrlUg9EpAevOFM0Oo6M",
+      "gross_after_openings_m3": 1.155000000000001,
+      "owned_volume_m3": 1.155000000000001,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        1.155000000000001,
+        12.156375000000008,
+        5.341875000000005,
+        7.147500000000004
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        1.155000000000001,
+        12.156375000000013,
+        5.341875000000004,
+        7.147500000000005
+      ],
+      "residual_m3_m4": [
+        0.0,
+        5.329070518200751e-15,
+        8.881784197001252e-16,
+        8.881784197001252e-16
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-N-2F",
+      "source_guid": "05fbaF5$n1teewmrwrPXhW",
+      "gross_after_openings_m3": 1.8450000000000004,
+      "owned_volume_m3": 1.8450000000000004,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        1.8450000000000004,
+        19.418625000000002,
+        12.776625000000003,
+        10.701000000000002
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        1.845,
+        19.418625000000006,
+        12.776625000000003,
+        10.701000000000002
+      ],
+      "residual_m3_m4": [
+        4.440892098500626e-16,
+        3.552713678800501e-15,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-E-2F",
+      "source_guid": "2fViMp80z5bhWRlhecCKJh",
+      "gross_after_openings_m3": 2.2950000000000004,
+      "owned_volume_m3": 2.2950000000000004,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        2.2950000000000004,
+        26.794125000000005,
+        13.253625000000003,
+        13.311000000000002
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        2.294999999999999,
+        26.794124999999998,
+        13.253625,
+        13.311
+      ],
+      "residual_m3_m4": [
+        1.3322676295501878e-15,
+        7.105427357601002e-15,
+        3.552713678800501e-15,
+        1.7763568394002505e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-W-3F",
+      "source_guid": "2K3NqGltn3lhdvkcROZEBs",
+      "gross_after_openings_m3": 6.614499999999999,
+      "owned_volume_m3": 5.719467999999999,
+      "removed_frame_overlap_m3": 0.8950319999999996,
+      "expected_volume_and_first_moments_m3_m4": [
+        5.719467999999999,
+        35.76194878,
+        45.74580171999998,
+        53.80715708
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        5.719468000000002,
+        35.76194878,
+        45.74580171999999,
+        53.80715708
+      ],
+      "residual_m3_m4": [
+        2.6645352591003757e-15,
+        0.0,
+        7.105427357601002e-15,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-S-3F",
+      "source_guid": "0$AHHdFirFcuE7R_ayrkfY",
+      "gross_after_openings_m3": 2.5919999999999996,
+      "owned_volume_m3": 2.5919999999999996,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        2.5919999999999996,
+        20.24352,
+        9.395999999999999,
+        24.364799999999992
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        2.5919999999999996,
+        20.243519999999997,
+        9.395999999999999,
+        24.364799999999995
+      ],
+      "residual_m3_m4": [
+        0.0,
+        3.552713678800501e-15,
+        0.0,
+        3.552713678800501e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-N-3F",
+      "source_guid": "3TIJQ8kWrDoBXVdnrUj0vf",
+      "gross_after_openings_m3": 2.5919999999999996,
+      "owned_volume_m3": 2.3224320000000005,
+      "removed_frame_overlap_m3": 0.26956799999999914,
+      "expected_volume_and_first_moments_m3_m4": [
+        2.3224320000000005,
+        18.138193920000006,
+        26.826266880000006,
+        21.464248320000006
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        2.3224319999999996,
+        18.138193920000006,
+        26.82626688,
+        21.46424832
+      ],
+      "residual_m3_m4": [
+        8.881784197001252e-16,
+        0.0,
+        7.105427357601002e-15,
+        7.105427357601002e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-SHARED-STAIR-LIFT-3F",
+      "source_guid": "2$XqIEpML258jSB7dqNAHG",
+      "gross_after_openings_m3": 7.361999999999998,
+      "owned_volume_m3": 7.286599999999999,
+      "removed_frame_overlap_m3": 0.07539999999999925,
+      "expected_volume_and_first_moments_m3_m4": [
+        7.286599999999999,
+        68.31187499999999,
+        55.38797399999999,
+        68.391496
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        7.286599999999997,
+        68.31187499999996,
+        55.38797399999999,
+        68.39149599999996
+      ],
+      "residual_m3_m4": [
+        1.7763568394002505e-15,
+        2.842170943040401e-14,
+        0.0,
+        4.263256414560601e-14
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-S-3F",
+      "source_guid": "1aUVPrp7D61O4JT4IHpkqH",
+      "gross_after_openings_m3": 1.1550000000000011,
+      "owned_volume_m3": 1.1550000000000011,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        1.1550000000000011,
+        12.156375000000011,
+        5.341875000000005,
+        11.30550000000001
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        1.1550000000000005,
+        12.156375000000006,
+        5.341875000000003,
+        11.305500000000007
+      ],
+      "residual_m3_m4": [
+        6.661338147750939e-16,
+        5.329070518200751e-15,
+        2.6645352591003757e-15,
+        1.7763568394002505e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-N-3F",
+      "source_guid": "0GjdWTnO12rP5E0_cwd5VI",
+      "gross_after_openings_m3": 1.8450000000000004,
+      "owned_volume_m3": 1.8450000000000004,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        1.8450000000000004,
+        19.418625000000002,
+        12.776625000000003,
+        17.343
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        1.8450000000000004,
+        19.418625000000006,
+        12.776625000000005,
+        17.343000000000007
+      ],
+      "residual_m3_m4": [
+        0.0,
+        3.552713678800501e-15,
+        1.7763568394002505e-15,
+        7.105427357601002e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-E-3F",
+      "source_guid": "1BtkFHip1D3Pz3SxkijX9k",
+      "gross_after_openings_m3": 2.2950000000000004,
+      "owned_volume_m3": 2.2950000000000004,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        2.2950000000000004,
+        26.794125000000005,
+        13.253625000000003,
+        21.573
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        2.295,
+        26.794125,
+        13.253624999999998,
+        21.573
+      ],
+      "residual_m3_m4": [
+        4.440892098500626e-16,
+        3.552713678800501e-15,
+        5.329070518200751e-15,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-W-RF",
+      "source_guid": "3FV$wlVvjMj8hB5PnfMHtI",
+      "gross_after_openings_m3": 5.419250000000001,
+      "owned_volume_m3": 5.419250000000001,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        5.419250000000001,
+        33.843216250000005,
+        41.132107500000004,
+        67.87610625
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        5.419250000000003,
+        33.84321624999998,
+        41.13210750000007,
+        67.87610625000005
+      ],
+      "residual_m3_m4": [
+        1.7763568394002505e-15,
+        2.1316282072803006e-14,
+        6.394884621840902e-14,
+        4.263256414560601e-14
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-W-SUBGRADE",
+      "source_guid": "1ufDeyYVLKP9uoBDDNWA4T",
+      "gross_after_openings_m3": 3.0675,
+      "owned_volume_m3": 2.8299000000000003,
+      "removed_frame_overlap_m3": 0.2375999999999996,
+      "expected_volume_and_first_moments_m3_m4": [
+        2.8299000000000003,
+        17.681041500000003,
+        21.729501,
+        -2.1224250000000002
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        2.8299000000000016,
+        17.681041500000006,
+        21.729501000000013,
+        -2.122425000000002
+      ],
+      "residual_m3_m4": [
+        1.3322676295501878e-15,
+        3.552713678800501e-15,
+        1.4210854715202004e-14,
+        1.7763568394002505e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-S-RF",
+      "source_guid": "0TvhGbdi5QgeY9dtSHoysp",
+      "gross_after_openings_m3": 1.2179999999999997,
+      "owned_volume_m3": 1.2179999999999997,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        1.2179999999999997,
+        9.81618,
+        4.4152499999999995,
+        15.376199999999997
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        1.218,
+        9.816180000000001,
+        4.41525,
+        15.376199999999999
+      ],
+      "residual_m3_m4": [
+        2.220446049250313e-16,
+        1.7763568394002505e-15,
+        8.881784197001252e-16,
+        1.7763568394002505e-15
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-S-SUBGRADE",
+      "source_guid": "2B5PqsgYPTx99cI3lz7rhi",
+      "gross_after_openings_m3": 1.08,
+      "owned_volume_m3": 1.08,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        1.08,
+        8.434800000000003,
+        3.915,
+        -0.81
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        1.0799999999999998,
+        8.4348,
+        3.9149999999999996,
+        -0.8099999999999999
+      ],
+      "residual_m3_m4": [
+        2.220446049250313e-16,
+        3.552713678800501e-15,
+        4.440892098500626e-16,
+        1.1102230246251565e-16
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-N-RF",
+      "source_guid": "0ZTEP5cPHKTOI5i_D_5_tT",
+      "gross_after_openings_m3": 1.9080000000000001,
+      "owned_volume_m3": 1.9080000000000001,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        1.9080000000000001,
+        14.901480000000003,
+        22.04694,
+        23.8977
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        1.9080000000000001,
+        14.90148,
+        22.046939999999996,
+        23.8977
+      ],
+      "residual_m3_m4": [
+        0.0,
+        3.552713678800501e-15,
+        3.552713678800501e-15,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-N-SUBGRADE",
+      "source_guid": "1KB0DrCVrG3fK_6FsXipKw",
+      "gross_after_openings_m3": 1.08,
+      "owned_volume_m3": 1.08,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        1.08,
+        8.434800000000003,
+        12.4794,
+        -0.81
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        1.0799999999999998,
+        8.4348,
+        12.4794,
+        -0.8099999999999999
+      ],
+      "residual_m3_m4": [
+        2.220446049250313e-16,
+        3.552713678800501e-15,
+        0.0,
+        1.1102230246251565e-16
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-SHARED-STAIR-LIFT-RF",
+      "source_guid": "2VUeyarjrPmw_qkqWDfBg2",
+      "gross_after_openings_m3": 5.419250000000001,
+      "owned_volume_m3": 5.419250000000001,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        5.419250000000001,
+        50.80546875000001,
+        41.132107500000004,
+        67.87610625
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        5.419250000000003,
+        50.805468749999996,
+        41.13210750000007,
+        67.87610625000005
+      ],
+      "residual_m3_m4": [
+        1.7763568394002505e-15,
+        1.4210854715202004e-14,
+        6.394884621840902e-14,
+        4.263256414560601e-14
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-SHARED-STAIR-LIFT-SUBGRADE",
+      "source_guid": "1tkmcepwDIJxknk_cGqC8T",
+      "gross_after_openings_m3": 3.0675,
+      "owned_volume_m3": 3.0675,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        3.0675,
+        28.7578125,
+        23.282325,
+        -2.300625
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        3.067500000000001,
+        28.757812500000004,
+        23.282325000000007,
+        -2.300625
+      ],
+      "residual_m3_m4": [
+        8.881784197001252e-16,
+        3.552713678800501e-15,
+        7.105427357601002e-15,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-S-RF",
+      "source_guid": "277NejeI9Osup$7BkR2Pd7",
+      "gross_after_openings_m3": 0.5381250000000005,
+      "owned_volume_m3": 0.5381250000000005,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.5381250000000005,
+        5.663765625000004,
+        2.4888281250000026,
+        6.309515625000006
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.5381250000000005,
+        5.663765625000006,
+        2.4888281250000026,
+        6.309515625000006
+      ],
+      "residual_m3_m4": [
+        0.0,
+        1.7763568394002505e-15,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-S-SUBGRADE",
+      "source_guid": "27akQ6CRvLsOZZjXKZCbFo",
+      "gross_after_openings_m3": 0.7687500000000003,
+      "owned_volume_m3": 0.7687500000000003,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.7687500000000003,
+        8.091093750000002,
+        3.555468750000001,
+        -0.5765625000000002
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.7687500000000003,
+        8.091093750000002,
+        3.5554687500000015,
+        -0.5765625000000002
+      ],
+      "residual_m3_m4": [
+        0.0,
+        0.0,
+        4.440892098500626e-16,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-N-RF",
+      "source_guid": "3A6KdH2BnSr8pusp05Ea4O",
+      "gross_after_openings_m3": 0.5381250000000005,
+      "owned_volume_m3": 0.5381250000000005,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.5381250000000005,
+        5.663765625000004,
+        3.7265156250000033,
+        6.309515625000006
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.5381250000000005,
+        5.663765625000006,
+        3.7265156250000038,
+        6.309515625000006
+      ],
+      "residual_m3_m4": [
+        0.0,
+        1.7763568394002505e-15,
+        4.440892098500626e-16,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-N-SUBGRADE",
+      "source_guid": "2OCExXxsLQZxfjZFNHMeAv",
+      "gross_after_openings_m3": 0.7687500000000003,
+      "owned_volume_m3": 0.7687500000000003,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.7687500000000003,
+        8.091093750000002,
+        5.3235937500000015,
+        -0.5765625000000002
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.7687500000000003,
+        8.091093750000002,
+        5.3235937500000015,
+        -0.5765625000000002
+      ],
+      "residual_m3_m4": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-E-RF",
+      "source_guid": "0iPo96J7rM9R6NpZnS9QZN",
+      "gross_after_openings_m3": 0.6693750000000004,
+      "owned_volume_m3": 0.6693750000000004,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.6693750000000004,
+        7.814953125000005,
+        3.8656406250000024,
+        7.848421875000004
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.669375,
+        7.814953125000008,
+        3.865640625000002,
+        7.848421875000005
+      ],
+      "residual_m3_m4": [
+        3.3306690738754696e-16,
+        2.6645352591003757e-15,
+        4.440892098500626e-16,
+        8.881784197001252e-16
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-E-SUBGRADE",
+      "source_guid": "2KnXC$Sm9TMhRh9cmLE5ts",
+      "gross_after_openings_m3": 0.9562499999999999,
+      "owned_volume_m3": 0.9562499999999999,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.9562499999999999,
+        11.16421875,
+        5.52234375,
+        -0.7171875
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.95625,
+        11.164218750000002,
+        5.522343749999998,
+        -0.7171875
+      ],
+      "residual_m3_m4": [
+        1.1102230246251565e-16,
+        1.7763568394002505e-15,
+        1.7763568394002505e-15,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-W-BASE",
+      "source_guid": "2u0XIlHdzHSxUvqowNFytD",
+      "gross_after_openings_m3": 0.6135,
+      "owned_volume_m3": 0.5659800000000001,
+      "removed_frame_overlap_m3": 0.047519999999999896,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.5659800000000001,
+        3.5362083000000015,
+        4.345900200000001,
+        -0.9338670000000002
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.5659800000000003,
+        3.5362083000000015,
+        4.3459002,
+        -0.933867
+      ],
+      "residual_m3_m4": [
+        1.1102230246251565e-16,
+        0.0,
+        8.881784197001252e-16,
+        2.220446049250313e-16
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-S-BASE",
+      "source_guid": "1tUscgKnLVH8SzJVul76Er",
+      "gross_after_openings_m3": 0.21600000000000008,
+      "owned_volume_m3": 0.21600000000000008,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.21600000000000008,
+        1.6869600000000005,
+        0.7830000000000003,
+        -0.3564000000000001
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.216,
+        1.68696,
+        0.783,
+        -0.35640000000000005
+      ],
+      "residual_m3_m4": [
+        8.326672684688674e-17,
+        4.440892098500626e-16,
+        2.220446049250313e-16,
+        5.551115123125783e-17
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-STAIR-N-BASE",
+      "source_guid": "3Susfu0UHOHfiL8PAB1l_e",
+      "gross_after_openings_m3": 0.21600000000000008,
+      "owned_volume_m3": 0.21600000000000008,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.21600000000000008,
+        1.6869600000000005,
+        2.4958800000000014,
+        -0.3564000000000001
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.216,
+        1.68696,
+        2.49588,
+        -0.35640000000000005
+      ],
+      "residual_m3_m4": [
+        8.326672684688674e-17,
+        4.440892098500626e-16,
+        1.3322676295501878e-15,
+        5.551115123125783e-17
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-SHARED-STAIR-LIFT-BASE",
+      "source_guid": "1SnbtbDRLQCQ5gG71z3C5f",
+      "gross_after_openings_m3": 0.6135,
+      "owned_volume_m3": 0.6135,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.6135,
+        5.7515625,
+        4.656465,
+        -1.012275
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.6135,
+        5.7515625,
+        4.656465,
+        -1.012275
+      ],
+      "residual_m3_m4": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-S-BASE",
+      "source_guid": "1NwgnMdQLKCA3SrwNet9UY",
+      "gross_after_openings_m3": 0.15375000000000008,
+      "owned_volume_m3": 0.15375000000000008,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.15375000000000008,
+        1.6182187500000007,
+        0.7110937500000004,
+        -0.2536875000000001
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.15375000000000005,
+        1.6182187500000007,
+        0.7110937500000003,
+        -0.25368750000000007
+      ],
+      "residual_m3_m4": [
+        2.7755575615628914e-17,
+        0.0,
+        1.1102230246251565e-16,
+        5.551115123125783e-17
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-N-BASE",
+      "source_guid": "1SQIqqambK5xShVqIR1Opx",
+      "gross_after_openings_m3": 0.15375000000000008,
+      "owned_volume_m3": 0.15375000000000008,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.15375000000000008,
+        1.6182187500000007,
+        1.0647187500000006,
+        -0.2536875000000001
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.15375000000000005,
+        1.6182187500000007,
+        1.0647187500000004,
+        -0.25368750000000007
+      ],
+      "residual_m3_m4": [
+        2.7755575615628914e-17,
+        0.0,
+        2.220446049250313e-16,
+        5.551115123125783e-17
+      ],
+      "passed": true
+    },
+    {
+      "source_name": "SW-LIFT-E-BASE",
+      "source_guid": "0YaItQau9QYhfv6PzWtpWY",
+      "gross_after_openings_m3": 0.1912500000000001,
+      "owned_volume_m3": 0.1912500000000001,
+      "removed_frame_overlap_m3": 0.0,
+      "expected_volume_and_first_moments_m3_m4": [
+        0.1912500000000001,
+        2.232843750000001,
+        1.1044687500000006,
+        -0.31556250000000013
+      ],
+      "actual_shell_volume_and_first_moments_m3_m4": [
+        0.19124999999999998,
+        2.23284375,
+        1.1044687499999999,
+        -0.31556249999999997
+      ],
+      "residual_m3_m4": [
+        1.1102230246251565e-16,
+        1.3322676295501878e-15,
+        6.661338147750939e-16,
+        1.6653345369377348e-16
+      ],
+      "passed": true
+    }
+  ],
+  "frame_contacts": [
+    {
+      "wall_name": "SW-STAIR-W-1F",
+      "wall_guid": "0meE0RiqH3SO9gn8K$Tx0k",
+      "owner_name": "C-B2-1F",
+      "owner_guid": "3s9lgrSw51zBU52rOG2Osf",
+      "owner_type": "IFCCOLUMN",
+      "overlap_volume_m3": 0.43199999999999905,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          3.9000000000000004,
+          0.0
+        ],
+        [
+          6.3,
+          4.5,
+          4.0
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        672,
+        8208,
+        8209,
+        8210,
+        8211,
+        8212,
+        8213
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-1F",
+      "wall_guid": "0meE0RiqH3SO9gn8K$Tx0k",
+      "owner_name": "C-B3-1F",
+      "owner_guid": "0_pyKq5Y12av5_YdVo2tT$",
+      "owner_type": "IFCCOLUMN",
+      "overlap_volume_m3": 0.2016000000000005,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          11.399999999999999,
+          0.0
+        ],
+        [
+          6.3,
+          11.68,
+          4.0
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        703,
+        8216,
+        8217,
+        8218,
+        8219,
+        8220,
+        8221
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-1F",
+      "wall_guid": "0meE0RiqH3SO9gn8K$Tx0k",
+      "owner_name": "B-X-BC-2-2F",
+      "owner_guid": "1WFGcuY1zFGuUZbVf_wRYU",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.014560000000000073,
+      "overlap_bounds_m": [
+        [
+          6.3,
+          4.0,
+          3.3
+        ],
+        [
+          6.37,
+          4.4,
+          3.82
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        672
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-1F",
+      "wall_guid": "0meE0RiqH3SO9gn8K$Tx0k",
+      "owner_name": "B-X-BC-3-2F",
+      "owner_guid": "3lZTADYZn7NPuEGmCALMmp",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.006552000000000016,
+      "overlap_bounds_m": [
+        [
+          6.3,
+          11.5,
+          3.3
+        ],
+        [
+          6.37,
+          11.68,
+          3.82
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        703
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-1F",
+      "wall_guid": "0meE0RiqH3SO9gn8K$Tx0k",
+      "owner_name": "B-Y-B-12-2F",
+      "owner_guid": "2c_VTrcpHEyApZqIj$JVMz",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.016640000000000012,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          3.5,
+          3.3
+        ],
+        [
+          6.2,
+          3.9,
+          3.82
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        666,
+        667,
+        668,
+        669,
+        672
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-1F",
+      "wall_guid": "0meE0RiqH3SO9gn8K$Tx0k",
+      "owner_name": "B-Y-B-23-2F",
+      "owner_guid": "3j6EzmHjjBQ8I3cyLqKNS3",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.28704000000000024,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          4.5,
+          3.3
+        ],
+        [
+          6.2,
+          11.4,
+          3.82
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        672,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681,
+        682,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        703
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-N-1F",
+      "wall_guid": "2OPgxAtI5CPezR_ApJR$pt",
+      "owner_name": "B-X-BC-3-2F",
+      "owner_guid": "3lZTADYZn7NPuEGmCALMmp",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.2695679999999996,
+      "overlap_bounds_m": [
+        [
+          6.37,
+          11.5,
+          3.3
+        ],
+        [
+          9.25,
+          11.68,
+          3.82
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        703,
+        1254,
+        1288,
+        1322,
+        1356,
+        1388,
+        1420,
+        1452
+      ]
+    },
+    {
+      "wall_name": "SW-SHARED-STAIR-LIFT-1F",
+      "wall_guid": "03zRJPydr6IuKojMT8t3eN",
+      "owner_name": "B-X-BC-2-2F",
+      "owner_guid": "1WFGcuY1zFGuUZbVf_wRYU",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.052000000000000046,
+      "overlap_bounds_m": [
+        [
+          9.25,
+          4.0,
+          3.3
+        ],
+        [
+          9.5,
+          4.4,
+          3.82
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        1468
+      ]
+    },
+    {
+      "wall_name": "SW-SHARED-STAIR-LIFT-1F",
+      "wall_guid": "03zRJPydr6IuKojMT8t3eN",
+      "owner_name": "B-X-BC-3-2F",
+      "owner_guid": "3lZTADYZn7NPuEGmCALMmp",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.023399999999999962,
+      "overlap_bounds_m": [
+        [
+          9.25,
+          11.5,
+          3.3
+        ],
+        [
+          9.5,
+          11.68,
+          3.82
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        1452
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-2F",
+      "wall_guid": "0mxaNqJyz0KBrqZEk$3Mq6",
+      "owner_name": "C-B2-2F",
+      "owner_guid": "3IFRIQRpnDQRv05j7q4ouR",
+      "owner_type": "IFCCOLUMN",
+      "overlap_volume_m3": 0.3887999999999991,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          3.9000000000000004,
+          4.0
+        ],
+        [
+          6.3,
+          4.5,
+          7.6
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        672,
+        3060,
+        8296,
+        8297,
+        8298,
+        8299
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-2F",
+      "wall_guid": "0mxaNqJyz0KBrqZEk$3Mq6",
+      "owner_name": "C-B3-2F",
+      "owner_guid": "38KCtTNtf0EwC3$PEDhHKt",
+      "owner_type": "IFCCOLUMN",
+      "overlap_volume_m3": 0.18144000000000043,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          11.399999999999999,
+          4.0
+        ],
+        [
+          6.3,
+          11.68,
+          7.6
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        703,
+        3091,
+        8302,
+        8303,
+        8304,
+        8305
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-2F",
+      "wall_guid": "0mxaNqJyz0KBrqZEk$3Mq6",
+      "owner_name": "B-X-BC-2-3F",
+      "owner_guid": "2WwwFPK4fAH8gAfUHf9dPs",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.014560000000000085,
+      "overlap_bounds_m": [
+        [
+          6.3,
+          4.0,
+          6.8999999999999995
+        ],
+        [
+          6.37,
+          4.4,
+          7.42
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        3060
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-2F",
+      "wall_guid": "0mxaNqJyz0KBrqZEk$3Mq6",
+      "owner_name": "B-X-BC-3-3F",
+      "owner_guid": "01Kb2lznTFKgxd1cQyqC7x",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.006552000000000022,
+      "overlap_bounds_m": [
+        [
+          6.3,
+          11.5,
+          6.8999999999999995
+        ],
+        [
+          6.37,
+          11.68,
+          7.42
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        3091
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-2F",
+      "wall_guid": "0mxaNqJyz0KBrqZEk$3Mq6",
+      "owner_name": "B-Y-B-12-3F",
+      "owner_guid": "2I865v9wT4QfpqFKsptlgT",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.016640000000000026,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          3.5,
+          6.8999999999999995
+        ],
+        [
+          6.2,
+          3.9,
+          7.42
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        3054,
+        3055,
+        3056,
+        3057,
+        3060
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-2F",
+      "wall_guid": "0mxaNqJyz0KBrqZEk$3Mq6",
+      "owner_name": "B-Y-B-23-3F",
+      "owner_guid": "0WPy6kBRjCNf3w9jWD1Duy",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.2870400000000005,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          4.5,
+          6.8999999999999995
+        ],
+        [
+          6.2,
+          11.4,
+          7.42
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        3060,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069,
+        3070,
+        3071,
+        3072,
+        3073,
+        3074,
+        3075,
+        3076,
+        3077,
+        3078,
+        3079,
+        3080,
+        3081,
+        3082,
+        3083,
+        3091
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-N-2F",
+      "wall_guid": "0yiPFvOPj4Kv$c5oxVcGzX",
+      "owner_name": "B-X-BC-3-3F",
+      "owner_guid": "01Kb2lznTFKgxd1cQyqC7x",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.2695679999999998,
+      "overlap_bounds_m": [
+        [
+          6.37,
+          11.5,
+          6.8999999999999995
+        ],
+        [
+          9.25,
+          11.68,
+          7.42
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        3091,
+        3644,
+        3680,
+        3716,
+        3752,
+        3786,
+        3820,
+        3854
+      ]
+    },
+    {
+      "wall_name": "SW-SHARED-STAIR-LIFT-2F",
+      "wall_guid": "3CPeXI16H56PWlDIK7njRa",
+      "owner_name": "B-X-BC-2-3F",
+      "owner_guid": "2WwwFPK4fAH8gAfUHf9dPs",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.052000000000000095,
+      "overlap_bounds_m": [
+        [
+          9.25,
+          4.0,
+          6.8999999999999995
+        ],
+        [
+          9.5,
+          4.4,
+          7.42
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        3870
+      ]
+    },
+    {
+      "wall_name": "SW-SHARED-STAIR-LIFT-2F",
+      "wall_guid": "3CPeXI16H56PWlDIK7njRa",
+      "owner_name": "B-X-BC-3-3F",
+      "owner_guid": "01Kb2lznTFKgxd1cQyqC7x",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.023399999999999983,
+      "overlap_bounds_m": [
+        [
+          9.25,
+          11.5,
+          6.8999999999999995
+        ],
+        [
+          9.5,
+          11.68,
+          7.42
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        3854
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-3F",
+      "wall_guid": "2K3NqGltn3lhdvkcROZEBs",
+      "owner_name": "C-B2-3F",
+      "owner_guid": "3t9K9byBf7yPwYNBeXjsBn",
+      "owner_type": "IFCCOLUMN",
+      "overlap_volume_m3": 0.3887999999999991,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          3.9000000000000004,
+          7.6
+        ],
+        [
+          6.3,
+          4.5,
+          11.2
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        3060,
+        5460,
+        8368,
+        8369,
+        8370,
+        8371
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-3F",
+      "wall_guid": "2K3NqGltn3lhdvkcROZEBs",
+      "owner_name": "C-B3-3F",
+      "owner_guid": "2G5dMhOyr0og0uKtXWdBMU",
+      "owner_type": "IFCCOLUMN",
+      "overlap_volume_m3": 0.18144000000000043,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          11.399999999999999,
+          7.6
+        ],
+        [
+          6.3,
+          11.68,
+          11.2
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        3091,
+        5491,
+        8374,
+        8375,
+        8376,
+        8377
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-3F",
+      "wall_guid": "2K3NqGltn3lhdvkcROZEBs",
+      "owner_name": "B-X-BC-2-RF",
+      "owner_guid": "0NmALXEwPBuuGIkvRpdLDG",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.01456000000000006,
+      "overlap_bounds_m": [
+        [
+          6.3,
+          4.0,
+          10.5
+        ],
+        [
+          6.37,
+          4.4,
+          11.02
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        5460
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-3F",
+      "wall_guid": "2K3NqGltn3lhdvkcROZEBs",
+      "owner_name": "B-X-BC-3-RF",
+      "owner_guid": "0M9Vp9R$r4Bg84tb2cwvoC",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.006552000000000011,
+      "overlap_bounds_m": [
+        [
+          6.3,
+          11.5,
+          10.5
+        ],
+        [
+          6.37,
+          11.68,
+          11.02
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        5491
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-3F",
+      "wall_guid": "2K3NqGltn3lhdvkcROZEBs",
+      "owner_name": "B-Y-B-12-RF",
+      "owner_guid": "1CnLU4Jzn20Q47i41fa0EK",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.01664,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          3.5,
+          10.5
+        ],
+        [
+          6.2,
+          3.9,
+          11.02
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        5454,
+        5455,
+        5456,
+        5457,
+        5460
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-3F",
+      "wall_guid": "2K3NqGltn3lhdvkcROZEBs",
+      "owner_name": "B-Y-B-23-RF",
+      "owner_guid": "2uGPlYYED8h9yUJEyXCKUl",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.28704,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          4.5,
+          10.5
+        ],
+        [
+          6.2,
+          11.4,
+          11.02
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        5460,
+        5464,
+        5465,
+        5466,
+        5467,
+        5468,
+        5469,
+        5470,
+        5471,
+        5472,
+        5473,
+        5474,
+        5475,
+        5476,
+        5477,
+        5478,
+        5479,
+        5480,
+        5481,
+        5482,
+        5483,
+        5491
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-N-3F",
+      "wall_guid": "3TIJQ8kWrDoBXVdnrUj0vf",
+      "owner_name": "B-X-BC-3-RF",
+      "owner_guid": "0M9Vp9R$r4Bg84tb2cwvoC",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.26956799999999936,
+      "overlap_bounds_m": [
+        [
+          6.37,
+          11.5,
+          10.5
+        ],
+        [
+          9.25,
+          11.68,
+          11.02
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        5491,
+        6044,
+        6080,
+        6116,
+        6152,
+        6188,
+        6224,
+        6260
+      ]
+    },
+    {
+      "wall_name": "SW-SHARED-STAIR-LIFT-3F",
+      "wall_guid": "2$XqIEpML258jSB7dqNAHG",
+      "owner_name": "B-X-BC-2-RF",
+      "owner_guid": "0NmALXEwPBuuGIkvRpdLDG",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.052000000000000005,
+      "overlap_bounds_m": [
+        [
+          9.25,
+          4.0,
+          10.5
+        ],
+        [
+          9.5,
+          4.4,
+          11.02
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        6276
+      ]
+    },
+    {
+      "wall_name": "SW-SHARED-STAIR-LIFT-3F",
+      "wall_guid": "2$XqIEpML258jSB7dqNAHG",
+      "owner_name": "B-X-BC-3-RF",
+      "owner_guid": "0M9Vp9R$r4Bg84tb2cwvoC",
+      "owner_type": "IFCBEAM",
+      "overlap_volume_m3": 0.023399999999999945,
+      "overlap_bounds_m": [
+        [
+          9.25,
+          11.5,
+          10.5
+        ],
+        [
+          9.5,
+          11.68,
+          11.02
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        6260
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-SUBGRADE",
+      "wall_guid": "1ufDeyYVLKP9uoBDDNWA4T",
+      "owner_name": "C-B2-BASE",
+      "owner_guid": "2pdjOuparUcwLWN0OoNb0A",
+      "owner_type": "IFCCOLUMN",
+      "overlap_volume_m3": 0.16199999999999964,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          3.9000000000000004,
+          -1.5
+        ],
+        [
+          6.3,
+          4.5,
+          0.0
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        8208,
+        8429,
+        8430
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-SUBGRADE",
+      "wall_guid": "1ufDeyYVLKP9uoBDDNWA4T",
+      "owner_name": "C-B3-BASE",
+      "owner_guid": "1xTJMvALHLbxffI84Ya_Xo",
+      "owner_type": "IFCCOLUMN",
+      "overlap_volume_m3": 0.0756000000000002,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          11.399999999999999,
+          -1.5
+        ],
+        [
+          6.3,
+          11.68,
+          0.0
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        8216,
+        8432,
+        8433
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-BASE",
+      "wall_guid": "2u0XIlHdzHSxUvqowNFytD",
+      "owner_name": "C-B2-BASE",
+      "owner_guid": "2pdjOuparUcwLWN0OoNb0A",
+      "owner_type": "IFCCOLUMN",
+      "overlap_volume_m3": 0.032399999999999936,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          3.9000000000000004,
+          -1.8
+        ],
+        [
+          6.3,
+          4.5,
+          -1.5
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        8429
+      ]
+    },
+    {
+      "wall_name": "SW-STAIR-W-BASE",
+      "wall_guid": "2u0XIlHdzHSxUvqowNFytD",
+      "owner_name": "C-B3-BASE",
+      "owner_guid": "1xTJMvALHLbxffI84Ya_Xo",
+      "owner_type": "IFCCOLUMN",
+      "overlap_volume_m3": 0.01512000000000004,
+      "overlap_bounds_m": [
+        [
+          6.12,
+          11.399999999999999,
+          -1.8
+        ],
+        [
+          6.3,
+          11.68,
+          -1.5
+        ]
+      ],
+      "direct_or_rigid_group_master_nodes": [
+        8432
+      ]
+    }
+  ],
+  "rigid_joint_count": 2323,
+  "removed_wall_frame_overlap_m3": 4.068479999999997,
+  "intersection_volume_by_owner_m3": {
+    "IFCCOLUMN": 2.0591999999999984,
+    "IFCBEAM": 2.00928
+  },
+  "contacts_without_direct_kinematic_group": 0,
+  "passed": true,
+  "status": "PASS_SCOPED_OWNERSHIP_AND_KINEMATIC_MAPPING",
+  "scope": "Geometry/section volumes and centroids, and direct group presence; actual joint compatibility/forces require solver checks. No RC acceptance.",
+  "engineering_approval": false
+}
